@@ -10,90 +10,124 @@ function searchString(v) {
     ...v.services.map((s) => s.label),
   ].filter(Boolean).join(' ').toLowerCase();
 }
+
+const phoneIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>';
 ---
 
 <Base description="Browse, filter, and search contractors and services recommended by Pomeroy West neighbors.">
   <section class="wrap hero">
     <h1>Neighbors' trusted vendors</h1>
-    <p>
-      Contractors, gardeners, plumbers and more that Pomeroy West homeowners have
-      actually used — including a few who know Eichler homes inside and out. Search
-      or filter to find your next one.
-    </p>
-    <div class="search">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-      <input
-        id="search"
-        type="search"
-        placeholder="Search by name or service (e.g. tankless, gardener, leak)…"
-        autocomplete="off"
-        aria-label="Search vendors"
-      />
-    </div>
+    <p>Plumbers, gardeners, electricians and more — vouched for by your Pomeroy West neighbors.</p>
   </section>
 
-  <section class="wrap">
-    <div class="filters" id="filters" role="group" aria-label="Filter by category">
-      <button class="chip" data-cat="all" aria-pressed="true">All<span class="count">{count}</span></button>
-      {categoryChips.map((c) => (
-        <button class="chip" data-cat={c.label} aria-pressed="false">
-          <span aria-hidden="true">{c.icon}</span>
-          {c.label}
-          <span class="count">{c.count}</span>
-        </button>
-      ))}
+  <div class="toolbar">
+    <div class="wrap">
+      <div class="search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input id="search" type="search" placeholder="Search name or service (leak, tankless, gardener…)" autocomplete="off" aria-label="Search vendors" />
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Filter by category">
+        <button class="chip" data-cat="all" aria-pressed="true">All<span class="count">{count}</span></button>
+        {categoryChips.map((c) => (
+          <button class="chip" data-cat={c.label} aria-pressed="false">
+            <span aria-hidden="true">{c.icon}</span>{c.label}<span class="count">{c.count}</span>
+          </button>
+        ))}
+      </div>
     </div>
+  </div>
+
+  <section class="wrap">
+    <p class="hoa-note">
+      🛠️ Heads up — some issues may be <strong>HOA-covered</strong>: sewer-line backups, radiant pipe leaks under the slab, and exterior pest control.
+      <a href="https://portal.commoninterest.com/community/new-request" target="_blank" rel="noopener noreferrer">Check with management before hiring →</a>
+    </p>
 
     <p class="result-count" id="result-count" aria-live="polite">Showing all {count} vendors</p>
 
-    <div class="grid" id="grid">
+    <div class="list" id="list">
       {vendors.map((v) => (
-        <article
-          class="card"
-          data-search={searchString(v)}
-          data-cats={v.categories.map((c) => c.label).join('||')}
-        >
-          <div class="card-cats">
-            {v.categories.map((c) => (
-              <span class="cat-badge"><span aria-hidden="true">{c.icon}</span> {c.label}</span>
-            ))}
+        <article class="vendor" id={v.slug} data-search={searchString(v)} data-cats={v.categories.map((c) => c.label).join('||')}>
+          <div class="v-head">
+            {v.logo && <img class="v-logo" src={v.logo} alt="" width="44" height="44" loading="lazy" />}
+            <div class="v-id">
+              <div class="card-cats">
+                {v.categories.map((c) => <span class="cat-badge"><span aria-hidden="true">{c.icon}</span> {c.label}</span>)}
+              </div>
+              <h2><a href={`#${v.slug}`}>{v.name}</a></h2>
+              {v.contact && <p class="contact-name">{v.contact}</p>}
+            </div>
             {v.reviewCount > 0 && (
-              <span class="reviews-pill">
-                <span class="star" aria-hidden="true">★</span>
-                {v.reviewCount} review{v.reviewCount === 1 ? '' : 's'}
+              <span class="reviews-pill" title={`${v.reviewCount} neighbor review${v.reviewCount === 1 ? '' : 's'}, most recent ${v.lastReviewedYear}`}>
+                <span class="star" aria-hidden="true">★</span> {v.reviewCount}{v.lastReviewedYear ? ` · ${v.lastReviewedYear}` : ''}
               </span>
             )}
           </div>
-          <h2><a href={`/vendor/${v.slug}`}>{v.name}</a></h2>
-          {v.contact && <p class="contact-name">{v.contact}</p>}
 
           {v.services.length > 0 && (
             <div class="tags">
-              {v.services.slice(0, 3).map((s) => <span class="tag"><span aria-hidden="true">{s.icon}</span> {s.label}</span>)}
-              {v.services.length > 3 && <span class="tag more">+{v.services.length - 3} more</span>}
+              {v.services.slice(0, 6).map((s) => <span class="tag"><span aria-hidden="true">{s.icon}</span> {s.label}</span>)}
+              {v.services.length > 6 && <span class="tag more">+{v.services.length - 6}</span>}
             </div>
           )}
 
-          <div class="card-actions">
-            {v.phones[0]?.href && (
-              <a class="btn primary" href={`tel:${v.phones[0].href}`}>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-                Call
-              </a>
-            )}
-            <a class="btn ghost" href={`/vendor/${v.slug}`}>Details</a>
+          {v.notes.map((n) => <p class="card-note">ℹ️ {n}</p>)}
+
+          <div class="reach">
+            <span class="reach-primary">
+              {v.phones[0]?.href ? (
+                <Fragment>
+                  <a class="phone" href={`tel:${v.phones[0].href}`}><Fragment set:html={phoneIcon} /> {v.phones[0].display}</a>
+                  {v.smsHref && <a class="text-link" href={`sms:${v.smsHref}`}>Text</a>}
+                </Fragment>
+              ) : v.emails[0] ? (
+                <a class="phone" href={`mailto:${v.emails[0]}`}>✉ Email</a>
+              ) : null}
+            </span>
+            <span class="reach-secondary">
+              {v.phones[0]?.href && v.emails[0] && <a href={`mailto:${v.emails[0]}`}>✉ Email</a>}
+              {v.links.map((l) => <a href={l.url} target="_blank" rel="noopener noreferrer">{l.label}</a>)}
+            </span>
           </div>
+
+          {v.reviews.length > 0 && (
+            <div class="v-reviews">
+              {v.reviews.slice(0, 3).map((r) => (
+                <blockquote class="review">
+                  <p class="review-text">“{r.text}”</p>
+                  <cite>{r.source
+                    ? <a class="review-src" href={r.source} target="_blank" rel="noopener noreferrer" title="View this recommendation in the Pomeroy West Google Group (members only)">— {r.by || 'A Pomeroy West neighbor'}{r.date ? `, ${r.date}` : ''} ↗</a>
+                    : <span>— {r.by || 'A Pomeroy West neighbor'}{r.date ? `, ${r.date}` : ''}</span>}</cite>
+                </blockquote>
+              ))}
+              {v.reviews.length > 3 && (
+                <Fragment>
+                  <div class="more-reviews" hidden>
+                    {v.reviews.slice(3).map((r) => (
+                      <blockquote class="review">
+                        <p class="review-text">“{r.text}”</p>
+                        <cite>{r.source
+                          ? <a class="review-src" href={r.source} target="_blank" rel="noopener noreferrer">— {r.by || 'A Pomeroy West neighbor'}{r.date ? `, ${r.date}` : ''} ↗</a>
+                          : <span>— {r.by || 'A Pomeroy West neighbor'}{r.date ? `, ${r.date}` : ''}</span>}</cite>
+                      </blockquote>
+                    ))}
+                  </div>
+                  <button class="more-toggle" type="button">Show {v.reviews.length - 3} more review{v.reviews.length - 3 === 1 ? '' : 's'} ▾</button>
+                </Fragment>
+              )}
+            </div>
+          )}
         </article>
       ))}
     </div>
 
-    <p class="empty" id="empty">No vendors match that search. Try a broader term or clear the filters.</p>
+    <p class="empty" id="empty">No vendors match that search. Try a broader term or tap “All”.</p>
   </section>
 
   <script>
     const search = document.getElementById('search');
-    const grid = document.getElementById('grid');
-    const cards = Array.from(grid.querySelectorAll('.card'));
+    const list = document.getElementById('list');
+    const cards = Array.from(list.querySelectorAll('.vendor'));
     const chips = Array.from(document.querySelectorAll('.chip'));
     const countEl = document.getElementById('result-count');
     const emptyEl = document.getElementById('empty');
@@ -106,7 +140,7 @@ function searchString(v) {
         const matchCat = activeCat === 'all' || card.dataset.cats.split('||').includes(activeCat);
         const matchText = !q || card.dataset.search.includes(q);
         const visible = matchCat && matchText;
-        card.style.display = visible ? '' : 'none';
+        card.hidden = !visible;
         if (visible) shown++;
       }
       emptyEl.style.display = shown === 0 ? 'block' : 'none';
@@ -123,5 +157,26 @@ function searchString(v) {
         apply();
       });
     }
+
+    // Expand extra reviews in place
+    for (const btn of document.querySelectorAll('.more-toggle')) {
+      btn.addEventListener('click', () => {
+        const more = btn.previousElementSibling;
+        more.hidden = false;
+        btn.remove();
+      });
+    }
+
+    // Deep-link: scroll to + highlight a vendor when the URL has #slug
+    function jumpToHash() {
+      if (!location.hash) return;
+      const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      if (!el) return;
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      el.classList.add('flash');
+      setTimeout(() => el.classList.remove('flash'), 2000);
+    }
+    window.addEventListener('hashchange', jumpToHash);
+    jumpToHash();
   </script>
 </Base>

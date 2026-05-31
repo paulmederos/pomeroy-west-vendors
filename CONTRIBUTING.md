@@ -39,7 +39,7 @@ will flag it and someone will help.
 
 | Field | What it is |
 |---|---|
-| `slug` | URL id, lowercase-with-dashes, **unique**. This becomes `vendors.pomeroywest.org/vendor/<slug>`. Don't change an existing one (it breaks shared links). |
+| `slug` | Anchor id, lowercase-with-dashes, **unique**. Links to that vendor on the page (`vendors.pomeroywest.org/#<slug>`). Don't change an existing one (it breaks shared links). |
 | `name` | Display name. |
 | `contact` | Optional contact person (or `null`). |
 | `categories` | One or more from the list in [`categories.mjs`](src/data/categories.mjs). Add a new one there if needed. |

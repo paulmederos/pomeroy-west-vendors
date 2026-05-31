@@ -24,9 +24,8 @@ src/data/vendors.json  ──(astro build)──►  static HTML  ──►  Clo
 
 - [`src/data/vendors.json`](src/data/vendors.json) — every vendor, with contact info and neighbor reviews. **This is the file you edit.**
 - [`src/data/categories.mjs`](src/data/categories.mjs) — the category list + icons used for filter chips.
-- [`src/lib/data.mjs`](src/lib/data.mjs) — build-time loader: derives phone links, website/Yelp buttons, a fallback logo, review counts, and the sort order (most-reviewed first, then A→Z).
-- [`src/pages/index.astro`](src/pages/index.astro) — the directory: search + category filters + cards.
-- [`src/pages/vendor/[slug].astro`](src/pages/vendor/[slug].astro) — one page per vendor.
+- [`src/lib/data.mjs`](src/lib/data.mjs) — build-time loader: derives phone/text links, website/Yelp buttons, review counts, and the recency-biased sort (most-recently-recommended first).
+- [`src/pages/index.astro`](src/pages/index.astro) — the whole site: one scannable list of vendor rows with a sticky search/filter bar; reviews show inline; each row is deep-linkable at `/#<slug>`.
 - [`src/styles/global.css`](src/styles/global.css) — the mid-century-modern / Eichler theme.
 
 ## Local development

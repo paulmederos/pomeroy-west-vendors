@@ -28,26 +28,36 @@ function shape(v) {
     ...(v.yelp ? [{ url: v.yelp, label: 'Yelp' }] : []),
   ];
   const reviews = v.reviews || [];
+  // Most recent review month ('YYYY-MM'), '' if none. Lexical compare = chronological.
+  const lastReviewed = reviews.reduce((m, r) => (r.date && r.date > m ? r.date : m), '');
+  const phones = (v.phones || []).map((display) => ({ display, href: telHref(display) }));
   return {
     slug: v.slug,
     name: v.name,
     contact: v.contact || null,
     categories: (v.categories || []).map((label) => ({ label, icon: iconFor(label) })),
     services: (v.services || []).map((label) => ({ label, icon: iconForService(label) })),
-    phones: (v.phones || []).map((display) => ({ display, href: telHref(display) })),
+    phones,
+    smsHref: phones.find((p) => p.href)?.href || null, // first callable number, also textable
     emails: v.emails || [],
     links,
     logo: v.logo || null, // locally-stored, hand-vetted logos only (see public/logos/)
     reviews,
     reviewCount: reviews.length,
+    lastReviewed,
+    lastReviewedYear: lastReviewed ? lastReviewed.slice(0, 4) : null,
     notes: v.notes || [],
   };
 }
 
-// Most-reviewed first, then alphabetical.
+// Recency-biased: most-recently-recommended first, then by review count, then A–Z.
+// Vendors with no reviews (lastReviewed '') naturally sort last.
 export const allVendors = vendors
   .map(shape)
-  .sort((a, b) => b.reviewCount - a.reviewCount || a.name.localeCompare(b.name));
+  .sort((a, b) =>
+    b.lastReviewed.localeCompare(a.lastReviewed) ||
+    b.reviewCount - a.reviewCount ||
+    a.name.localeCompare(b.name));
 
 // Category chips: only categories in use, ordered by categories.mjs then count.
 const counts = {};
