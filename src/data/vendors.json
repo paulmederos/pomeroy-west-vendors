@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-05-31T01:11:41.947Z",
+  "generatedAt": "2026-05-31T01:18:31.869Z",
   "count": 65,
   "catCounts": {
+    "RAD": 6,
     "CLE": 8,
-    "GAR": 6,
     "PLU": 12,
+    "GAR": 6,
     "ELE": 8,
     "HAN": 7,
-    "RAD": 6,
     "ARB": 5,
     "PRO": 3,
     "CON": 2,
@@ -18,6 +18,65 @@
     "SOF": 1
   },
   "vendors": [
+    {
+      "slug": "anderson-radiant",
+      "name": "Anderson Radiant",
+      "contact": "Glenn Anderson",
+      "categories": [
+        {
+          "code": "RAD",
+          "label": "Radiant Heat",
+          "icon": "♨️"
+        }
+      ],
+      "services": [
+        {
+          "code": "TAN",
+          "label": "Tankless water heater"
+        },
+        {
+          "code": "RAN",
+          "label": "Radiant heat servicing"
+        }
+      ],
+      "phones": [
+        {
+          "display": "(408) 378-3868",
+          "href": "4083783868"
+        }
+      ],
+      "emails": [
+        "info@radiantheat.net"
+      ],
+      "links": [
+        {
+          "url": "https://radiantheat.net",
+          "label": "radiantheat.net"
+        },
+        {
+          "url": "https://www.yelp.com/biz/anderson-radiant-heating-campbell",
+          "label": "Yelp"
+        }
+      ],
+      "reviews": [
+        {
+          "text": "We went with Glen from Anderson Radiant and I can't recommend him enough — incredibly responsive and worked around our schedule. The whole job took about a day and a half, with the final half-day spent thoroughly checking the system and walking us through how everything works. The craftsmanship is truly like a “piece of art” — everything neatly labeled, with all the documentation for our records.",
+          "author": "A Pomeroy West neighbor",
+          "source": "group",
+          "date": "2026-05"
+        },
+        {
+          "text": "I switched to a combi boiler system and used Glen with Anderson Radiant — he took over for his grandfather and specializes in water-based radiant heating systems.",
+          "author": "A Pomeroy West neighbor",
+          "source": "group",
+          "date": "2022-03"
+        }
+      ],
+      "notes": [],
+      "reviewCount": 2,
+      "logo": "https://www.google.com/s2/favicons?domain=radiantheat.net&sz=128",
+      "yelp": null
+    },
     {
       "slug": "maria-and-silvario",
       "name": "Maria and Silvario",
@@ -52,6 +111,161 @@
           "text": "have cleaned our place for ~3 years, come every two weeks, highly recommended",
           "author": "A Pomeroy West neighbor",
           "source": "sheet"
+        },
+        {
+          "text": "Maria and Silvario clean our home every other week and do a great job. They clean a few other homes around the neighborhood too.",
+          "author": "A Pomeroy West neighbor",
+          "source": "group",
+          "date": "2026-05"
+        }
+      ],
+      "notes": [],
+      "reviewCount": 2,
+      "logo": null,
+      "yelp": null
+    },
+    {
+      "slug": "ej-plumbing",
+      "name": "EJ Plumbing",
+      "contact": null,
+      "categories": [
+        {
+          "code": "PLU",
+          "label": "Plumber",
+          "icon": "🚰"
+        }
+      ],
+      "services": [
+        {
+          "code": "PIP",
+          "label": "Plumbing pipes"
+        },
+        {
+          "code": "HEA",
+          "label": "Water heater"
+        },
+        {
+          "code": "DRA",
+          "label": "Drain cleaning"
+        },
+        {
+          "code": "SEW",
+          "label": "Sewer backup"
+        },
+        {
+          "code": "TRE",
+          "label": "Trenchless sewer repair"
+        },
+        {
+          "code": "HYD",
+          "label": "Hydro jetting"
+        }
+      ],
+      "phones": [
+        {
+          "display": "(650) 434-4432",
+          "href": "6504344432"
+        }
+      ],
+      "emails": [
+        "customercare@ejplumbing.com"
+      ],
+      "links": [
+        {
+          "url": "https://www.ejplumbing.com",
+          "label": "ejplumbing.com"
+        },
+        {
+          "url": "https://www.yelp.com/biz/ej-home-services-santa-clara",
+          "label": "Yelp"
+        }
+      ],
+      "reviews": [
+        {
+          "text": "The plumber from EJ Plumbing was very nice — highly recommend.",
+          "author": "A Pomeroy West neighbor",
+          "source": "group",
+          "date": "2026-05"
+        }
+      ],
+      "notes": [],
+      "reviewCount": 1,
+      "logo": "https://www.google.com/s2/favicons?domain=www.ejplumbing.com&sz=128",
+      "yelp": null
+    },
+    {
+      "slug": "h-h-hydronics",
+      "name": "H H Hydronics",
+      "contact": "Hector Hernandez",
+      "categories": [
+        {
+          "code": "RAD",
+          "label": "Radiant Heat",
+          "icon": "♨️"
+        }
+      ],
+      "services": [
+        {
+          "code": "TAN",
+          "label": "Tankless water heater"
+        },
+        {
+          "code": "RAN",
+          "label": "Radiant heat servicing"
+        }
+      ],
+      "phones": [
+        {
+          "display": "(650) 384-6393",
+          "href": "6503846393"
+        }
+      ],
+      "emails": [],
+      "links": [],
+      "reviews": [
+        {
+          "text": "We had H H Hydronics service our radiant heating system recently and the experience was quite positive.",
+          "author": "A Pomeroy West neighbor",
+          "source": "group",
+          "date": "2026-04"
+        }
+      ],
+      "notes": [],
+      "reviewCount": 1,
+      "logo": null,
+      "yelp": null
+    },
+    {
+      "slug": "orlindos-cleaning",
+      "name": "Orlindos Cleaning",
+      "contact": "Ruben and Lorenzo",
+      "categories": [
+        {
+          "code": "CLE",
+          "label": "Cleaner",
+          "icon": "🧽"
+        }
+      ],
+      "services": [
+        {
+          "code": "WHC",
+          "label": "Windows + floors cleaning"
+        }
+      ],
+      "phones": [
+        {
+          "display": "(408) 774-9340",
+          "href": "4087749340"
+        }
+      ],
+      "emails": [],
+      "links": [],
+      "reviews": [
+        {
+          "text": "We've used Orlindo's for house cleaning and windows.",
+          "author": "A Pomeroy West neighbor",
+          "source": "group",
+          "date": "2026-05"
         }
       ],
       "notes": [],
@@ -146,6 +360,59 @@
       "notes": [],
       "reviewCount": 1,
       "logo": null,
+      "yelp": null
+    },
+    {
+      "slug": "willow-glen-electric",
+      "name": "Willow Glen Electric",
+      "contact": null,
+      "categories": [
+        {
+          "code": "ELE",
+          "label": "Electrician",
+          "icon": "💡"
+        }
+      ],
+      "services": [
+        {
+          "code": "EVC",
+          "label": "EV charger install"
+        },
+        {
+          "code": "FUS",
+          "label": "Electric fuse replacement"
+        }
+      ],
+      "phones": [
+        {
+          "display": "(408) 289-9725",
+          "href": "4082899725"
+        }
+      ],
+      "emails": [
+        "matt@willowglenelectric.com"
+      ],
+      "links": [
+        {
+          "url": "https://willowglenelectric.com",
+          "label": "willowglenelectric.com"
+        },
+        {
+          "url": "https://www.yelp.com/biz/willow-glen-electric-san-jose",
+          "label": "Yelp"
+        }
+      ],
+      "reviews": [
+        {
+          "text": "I used Willow Glen Electric to install my EV charger — they were helpful walking us through the whole process.",
+          "author": "A Pomeroy West neighbor",
+          "source": "group",
+          "date": "2026-05"
+        }
+      ],
+      "notes": [],
+      "reviewCount": 1,
+      "logo": "https://www.google.com/s2/favicons?domain=willowglenelectric.com&sz=128",
       "yelp": null
     },
     {
@@ -314,52 +581,6 @@
       "notes": [],
       "reviewCount": 0,
       "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "anderson-radiant",
-      "name": "Anderson Radiant",
-      "contact": "Glenn Anderson",
-      "categories": [
-        {
-          "code": "RAD",
-          "label": "Radiant Heat",
-          "icon": "♨️"
-        }
-      ],
-      "services": [
-        {
-          "code": "TAN",
-          "label": "Tankless water heater"
-        },
-        {
-          "code": "RAN",
-          "label": "Radiant heat servicing"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 378-3868",
-          "href": "4083783868"
-        }
-      ],
-      "emails": [
-        "info@radiantheat.net"
-      ],
-      "links": [
-        {
-          "url": "https://radiantheat.net",
-          "label": "radiantheat.net"
-        },
-        {
-          "url": "https://www.yelp.com/biz/anderson-radiant-heating-campbell",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=radiantheat.net&sz=128",
       "yelp": null
     },
     {
@@ -673,68 +894,6 @@
       "yelp": null
     },
     {
-      "slug": "ej-plumbing",
-      "name": "EJ Plumbing",
-      "contact": null,
-      "categories": [
-        {
-          "code": "PLU",
-          "label": "Plumber",
-          "icon": "🚰"
-        }
-      ],
-      "services": [
-        {
-          "code": "PIP",
-          "label": "Plumbing pipes"
-        },
-        {
-          "code": "HEA",
-          "label": "Water heater"
-        },
-        {
-          "code": "DRA",
-          "label": "Drain cleaning"
-        },
-        {
-          "code": "SEW",
-          "label": "Sewer backup"
-        },
-        {
-          "code": "TRE",
-          "label": "Trenchless sewer repair"
-        },
-        {
-          "code": "HYD",
-          "label": "Hydro jetting"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(650) 434-4432",
-          "href": "6504344432"
-        }
-      ],
-      "emails": [
-        "customercare@ejplumbing.com"
-      ],
-      "links": [
-        {
-          "url": "https://www.ejplumbing.com",
-          "label": "ejplumbing.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/ej-home-services-santa-clara",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=www.ejplumbing.com&sz=128",
-      "yelp": null
-    },
-    {
       "slug": "environmental-water-systems",
       "name": "Environmental Water Systems",
       "contact": null,
@@ -1019,41 +1178,6 @@
         {
           "display": "(408) 887-5157",
           "href": "4088875157"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "h-h-hydronics",
-      "name": "H H Hydronics",
-      "contact": "Hector Hernandez",
-      "categories": [
-        {
-          "code": "RAD",
-          "label": "Radiant Heat",
-          "icon": "♨️"
-        }
-      ],
-      "services": [
-        {
-          "code": "TAN",
-          "label": "Tankless water heater"
-        },
-        {
-          "code": "RAN",
-          "label": "Radiant heat servicing"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(650) 384-6393",
-          "href": "6503846393"
         }
       ],
       "emails": [],
@@ -1893,37 +2017,6 @@
       "yelp": null
     },
     {
-      "slug": "orlindos-cleaning",
-      "name": "Orlindos Cleaning",
-      "contact": "Ruben and Lorenzo",
-      "categories": [
-        {
-          "code": "CLE",
-          "label": "Cleaner",
-          "icon": "🧽"
-        }
-      ],
-      "services": [
-        {
-          "code": "WHC",
-          "label": "Windows + floors cleaning"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 774-9340",
-          "href": "4087749340"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
       "slug": "palo-alto-glass",
       "name": "Palo Alto Glass",
       "contact": null,
@@ -2549,52 +2642,6 @@
       "notes": [],
       "reviewCount": 0,
       "logo": "https://www.google.com/s2/favicons?domain=waterheatersonly.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "willow-glen-electric",
-      "name": "Willow Glen Electric",
-      "contact": null,
-      "categories": [
-        {
-          "code": "ELE",
-          "label": "Electrician",
-          "icon": "💡"
-        }
-      ],
-      "services": [
-        {
-          "code": "EVC",
-          "label": "EV charger install"
-        },
-        {
-          "code": "FUS",
-          "label": "Electric fuse replacement"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 289-9725",
-          "href": "4082899725"
-        }
-      ],
-      "emails": [
-        "matt@willowglenelectric.com"
-      ],
-      "links": [
-        {
-          "url": "https://willowglenelectric.com",
-          "label": "willowglenelectric.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/willow-glen-electric-san-jose",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=willowglenelectric.com&sz=128",
       "yelp": null
     }
   ]
