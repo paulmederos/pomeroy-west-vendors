@@ -806,7 +806,18 @@
     "websites": [],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "Hector's wonderful — he came right over to clean up our yard and does great work.",
+        "by": "Cindy",
+        "date": "2023-08"
+      },
+      {
+        "text": "We've worked with Hector for years, as have both our direct neighbors. He's super friendly, knowledgeable, and great at suggesting ideas — all at reasonable pricing.",
+        "by": "Celine",
+        "date": "2024-07"
+      }
+    ],
     "notes": []
   },
   {
@@ -1400,6 +1411,7 @@
       "Water heater"
     ],
     "phones": [
+      "(408) 375-9199",
       "(408) 372-8978"
     ],
     "emails": [],
@@ -1408,8 +1420,16 @@
     ],
     "yelp": "https://www.yelp.com/biz/san-jose-plumbing-san-jose-15",
     "logo": null,
-    "reviews": [],
-    "notes": []
+    "reviews": [
+      {
+        "text": "I highly recommend Adam Garza at San Jose Plumbing — he's done work for me and several other Pomeroy West residents.",
+        "by": "Horst",
+        "date": "2021-10"
+      }
+    ],
+    "notes": [
+      "Warmly recommended by several neighbors over the years. A couple reported slow or no response more recently (2023–2025), so confirm availability before counting on him."
+    ]
   },
   {
     "slug": "smith-electric",
