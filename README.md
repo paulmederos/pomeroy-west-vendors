@@ -1,5 +1,8 @@
 # Pomeroy West Vendor Directory
 
+**Live at [vendors.pomeroywest.org](https://vendors.pomeroywest.org)** ·
+hosted on Cloudflare Pages.
+
 A browseable, searchable directory of contractors and services that Pomeroy West
 (an Eichler community in Santa Clara) homeowners have recommended. Built as a
 static site — no server, no database — and hosted at
