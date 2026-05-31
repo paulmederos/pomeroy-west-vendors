@@ -177,9 +177,10 @@
     "logo": null,
     "reviews": [
       {
-        "text": "We've used Orlindo's for house cleaning and windows.",
+        "text": "We've used Orlindo's cleaners for house cleaning and windows. It's been a while, so I forget the pricing.",
         "date": "2026-05",
-        "by": "Quentin"
+        "by": "Quentin",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/1D3767F1-8B0F-4A32-BA10-F8D024536A42%40yahoo.com"
       }
     ],
     "notes": []
@@ -2032,5 +2033,32 @@
     "notes": [
       "Suzanne’s regular window washer — ask her for the contact."
     ]
+  },
+  {
+    "slug": "rolling-suds-power-washing",
+    "name": "Rolling Suds Power Washing",
+    "contact": null,
+    "categories": [
+      "Cleaner"
+    ],
+    "services": [
+      "Window washing",
+      "Power washing"
+    ],
+    "phones": [],
+    "emails": [],
+    "websites": [
+      "https://www.rollingsudspowerwashing.com/san-jose-santa-clara/"
+    ],
+    "yelp": null,
+    "logo": null,
+    "reviews": [
+      {
+        "text": "For window cleaning, last year we used Rolling Suds Power Washing — they did a good job for an OK price.",
+        "date": "2026-05",
+        "by": "Karl"
+      }
+    ],
+    "notes": []
   }
 ]
