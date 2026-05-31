@@ -26,3 +26,30 @@ export const CATEGORIES = {
 
 export const iconFor = (label) => CATEGORIES[label]?.icon || '🔧';
 export const orderFor = (label) => CATEGORIES[label]?.order ?? 999;
+
+// Pick an emoji for a free-text service label (keyword rules, first match wins).
+const SERVICE_RULES = [
+  [/water filter|softener|reverse osmosis|whole-house water/i, '💧'],
+  [/tankless|water heater|boiler/i, '🔥'],
+  [/radiant|heat servicing|heat$/i, '♨️'],
+  [/mini-?split|hvac|air condition/i, '❄️'],
+  [/ev charger|sub-?panel|fuse|outlet|install lights|low-voltage|general electrical/i, '💡'],
+  [/leak|pipe|plumb|drain|sewer|hydro|toilet|trenchless/i, '🚰'],
+  [/window|glass|insect|mesh/i, '🪟'],
+  [/kitchen|cabinet|reface/i, '🍽️'],
+  [/countertop|backsplash/i, '🍳'],
+  [/concrete|atrium|driveway|seal/i, '🧱'],
+  [/sheetrock|wood|siding|fence/i, '🪚'],
+  [/floor/i, '🪵'],
+  [/tree|fruit|arbor|prune/i, '🌳'],
+  [/lawn|garden|irrigation|plant/i, '🌿'],
+  [/clean|polish|vacuum/i, '🧽'],
+  [/appliance|dryer vent|shelving|exhaust fan|light bulb/i, '🧰'],
+  [/babysit|childcare|mother's helper|chore|helper/i, '🧸'],
+  [/pet/i, '🐾'],
+  [/auto|maintenance|repair/i, '🔧'],
+];
+export const iconForService = (label) => {
+  for (const [re, emo] of SERVICE_RULES) if (re.test(label)) return emo;
+  return '🔧';
+};

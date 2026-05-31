@@ -6,7 +6,7 @@
 // There is no build/import step that overwrites it.
 
 import vendors from '../data/vendors.json';
-import { iconFor, orderFor, CATEGORIES } from '../data/categories.mjs';
+import { iconFor, orderFor, iconForService, CATEGORIES } from '../data/categories.mjs';
 
 const telHref = (s) => {
   const d = String(s).replace(/[^\d+]/g, '');
@@ -33,7 +33,7 @@ function shape(v) {
     name: v.name,
     contact: v.contact || null,
     categories: (v.categories || []).map((label) => ({ label, icon: iconFor(label) })),
-    services: v.services || [],
+    services: (v.services || []).map((label) => ({ label, icon: iconForService(label) })),
     phones: (v.phones || []).map((display) => ({ display, href: telHref(display) })),
     emails: v.emails || [],
     links,

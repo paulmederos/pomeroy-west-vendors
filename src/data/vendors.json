@@ -24,19 +24,26 @@
     "reviews": [
       {
         "text": "We went with Glen from Anderson Radiant and I can't recommend him enough — incredibly responsive and worked around our schedule. The whole job took about a day and a half, with the final half-day spent thoroughly checking the system and walking us through how everything works. The craftsmanship is truly like a “piece of art” — everything neatly labeled, with all the documentation for our records.",
-        "date": "2026-05"
+        "date": "2026-05",
+        "by": "Mala",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/8E761D58-FB1E-42DF-9772-C0CA7D550847%40yahoo.com"
       },
       {
         "text": "I switched to a combi boiler system and used Glen with Anderson Radiant — he took over for his grandfather and specializes in water-based radiant heating systems.",
-        "date": "2022-03"
+        "date": "2022-03",
+        "by": "Ginger",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CA%2BYBO%3D2xxjZc%2BGDEwBk-TTk8DcG%3DWVDOb1eyN7CNpsNWBFsKew%40mail.gmail.com"
       },
       {
         "text": "I needed to replace the original boiler and used Anderson Radiant — they were amazing.",
-        "date": "2022-11"
+        "date": "2022-11",
+        "by": "Lisa",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CAGcgEMJ2%2B3mYQfKumGnzBRK%3DmoH9izL4%3Dzwaegn_ggcs4vdDQQ%40mail.gmail.com"
       },
       {
         "text": "Anderson Radiant installed a combined radiant and tankless water heater for me and I’m happy with it.",
-        "date": "2025-01"
+        "date": "2025-01",
+        "by": "Vitaliy"
       }
     ],
     "notes": []
@@ -66,7 +73,8 @@
       },
       {
         "text": "Maria and Silvario clean our home every other week and do a great job. They clean a few other homes around the neighborhood too.",
-        "date": "2026-05"
+        "date": "2026-05",
+        "by": "Paul"
       }
     ],
     "notes": []
@@ -100,7 +108,9 @@
     "reviews": [
       {
         "text": "The plumber from EJ Plumbing was very nice — highly recommend.",
-        "date": "2026-05"
+        "date": "2026-05",
+        "by": "James",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/2828ab61-9b14-4e9c-854d-8d55c0744b94n%40googlegroups.com"
       }
     ],
     "notes": []
@@ -126,19 +136,24 @@
     "reviews": [
       {
         "text": "We had H H Hydronics service our radiant heating system recently and the experience was quite positive.",
-        "date": "2026-04"
+        "date": "2026-04",
+        "by": "Patrick",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CAG4%2B4Oc5w%2BZj%2BSJs8JaJXc8y_VGGZ1ShEQ5WVbDCQe7yqV8N_A%40mail.gmail.com"
       },
       {
         "text": "Hector at HH Hydronics has saved us a few times — from a radiant-heat leak to a bathtub clog. He did the inspection and maintenance on our original radiant system.",
-        "date": "2025-11"
+        "date": "2025-11",
+        "by": "Paul"
       },
       {
         "text": "We had a leak under the floor and Hector did an excellent job locating it and making the repair, at a very reasonable rate compared to others.",
-        "date": "2025-09"
+        "date": "2025-09",
+        "by": "Paul"
       },
       {
         "text": "Hector has been wonderful to work with — leak detection and pipe repair.",
-        "date": "2024-12"
+        "date": "2024-12",
+        "by": "Paul"
       }
     ],
     "notes": []
@@ -163,7 +178,8 @@
     "reviews": [
       {
         "text": "We've used Orlindo's for house cleaning and windows.",
-        "date": "2026-05"
+        "date": "2026-05",
+        "by": "Quentin"
       }
     ],
     "notes": []
@@ -247,7 +263,8 @@
     "reviews": [
       {
         "text": "I used Willow Glen Electric to install my EV charger — they were helpful walking us through the whole process.",
-        "date": "2026-05"
+        "date": "2026-05",
+        "by": "Jay"
       }
     ],
     "notes": []
@@ -655,11 +672,13 @@
     "reviews": [
       {
         "text": "We used Fuse for a ceiling mini-split and had a fantastic experience.",
-        "date": "2025-03"
+        "date": "2025-03",
+        "by": "Laurel"
       },
       {
         "text": "I installed a ductless mini-split with Fuse — the standard design got Architectural Review approval quickly.",
-        "date": "2025-03"
+        "date": "2025-03",
+        "by": "Lisa"
       }
     ],
     "notes": []
@@ -841,7 +860,8 @@
     "reviews": [
       {
         "text": "Highly recommend Kevin Smith for radiant heat.",
-        "date": "2024-12"
+        "date": "2024-12",
+        "by": "Steve"
       }
     ],
     "notes": []
@@ -913,11 +933,14 @@
     "reviews": [
       {
         "text": "Dale at LaChance has been wonderful — he helped us with boiler maintenance.",
-        "date": "2024-12"
+        "date": "2024-12",
+        "by": "Paul"
       },
       {
         "text": "I've had good luck with LaChance for radiant heating.",
-        "date": "2022-11"
+        "date": "2022-11",
+        "by": "Bertrand",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/018EF0EE-D320-43D9-BC98-2D823D07E992%40bmt-online.org"
       }
     ],
     "notes": []
@@ -1559,15 +1582,18 @@
     "reviews": [
       {
         "text": "Several of us converted to tankless a couple years ago — couldn't be happier with our Just Tankless Navien water-heating system.",
-        "date": "2026-05"
+        "date": "2026-05",
+        "by": "Michael"
       },
       {
         "text": "Call Al — he's a great guy, and he'll figure everything out.",
-        "date": "2024-01"
+        "date": "2024-01",
+        "by": "Candace"
       },
       {
         "text": "We had Just Tankless install a new water heater and boiler — smooth process and a tidy install.",
-        "date": "2024-03"
+        "date": "2024-03",
+        "by": "Mary"
       }
     ],
     "notes": []
@@ -1592,7 +1618,8 @@
     "reviews": [
       {
         "text": "I'm very happy with my house cleaner — she is fantastic.",
-        "date": "2026-05"
+        "date": "2026-05",
+        "by": "Horst"
       }
     ],
     "notes": []
@@ -1622,11 +1649,13 @@
     "reviews": [
       {
         "text": "For anyone considering Sandra's services, we highly recommend her. She regularly looks after our 2-year-old and they adore each other — always excited to see her.",
-        "date": "2025-07"
+        "date": "2025-07",
+        "by": "Noriko"
       },
       {
         "text": "Sandra has watched our two kids (7 and 2) regularly and they've loved her!",
-        "date": "2025-07"
+        "date": "2025-07",
+        "by": "Paul"
       },
       {
         "text": "She looks after our cats when we travel and always texts us updates and pictures. One of our cats is very shy, and Sandra goes out of her way to find her and give her attention.",
@@ -1656,7 +1685,8 @@
     "reviews": [
       {
         "text": "We use Professional Auto Repair — Raul always gives a price lower than anywhere else.",
-        "date": "2026-01"
+        "date": "2026-01",
+        "by": "Michelle"
       },
       {
         "text": "I'd third that recommendation — we've gone to Raul for years.",

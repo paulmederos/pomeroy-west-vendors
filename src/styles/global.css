@@ -207,11 +207,14 @@ a:hover { text-decoration: underline; }
 .service-list .tag { font-size: .85rem; padding: 4px 11px; }
 
 blockquote.review {
-  position: relative; margin: 0 0 14px; padding: 4px 0 4px 20px;
-  border-left: 3px solid var(--terra); color: var(--ink); font-size: 1.05rem;
+  position: relative; margin: 0 0 30px; padding: 2px 0 2px 20px;
+  border-left: 3px solid var(--terra); color: var(--ink);
 }
 blockquote.review:last-child { margin-bottom: 0; }
-blockquote.review cite { display: block; margin-top: 8px; font-style: normal; font-size: .85rem; color: var(--muted); }
+.review-text { margin: 0; font-size: 1.05rem; line-height: 1.45; }
+blockquote.review cite { display: block; margin-top: 14px; font-style: normal; font-size: .85rem; color: var(--muted); }
+.review-src { color: var(--muted); text-decoration: none; border-bottom: 1px dotted var(--line); transition: color .12s, border-color .12s; }
+.review-src:hover { color: var(--terra); border-bottom-color: var(--terra); text-decoration: none; }
 
 .note {
   background: var(--terra-tint); border-radius: 9px; padding: 12px 14px;

@@ -7,7 +7,7 @@ function searchString(v) {
     v.name,
     v.contact,
     ...v.categories.map((c) => c.label),
-    ...v.services,
+    ...v.services.map((s) => s.label),
   ].filter(Boolean).join(' ').toLowerCase();
 }
 ---
@@ -69,7 +69,7 @@ function searchString(v) {
 
           {v.services.length > 0 && (
             <div class="tags">
-              {v.services.slice(0, 3).map((s) => <span class="tag">{s}</span>)}
+              {v.services.slice(0, 3).map((s) => <span class="tag"><span aria-hidden="true">{s.icon}</span> {s.label}</span>)}
               {v.services.length > 3 && <span class="tag more">+{v.services.length - 3} more</span>}
             </div>
           )}

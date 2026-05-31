@@ -76,7 +76,7 @@ const desc = `${v.name} — ${v.categories.map((c) => c.label).join(', ')} recom
       <section class="panel">
         <h3>Services</h3>
         <div class="service-list">
-          {v.services.map((s) => <span class="tag">{s}</span>)}
+          {v.services.map((s) => <span class="tag"><span aria-hidden="true">{s.icon}</span> {s.label}</span>)}
         </div>
       </section>
     )}
@@ -84,12 +84,22 @@ const desc = `${v.name} — ${v.categories.map((c) => c.label).join(', ')} recom
     {v.reviews.length > 0 && (
       <section class="panel">
         <h3>Homeowner reviews <span class="h3-count">({v.reviews.length})</span></h3>
-        {v.reviews.map((r) => (
-          <blockquote class="review">
-            “{r.text}”
-            <cite>— {r.author || 'A Pomeroy West neighbor'}{r.date ? `, ${r.date}` : ''}</cite>
-          </blockquote>
-        ))}
+        {v.reviews.map((r) => {
+          const who = r.by || 'A Pomeroy West neighbor';
+          const when = r.date ? `, ${r.date}` : '';
+          return (
+            <blockquote class="review">
+              <p class="review-text">“{r.text}”</p>
+              <cite>
+                {r.source ? (
+                  <a class="review-src" href={r.source} target="_blank" rel="noopener noreferrer" title="View this recommendation in the Pomeroy West Google Group (members only)">— {who}{when} ↗</a>
+                ) : (
+                  <span>— {who}{when}</span>
+                )}
+              </cite>
+            </blockquote>
+          );
+        })}
       </section>
     )}
   </div>
