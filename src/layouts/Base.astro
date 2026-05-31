@@ -1,0 +1,61 @@
+---
+import '../styles/global.css';
+const { title, description } = Astro.props;
+const fullTitle = title
+  ? `${title} · Pomeroy West Vendors`
+  : 'Pomeroy West Vendor Directory';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Public but unlisted: keep out of search engines. -->
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{fullTitle}</title>
+    {description && <meta name="description" content={description} />}
+    <meta name="theme-color" content="#3f7d2e" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">
+          <svg class="leaf" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M27 5C13 5 6 13 6 24c0 1 0 2 .3 3C8 18 14 12 24 10c-7 4-12 9-15 18 12 1 21-6 21-18 0-2 0-4-3-5z" fill="#3f7d2e"/>
+          </svg>
+          <span class="brand-text" style="display:flex;flex-direction:column">
+            <b>Pomeroy West</b>
+            <span>Vendor Directory</span>
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p class="disclaimer">
+          A neighbor-built directory of contractors and services that Pomeroy West
+          homeowners have used. It's maintained by resident volunteers and is
+          <strong>not</strong> an official representation of the HOA — listings are
+          shared experiences, not endorsements. Always vet vendors for your own project.
+        </p>
+        <p class="meta">
+          Know a great vendor, or spot something out of date?
+          <a href="https://groups.google.com/g/pomeroywest">Let us know in the Google Group</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

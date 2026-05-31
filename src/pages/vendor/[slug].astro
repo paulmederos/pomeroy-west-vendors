@@ -1,0 +1,78 @@
+---
+import Base from '../../layouts/Base.astro';
+import data from '../../data/vendors.json';
+
+export function getStaticPaths() {
+  return data.vendors.map((v) => ({ params: { slug: v.slug }, props: { v } }));
+}
+
+const { v } = Astro.props;
+const desc = `${v.name} — ${v.categories.map((c) => c.label).join(', ')} recommended by Pomeroy West neighbors.`;
+---
+
+<Base title={v.name} description={desc}>
+  <div class="wrap detail">
+    <a class="back" href="/">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+      All vendors
+    </a>
+
+    <header class="detail-head">
+      <div class="card-cats">
+        {v.categories.map((c) => (
+          <span class="cat-badge"><span aria-hidden="true">{c.icon}</span> {c.label}</span>
+        ))}
+      </div>
+      <h1>{v.name}</h1>
+      {v.contact && <p class="contact-name">{v.contact}</p>}
+    </header>
+
+    <section class="panel">
+      <h3>Contact</h3>
+      <div class="contact-actions">
+        {v.phones.map((p) => (
+          p.href
+            ? <a class="btn primary" href={`tel:${p.href}`}>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+                {p.display}
+              </a>
+            : <span class="btn ghost">{p.display}</span>
+        ))}
+        {v.emails.map((e) => (
+          <a class="btn" href={`mailto:${e}`}>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+            Email
+          </a>
+        ))}
+        {v.links.map((l) => (
+          <a class="btn" href={l.url} target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            {l.label}
+          </a>
+        ))}
+      </div>
+      {v.notes.map((n) => <p class="note">ℹ️ {n}</p>)}
+    </section>
+
+    {v.services.length > 0 && (
+      <section class="panel">
+        <h3>Services</h3>
+        <div class="service-list">
+          {v.services.map((s) => <span class="tag">{s.label}</span>)}
+        </div>
+      </section>
+    )}
+
+    {v.reviews.length > 0 && (
+      <section class="panel">
+        <h3>What neighbors say</h3>
+        {v.reviews.map((r) => (
+          <blockquote class="review">
+            “{r}”
+            <cite>— A Pomeroy West neighbor</cite>
+          </blockquote>
+        ))}
+      </section>
+    )}
+  </div>
+</Base>

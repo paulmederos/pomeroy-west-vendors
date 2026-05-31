@@ -1,0 +1,138 @@
+---
+import Base from '../layouts/Base.astro';
+import { CATEGORY_ORDER } from '../data/labels.mjs';
+import data from '../data/vendors.json';
+
+const { vendors, catCounts, count } = data;
+
+// Build the ordered list of category chips: known order first, then any extras,
+// limited to categories that actually have vendors.
+const seen = new Set();
+const chipCodes = [
+  ...CATEGORY_ORDER.filter((c) => catCounts[c]),
+  ...Object.keys(catCounts).filter((c) => !CATEGORY_ORDER.includes(c)),
+].filter((c) => (seen.has(c) ? false : (seen.add(c), true)));
+
+// Map a code to a representative {label, icon} from the vendor data.
+const codeMeta = {};
+for (const v of vendors)
+  for (const c of v.categories) codeMeta[c.code] ??= c;
+
+function searchString(v) {
+  return [
+    v.name,
+    v.contact,
+    ...v.categories.map((c) => c.label),
+    ...v.services.map((s) => s.label),
+  ].filter(Boolean).join(' ').toLowerCase();
+}
+---
+
+<Base description="Browse, filter, and search contractors and services recommended by Pomeroy West neighbors.">
+  <section class="wrap hero">
+    <h1>Neighbors' trusted vendors</h1>
+    <p>
+      Contractors, gardeners, plumbers and more that Pomeroy West homeowners have
+      actually used — including a few who know Eichler homes inside and out. Search
+      or filter to find your next one.
+    </p>
+    <div class="search">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input
+        id="search"
+        type="search"
+        placeholder="Search by name or service (e.g. tankless, gardener, leak)…"
+        autocomplete="off"
+        aria-label="Search vendors"
+      />
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="filters" id="filters" role="group" aria-label="Filter by category">
+      <button class="chip" data-cat="all" aria-pressed="true">All<span class="count">{count}</span></button>
+      {chipCodes.map((code) => (
+        <button class="chip" data-cat={code} aria-pressed="false">
+          <span aria-hidden="true">{codeMeta[code]?.icon}</span>
+          {codeMeta[code]?.label}
+          <span class="count">{catCounts[code]}</span>
+        </button>
+      ))}
+    </div>
+
+    <p class="result-count" id="result-count" aria-live="polite">Showing all {count} vendors</p>
+
+    <div class="grid" id="grid">
+      {vendors.map((v) => (
+        <article
+          class="card"
+          data-search={searchString(v)}
+          data-cats={v.categories.map((c) => c.code).join(' ')}
+        >
+          <div class="card-cats">
+            {v.categories.map((c) => (
+              <span class="cat-badge"><span aria-hidden="true">{c.icon}</span> {c.label}</span>
+            ))}
+          </div>
+          <h2><a href={`/vendor/${v.slug}`}>{v.name}</a></h2>
+          {v.contact && <p class="contact-name">{v.contact}</p>}
+
+          {v.services.length > 0 && (
+            <div class="tags">
+              {v.services.slice(0, 3).map((s) => <span class="tag">{s.label}</span>)}
+              {v.services.length > 3 && <span class="tag more">+{v.services.length - 3} more</span>}
+            </div>
+          )}
+
+          <div class="card-actions">
+            {v.phones[0]?.href && (
+              <a class="btn primary" href={`tel:${v.phones[0].href}`}>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+                Call
+              </a>
+            )}
+            <a class="btn ghost" href={`/vendor/${v.slug}`}>Details</a>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <p class="empty" id="empty">No vendors match that search. Try a broader term or clear the filters.</p>
+  </section>
+
+  <script>
+    const search = document.getElementById('search');
+    const grid = document.getElementById('grid');
+    const cards = Array.from(grid.querySelectorAll('.card'));
+    const chips = Array.from(document.querySelectorAll('.chip'));
+    const countEl = document.getElementById('result-count');
+    const emptyEl = document.getElementById('empty');
+    let activeCat = 'all';
+
+    function apply() {
+      const q = search.value.trim().toLowerCase();
+      let shown = 0;
+      for (const card of cards) {
+        const matchCat = activeCat === 'all' || card.dataset.cats.split(' ').includes(activeCat);
+        const matchText = !q || card.dataset.search.includes(q);
+        const visible = matchCat && matchText;
+        card.style.display = visible ? '' : 'none';
+        if (visible) shown++;
+      }
+      emptyEl.style.display = shown === 0 ? 'block' : 'none';
+      const catLabel = activeCat === 'all'
+        ? 'vendors'
+        : chips.find((c) => c.dataset.cat === activeCat)?.textContent.replace(/\d+$/, '').trim().toLowerCase() + 's';
+      countEl.textContent = `Showing ${shown} ${q || activeCat !== 'all' ? 'matching ' : ''}${activeCat === 'all' ? 'vendors' : catLabel}`;
+    }
+
+    search.addEventListener('input', apply);
+    for (const chip of chips) {
+      chip.addEventListener('click', () => {
+        activeCat = chip.dataset.cat;
+        for (const c of chips) c.setAttribute('aria-pressed', String(c === chip));
+        apply();
+      });
+    }
+  </script>
+</Base>
