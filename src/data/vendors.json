@@ -29,6 +29,14 @@
       {
         "text": "I switched to a combi boiler system and used Glen with Anderson Radiant — he took over for his grandfather and specializes in water-based radiant heating systems.",
         "date": "2022-03"
+      },
+      {
+        "text": "I needed to replace the original boiler and used Anderson Radiant — they were amazing.",
+        "date": "2022-11"
+      },
+      {
+        "text": "Anderson Radiant installed a combined radiant and tankless water heater for me and I’m happy with it.",
+        "date": "2025-01"
       }
     ],
     "notes": []
@@ -88,7 +96,7 @@
       "https://www.ejplumbing.com"
     ],
     "yelp": "https://www.yelp.com/biz/ej-home-services-santa-clara",
-    "logo": null,
+    "logo": "/logos/ej-plumbing.png",
     "reviews": [
       {
         "text": "The plumber from EJ Plumbing was very nice — highly recommend.",
@@ -119,6 +127,18 @@
       {
         "text": "We had H H Hydronics service our radiant heating system recently and the experience was quite positive.",
         "date": "2026-04"
+      },
+      {
+        "text": "Hector at HH Hydronics has saved us a few times — from a radiant-heat leak to a bathtub clog. He did the inspection and maintenance on our original radiant system.",
+        "date": "2025-11"
+      },
+      {
+        "text": "We had a leak under the floor and Hector did an excellent job locating it and making the repair, at a very reasonable rate compared to others.",
+        "date": "2025-09"
+      },
+      {
+        "text": "Hector has been wonderful to work with — leak detection and pipe repair.",
+        "date": "2024-12"
       }
     ],
     "notes": []
@@ -223,7 +243,7 @@
       "https://willowglenelectric.com"
     ],
     "yelp": "https://www.yelp.com/biz/willow-glen-electric-san-jose",
-    "logo": null,
+    "logo": "/logos/willow-glen-electric.png",
     "reviews": [
       {
         "text": "I used Willow Glen Electric to install my EV charger — they were helpful walking us through the whole process.",
@@ -250,7 +270,7 @@
       "https://www.checkbook.org/ca/san-jose/plumbers/-15-sewer-and-drain-service/yhqv7"
     ],
     "yelp": null,
-    "logo": null,
+    "logo": "/logos/15-sewer-and-plumbing.png",
     "reviews": [],
     "notes": []
   },
@@ -352,7 +372,7 @@
       "https://www.californiatreesolutions.com/index.html"
     ],
     "yelp": null,
-    "logo": null,
+    "logo": "/logos/california-tree-solutions.png",
     "reviews": [],
     "notes": []
   },
@@ -376,7 +396,7 @@
       "http://cityarborist.com"
     ],
     "yelp": "https://www.yelp.com/biz/city-arborist-menlo-park-3",
-    "logo": null,
+    "logo": "/logos/city-arborist.png",
     "reviews": [],
     "notes": []
   },
@@ -457,7 +477,7 @@
     "logo": null,
     "reviews": [],
     "notes": [
-      "May have retired."
+      "Retired as of late 2025 — a longtime go-to radiant-heat repairman in the community."
     ]
   },
   {
@@ -479,7 +499,7 @@
       "https://deanzawater.com"
     ],
     "yelp": "https://www.yelp.com/biz/de-anza-water-conditioning-campbell-4",
-    "logo": null,
+    "logo": "/logos/de-anza-water-conditioning.png",
     "reviews": [],
     "notes": []
   },
@@ -539,7 +559,7 @@
       "https://www.ewswater.com"
     ],
     "yelp": null,
-    "logo": null,
+    "logo": "/logos/environmental-water-systems.png",
     "reviews": [],
     "notes": []
   },
@@ -607,7 +627,7 @@
       "https://fuseservice.com"
     ],
     "yelp": "https://www.yelp.com/biz/fuse-hvac-refrigeration-electrical-and-plumbing-santa-clara-4",
-    "logo": null,
+    "logo": "/logos/fuse-electric.png",
     "reviews": [],
     "notes": []
   },
@@ -631,8 +651,17 @@
       "https://fuseservice.com"
     ],
     "yelp": "https://www.yelp.com/biz/fuse-hvac-refrigeration-electrical-and-plumbing-santa-clara-4",
-    "logo": null,
-    "reviews": [],
+    "logo": "/logos/fuse-hvac.png",
+    "reviews": [
+      {
+        "text": "We used Fuse for a ceiling mini-split and had a fantastic experience.",
+        "date": "2025-03"
+      },
+      {
+        "text": "I installed a ductless mini-split with Fuse — the standard design got Architectural Review approval quickly.",
+        "date": "2025-03"
+      }
+    ],
     "notes": []
   },
   {
@@ -713,7 +742,7 @@
       "https://hpcleaningservices.com"
     ],
     "yelp": "https://www.yelp.com/biz/happy-planet-cleaning-services-san-jose-2",
-    "logo": null,
+    "logo": "/logos/happy-planet.png",
     "reviews": [],
     "notes": []
   },
@@ -735,7 +764,7 @@
       "https://www.heavenlytouchstonecare.com/"
     ],
     "yelp": null,
-    "logo": null,
+    "logo": "/logos/heavenly-touch-stone-care.png",
     "reviews": [],
     "notes": []
   },
@@ -809,7 +838,12 @@
     ],
     "yelp": "https://www.yelp.com/biz/intuitive-climate-control-palo-alto",
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "Highly recommend Kevin Smith for radiant heat.",
+        "date": "2024-12"
+      }
+    ],
     "notes": []
   },
   {
@@ -830,7 +864,7 @@
       "https://keyconinc.com"
     ],
     "yelp": "https://www.yelp.com/biz/keycon-mountain-view",
-    "logo": null,
+    "logo": "/logos/keycon.png",
     "reviews": [],
     "notes": []
   },
@@ -852,7 +886,7 @@
       "https://www.kitchenrefacedepot.com/"
     ],
     "yelp": "https://www.yelp.com/biz/kitchen-reface-depot-san-jose",
-    "logo": null,
+    "logo": "/logos/kitchen-reface-depot.png",
     "reviews": [],
     "notes": []
   },
@@ -876,7 +910,16 @@
     ],
     "yelp": "https://www.yelp.com/biz/lachance-s-radiant-heating-santa-clara",
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "Dale at LaChance has been wonderful — he helped us with boiler maintenance.",
+        "date": "2024-12"
+      },
+      {
+        "text": "I've had good luck with LaChance for radiant heating.",
+        "date": "2022-11"
+      }
+    ],
     "notes": []
   },
   {
@@ -952,7 +995,7 @@
       "https://www.limebricks.com"
     ],
     "yelp": "https://www.yelp.com/biz/limebricks-fremont",
-    "logo": null,
+    "logo": "/logos/limebricks.png",
     "reviews": [],
     "notes": []
   },
@@ -998,7 +1041,7 @@
       "https://www.majestictreeservice.com"
     ],
     "yelp": "https://www.yelp.com/biz/majestic-tree-service-san-jose-2?override_cta=Get+a+quote",
-    "logo": null,
+    "logo": "/logos/majestic-tree-service.png",
     "reviews": [],
     "notes": []
   },
@@ -1108,7 +1151,7 @@
       "https://www.mitraniconstruction.com"
     ],
     "yelp": null,
-    "logo": null,
+    "logo": "/logos/mitrani-construction.png",
     "reviews": [],
     "notes": []
   },
@@ -1137,7 +1180,7 @@
       "https://newpipesinc.com"
     ],
     "yelp": "https://www.yelp.com/biz/new-pipes-santa-clara",
-    "logo": null,
+    "logo": "/logos/new-pipes.png",
     "reviews": [],
     "notes": []
   },
@@ -1160,7 +1203,7 @@
       "https://paloaltoglass.com"
     ],
     "yelp": "https://www.yelp.com/biz/palo-alto-glass-palo-alto",
-    "logo": null,
+    "logo": "/logos/palo-alto-glass.png",
     "reviews": [],
     "notes": []
   },
@@ -1203,7 +1246,7 @@
       "https://randazzoswater.com"
     ],
     "yelp": "https://www.yelp.com/biz/randazzos-water-conditioning-san-jose",
-    "logo": null,
+    "logo": "/logos/randazzo-s-water-conditioning.png",
     "reviews": [],
     "notes": []
   },
@@ -1487,7 +1530,7 @@
       "https://waterheatersonly.com"
     ],
     "yelp": "https://www.yelp.com/biz/water-heaters-only-sunnyvale-4",
-    "logo": null,
+    "logo": "/logos/water-heaters-only.png",
     "reviews": [],
     "notes": []
   },
@@ -1507,7 +1550,8 @@
       "(408) 357-3280"
     ],
     "emails": [
-      "info@justtankless.com"
+      "info@justtankless.com",
+      "justtankless@gmail.com"
     ],
     "websites": [],
     "yelp": null,
@@ -1516,6 +1560,14 @@
       {
         "text": "Several of us converted to tankless a couple years ago — couldn't be happier with our Just Tankless Navien water-heating system.",
         "date": "2026-05"
+      },
+      {
+        "text": "Call Al — he's a great guy, and he'll figure everything out.",
+        "date": "2024-01"
+      },
+      {
+        "text": "We had Just Tankless install a new water heater and boiler — smooth process and a tidy install.",
+        "date": "2024-03"
       }
     ],
     "notes": []
@@ -1613,6 +1665,38 @@
     ],
     "notes": [
       "On El Camino Real, Santa Clara."
+    ]
+  },
+  {
+    "slug": "tested-and-true-electric",
+    "name": "Tested & True Electric",
+    "contact": "Jon",
+    "categories": [
+      "Electrician"
+    ],
+    "services": [
+      "EV charger install",
+      "Electric sub-panel",
+      "Install lights",
+      "General electrical"
+    ],
+    "phones": [],
+    "emails": [
+      "office@testedandtrue.com"
+    ],
+    "websites": [
+      "https://www.testedandtrue.com"
+    ],
+    "yelp": null,
+    "logo": "/logos/tested-and-true-electric.png",
+    "reviews": [
+      {
+        "text": "Jon and his team at Tested & True do great work — clear communication and solid quality. Several of us in the community have used them.",
+        "date": "2025-05"
+      }
+    ],
+    "notes": [
+      "Also operates as JMC Electric."
     ]
   }
 ]

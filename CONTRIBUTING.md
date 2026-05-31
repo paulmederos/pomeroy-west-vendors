@@ -46,9 +46,9 @@ will flag it and someone will help.
 | `services` | Free-text list of what they do. |
 | `phones` | List of phone numbers as written, e.g. `"(408) 555-1212"`. Tap-to-call is built automatically. |
 | `emails` | List of emails (or `[]`). |
-| `websites` | List of full URLs (or `[]`). A small logo is auto-fetched from the first one. |
+| `websites` | List of full URLs (or `[]`). |
 | `yelp` | Full Yelp URL, or `null`. |
-| `logo` | Usually `null` (auto from website). Set a URL to override. |
+| `logo` | Path to a logo stored in `public/logos/` (e.g. `/logos/ej-plumbing.png`), or `null`. Drop a square PNG in `public/logos/` named after the slug and point to it here — we keep logos local rather than hotlinking. |
 | `reviews` | List of `{ "text": "...", "date": "YYYY-MM" }`. |
 | `notes` | List of short factual notes (e.g. `"May have retired."`). |
 

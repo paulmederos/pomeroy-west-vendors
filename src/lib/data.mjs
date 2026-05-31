@@ -22,14 +22,6 @@ const labelFor = (url) => {
   } catch { return 'Website'; }
 };
 
-const faviconFor = (websites = []) => {
-  const site = websites[0];
-  if (!site) return null;
-  try {
-    return `https://www.google.com/s2/favicons?domain=${new URL(site).hostname}&sz=128`;
-  } catch { return null; }
-};
-
 function shape(v) {
   const links = [
     ...(v.websites || []).map((url) => ({ url, label: labelFor(url) })),
@@ -45,7 +37,7 @@ function shape(v) {
     phones: (v.phones || []).map((display) => ({ display, href: telHref(display) })),
     emails: v.emails || [],
     links,
-    logo: v.logo || faviconFor(v.websites),
+    logo: v.logo || null, // locally-stored, hand-vetted logos only (see public/logos/)
     reviews,
     reviewCount: reviews.length,
     notes: v.notes || [],
