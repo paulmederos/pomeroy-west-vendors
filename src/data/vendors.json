@@ -310,7 +310,14 @@
     "websites": [],
     "yelp": "https://www.yelp.com/biz/aaa-electric-san-jose-2?osq=AAA+Electric&override_cta=Request+quote+%26+availability",
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "For our most recent light installs I’ve used AAA Electric or Fuse Electric — both are fine.",
+        "date": "2025-02",
+        "by": "Mark",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/31F51423-64B0-4B8D-A52E-1A82C97DC23C%40mymsky.net"
+      }
+    ],
     "notes": []
   },
   {
@@ -330,7 +337,14 @@
     "websites": [],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "Abel has done a lot of work at my house and can do toilets in his sleep — and he’s honest. I’ve recommended him to friends and all are happy. abflowers80@yahoo.com / (408) 387-3340",
+        "date": "2023-04",
+        "by": "Francis",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CAD9nWkr%2Bmsfm2RFwvFZJ%3Diw1jEUPni3mDer_9PUe4pMy59uFUw%40mail.gmail.com"
+      }
+    ],
     "notes": []
   },
   {
@@ -434,7 +448,14 @@
     "websites": [],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "I have to share the great experience I had with Comfort Energy. After weeks and dollars spent elsewhere with no results, Dan Salzberg put me in touch with Kevin Smith, who connected me with Comfort Energy (408-263-3100). I can’t say enough good about them.",
+        "date": "2025-03",
+        "by": "Suzanne",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/f8700478-95cc-451d-92f4-a3f596a815f2%40earthlink.net"
+      }
+    ],
     "notes": []
   },
   {
@@ -472,7 +493,14 @@
     "websites": [],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "My house cleaner is Complete Cleaning Services — owner Lupe Martinez (408-250-2302). Lupe and her company have cleaned my 2-bedroom condo for 20+ years and are fairly priced.",
+        "date": "2025-04",
+        "by": "Gail",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/64FE79E2-BD9F-4831-B016-FF9ACAFFFE71%40comcast.net"
+      }
+    ],
     "notes": []
   },
   {
@@ -494,7 +522,7 @@
     "logo": null,
     "reviews": [],
     "notes": [
-      "Retired as of late 2025 — a longtime go-to radiant-heat repairman in the community."
+      "Long the neighborhood’s go-to radiant-heat repairman. Neighbors report Dan retired in 2025 — listed for reference; see Anderson Radiant, LaChance, HH Hydronics, or Comfort Energy for active options."
     ]
   },
   {
@@ -555,7 +583,14 @@
     "websites": [],
     "yelp": "https://www.yelp.com/biz/dv-electric-san-jose-2",
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "‘Thang’ at DV Electric (the owner) was very good and fast — a job that was supposed to take two hours went smoothly. DV Electric: 408-827-1322",
+        "date": "2018-06",
+        "by": "Cynthia",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/005601d4012c%24e6e9fc70%24b4bdf550%24%40com"
+      }
+    ],
     "notes": []
   },
   {
@@ -595,7 +630,14 @@
     "websites": [],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "I want to share a window washer — Ethan Angerbauer, Hang Ten Window Cleaning (408-915-7070). He did a great job and was less expensive than my usual window washer.",
+        "date": "2025-03",
+        "by": "Suzanne",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/f8700478-95cc-451d-92f4-a3f596a815f2%40earthlink.net"
+      }
+    ],
     "notes": []
   },
   {
@@ -645,7 +687,14 @@
     ],
     "yelp": "https://www.yelp.com/biz/fuse-hvac-refrigeration-electrical-and-plumbing-santa-clara-4",
     "logo": "/logos/fuse-electric.png",
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "For our most recent light installs I’ve used AAA Electric or Fuse Electric — both are fine.",
+        "date": "2025-02",
+        "by": "Mark",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/31F51423-64B0-4B8D-A52E-1A82C97DC23C%40mymsky.net"
+      }
+    ],
     "notes": []
   },
   {
@@ -700,7 +749,14 @@
     "websites": [],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "George Hernandez (408-701-8751) does simple yard clean-ups and minor repair work and is very reasonable. If you want something pruned, best to show him exactly what you want.",
+        "date": "2022-01",
+        "by": "Diane",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CACOq_jA2z1ErjgE7UyzdbGQ-PZDbQcLnmNUYwHnakR7skpdh7Q%40mail.gmail.com"
+      }
+    ],
     "notes": []
   },
   {
@@ -845,7 +901,9 @@
     "yelp": null,
     "logo": null,
     "reviews": [],
-    "notes": []
+    "notes": [
+      "For years John Hott was the community’s on-site handyman (dryer-vent cleaning, clearing leaves off the flat roofs, light fixtures, small repairs). As of ~2024–25 neighbors note he’s no longer available — listed here for reference."
+    ]
   },
   {
     "slug": "intuitive-climate-control",
@@ -918,7 +976,14 @@
     ],
     "yelp": "https://www.yelp.com/biz/kitchen-reface-depot-san-jose",
     "logo": "/logos/kitchen-reface-depot.png",
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "If you’re happy with your cabinet structure, look into a kitchen reface. We priced a few options and went with Kitchen Reface Depot — completely awesome, highly professional, always on time, much better pricing.",
+        "date": "2020-08",
+        "by": "Michelle",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CAJ5WzFkgGT%3DLW-mfSTSaMqoQwueCzEE__PqL5xVSbXG-EsgiDw%40mail.gmail.com"
+      }
+    ],
     "notes": []
   },
   {
@@ -994,7 +1059,14 @@
     "websites": [],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "We have a great handyman called Leo who does a variety of repairs, maintenance, and installs (he recently fixed our garbage disposal). Great work at affordable, fair prices. 747-308-5555",
+        "date": "2022-11",
+        "by": "Sabine",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CABBQWhyoLdERomAcNFSGY3bE4PEpTqq0FHZq6kqOPG559sijHA%40mail.gmail.com"
+      }
+    ],
     "notes": []
   },
   {
@@ -1030,7 +1102,14 @@
     ],
     "yelp": "https://www.yelp.com/biz/limebricks-fremont",
     "logo": "/logos/limebricks.png",
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "I suggested LimeBricks (limebricks.com) — they handled appliance and kitchen-sink installs that turned out satisfactory and passed permit inspection.",
+        "date": "2025-06",
+        "by": "Mark",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/815AF932-83C9-4CF6-9E6A-90FF8C7BAACE%40mymsky.net"
+      }
+    ],
     "notes": []
   },
   {
@@ -1120,7 +1199,26 @@
     "websites": [],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "We have Martin coming in to do some caulk/sealing work and replace a few old baseboards — happy to connect anyone with him. (408) 775-9980",
+        "date": "2026-03",
+        "by": "Paul",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/IA1PR20MB487445325CEBD0BE92C3758DF443A%40IA1PR20MB4874.namprd20.prod.outlook.com"
+      },
+      {
+        "text": "Martin isn’t a plumber, but he specializes in bathroom remodels and can do a lot of different things. He replaced a toilet for me and installed new shower doors — an excellent job.",
+        "date": "2023-04",
+        "by": "Cindy",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/71f29e0b-fb14-5f96-2125-92bfc196fef4%40jps.net"
+      },
+      {
+        "text": "We found a fantastic subcontractor/handyman named Martin who can do it all — he’s done countertops, floors, fresh paint, plumbing updates, atrium-floor concrete repair, and minor electrical for us.",
+        "date": "2022-01",
+        "by": "Paul",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/BYAPR13MB2887D71702AEC0150B3ADF5DF44A9%40BYAPR13MB2887.namprd13.prod.outlook.com"
+      }
+    ],
     "notes": []
   },
   {
@@ -1142,7 +1240,14 @@
     "websites": [],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "The plumber from Master Plumbing did a very nice job in our laundry area — just note they don’t do the sheetrock, so we had that part done separately.",
+        "date": "2024-01",
+        "by": "Roy",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/730051045.4167487.1704211338730%40mail.yahoo.com"
+      }
+    ],
     "notes": []
   },
   {
@@ -1163,7 +1268,14 @@
     "websites": [],
     "yelp": "https://www.yelp.com/biz/mission-glass-and-screen-co-santa-clara-2",
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "Dealt with Mission Glass for one window and for screen replacements — they did the work fine.",
+        "date": "2023-01",
+        "by": "Mark",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/BF44D849-FBD4-4331-B386-03A41FA02B66%40mymsky.net"
+      }
+    ],
     "notes": []
   },
   {
@@ -1216,7 +1328,9 @@
     "yelp": "https://www.yelp.com/biz/new-pipes-santa-clara",
     "logo": "/logos/new-pipes.png",
     "reviews": [],
-    "notes": []
+    "notes": [
+      "Often the HOA association’s preferred/“go-to” plumber for shared water-line and main-valve work, per neighbor posts."
+    ]
   },
   {
     "slug": "palo-alto-glass",
@@ -1238,7 +1352,14 @@
     ],
     "yelp": "https://www.yelp.com/biz/palo-alto-glass-palo-alto",
     "logo": "/logos/palo-alto-glass.png",
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "Went with Palo Alto Glass and Rudy’s Glass and can recommend both. (Palo Alto Glass is also the HOA’s preferred window vendor.)",
+        "date": "2023-01",
+        "by": "Mark",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/BF44D849-FBD4-4331-B386-03A41FA02B66%40mymsky.net"
+      }
+    ],
     "notes": []
   },
   {
@@ -1302,7 +1423,14 @@
     "websites": [],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "I recommend Rob Lutge. He manages properties all over the peninsula, including my place on Benton, and has done jobs big (down-to-the-studs remodel) and small for us for 25 years. He has a great network of people.",
+        "date": "2022-01",
+        "by": "Dorothy",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/SJ0PR06MB6797CE4AF0007C50E21CDC74E3259%40SJ0PR06MB6797.namprd06.prod.outlook.com"
+      }
+    ],
     "notes": []
   },
   {
@@ -1347,7 +1475,14 @@
     ],
     "yelp": "https://www.yelp.com/biz/rudys-glass-santa-clara-2",
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "I had my windows and doors replaced by Rudy’s Glass (408-986-8660) and know others in the complex who did too. I called Rudy and he can still do aluminum frames — he’s very familiar with our complex.",
+        "date": "2023-11",
+        "by": "Diane",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CACOq_jAJDTFfhQ6X%2B1yp8pMZJyRt8SyVYzHizJzqeoFP38evUw%40mail.gmail.com"
+      }
+    ],
     "notes": []
   },
   {
@@ -1368,7 +1503,20 @@
     "websites": [],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "Scotty is amazing. (408) 594-0955 — he scoped out our main shut-off valve and knew exactly what to do, at a very reasonable price.",
+        "date": "2023-02",
+        "by": "Paul",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/IA1PR20MB4874FDF284919C28ECA6EA14F4D89%40IA1PR20MB4874.namprd20.prod.outlook.com"
+      },
+      {
+        "text": "Scotty with Scotty’s Plumbing is amazing. (408) 594-0955",
+        "date": "2022-07",
+        "by": "Ginger",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CA%2BYBO%3D2rbzcj37%2BJhhiWxQ4JD9i0yQhhhUYWMerRPXncHiJaWg%40mail.gmail.com"
+      }
+    ],
     "notes": []
   },
   {
@@ -1390,7 +1538,14 @@
     "websites": [],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "I use Sergio Soto (650-793-5872). He lives nearby and has his own small business — very reasonable fees and he does a very good job on whatever he does.",
+        "date": "2022-06",
+        "by": "Diane",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CACOq_jB6Yr2jymjZL%2BhBjgATnUvt858i9xko2OLQHr2oLZaKeQ%40mail.gmail.com"
+      }
+    ],
     "notes": []
   },
   {
@@ -1452,7 +1607,14 @@
     ],
     "yelp": "https://www.yelp.com/biz/sean-smith-electric-inc-los-gatos",
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "Sean Smith — Smith Electric. When we moved in he upgraded our old, unsafe Zinsco breaker box and grounded all our outlets, for under $1K. He advertises in the Eichler magazine and knows Eichlers.",
+        "date": "2018-08",
+        "by": "Mark",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/1533844236-8513325.98738886.fw79JoYgm028104%40rs153.luxsci.com"
+      }
+    ],
     "notes": []
   },
   {
@@ -1490,7 +1652,14 @@
     "websites": [],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "We had Tiago Pereira of TJ Construction and Design do a bunch of electrical work for us — nice guy, good crew, and he’s familiar with the quirks of our Eichlers. contact.tjcd@gmail.com / 408.506.2828",
+        "date": "2018-01",
+        "by": "Peter",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CA%2BnAzTamc0Rp7JU_%2B2RQSEgRgVvWzhO_PrKL4qx%3DTRFdHvjGuQ%40mail.gmail.com"
+      }
+    ],
     "notes": []
   },
   {
@@ -1510,7 +1679,14 @@
     "websites": [],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "Todd Ervin (Ervin Co.) replaced a fuse at my home. 650-766-1208",
+        "date": "2024-01",
+        "by": "Manju",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CACX6N%2B9sOKLWjggshEJUDPRNfMSQ3dVR86teR0-xC8%2BmcHz%3D4A%40mail.gmail.com"
+      }
+    ],
     "notes": []
   },
   {
@@ -1530,7 +1706,14 @@
     "websites": [],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "I used to call a tree trimmer called VILLA Tree Service — they trimmed trees for my company’s parking lot and for co-workers. Very reasonably priced. 650-670-0787",
+        "date": "2025-03",
+        "by": "Sabine",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CABBQWhzUaFG7yqZKMweAfiWpoy7i89PNLWOQychFvFULgahCHQ%40mail.gmail.com"
+      }
+    ],
     "notes": []
   },
   {
@@ -1574,7 +1757,20 @@
     ],
     "yelp": "https://www.yelp.com/biz/water-heaters-only-sunnyvale-4",
     "logo": "/logos/water-heaters-only.png",
-    "reviews": [],
+    "reviews": [
+      {
+        "text": "I went with waterheatersonly.com and had a great experience — they came out, gave a quote, and installed a new water heater the same day.",
+        "date": "2021-01",
+        "by": "Scott",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/0C170803-0A07-4477-A20D-8548B49BB1AC%40mac.com"
+      },
+      {
+        "text": "I called Water Heaters Only (1-800-835-5946). Steve Burlison came and replaced the heater in a matter of hours; it cost about $1,500.",
+        "date": "2019-03",
+        "by": "Mala",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/18F0092B-98D5-4A19-BB0A-0FB7F7CC6732%40yahoo.com"
+      }
+    ],
     "notes": []
   },
   {

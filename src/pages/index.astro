@@ -45,10 +45,28 @@ const phoneIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" s
     </aside>
 
     <main class="results">
-      <p class="hoa-note">
-        🛠️ Heads up — some issues may be <strong>HOA-covered</strong>: sewer-line backups, radiant pipe leaks under the slab, and exterior pest control.
-        <a href="https://portal.commoninterest.com/community/new-request" target="_blank" rel="noopener noreferrer">Check with management before hiring →</a>
-      </p>
+      <details class="hoa-note">
+        <summary>
+          🛠️ <strong>Many home repairs are HOA-covered</strong> — <span class="hoa-toggle">see what the Association handles<span class="caret">▾</span></span>
+        </summary>
+        <div class="hoa-body">
+          <p>Before calling a vendor for any of these, it’s likely the <strong>Association’s</strong> job (and cost):</p>
+          <ul>
+            <li><strong>Roofs</strong> — leaks, coating, repair &amp; replacement (plus atrium roofs, gutters, eaves &amp; fascia)</li>
+            <li><strong>Exterior walls &amp; paint</strong> — siding, structure, and all exterior painting</li>
+            <li><strong>Outside of windows &amp; doors</strong> — exterior frames, weatherstripping, caulking, flashing, and door refinishing <em>(you handle the glass, screens, hardware &amp; interior paint)</em></li>
+            <li><strong>Radiant heat under the slab or inside walls</strong> — the in-floor &amp; in-wall pipe components</li>
+            <li><strong>Water &amp; sewer pipes inside walls, floors &amp; the slab</strong> — including backups a snake can’t clear</li>
+            <li><strong>Electrical &amp; gas lines inside walls and floors</strong></li>
+            <li><strong>Fences</strong> — perimeter fencing, plus the structure &amp; exterior of patio fences &amp; gates</li>
+            <li><strong>Common landscaping</strong> — shared/front-yard trees, shrubs, planting &amp; irrigation <em>(plants inside your private patio are yours)</em></li>
+            <li><strong>Carport &amp; storage structure</strong> — posts, ceiling, walls, and the exterior of the storage door</li>
+            <li><strong>Pool, BBQ, community room, playground, private streets &amp; guest parking</strong></li>
+          </ul>
+          <p class="hoa-foot">You’re generally responsible for everything <em>inside</em> your unit — fixtures, appliances, interior finishes, your water heater &amp; A/C, breaker panel, and window glass/screens. When in doubt, <a href="https://portal.commoninterest.com/community/new-request" target="_blank" rel="noopener noreferrer">check with management before hiring →</a></p>
+          <p class="hoa-src">Source: Pomeroy West CC&amp;Rs — Exhibit E, Maintenance Responsibility Chart.</p>
+        </div>
+      </details>
 
       <p class="result-count" id="result-count" aria-live="polite">Showing all {count} vendors</p>
 

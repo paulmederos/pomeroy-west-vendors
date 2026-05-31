@@ -42,7 +42,7 @@ a:hover { text-decoration: underline; }
 .brand span { font-size: .78rem; color: var(--muted); letter-spacing: .02em; }
 
 /* ---- hero ---- */
-.hero { padding: 28px 0 14px; }
+.hero { padding-block: 28px 14px; } /* horizontal gutter comes from .wrap */
 .hero h1 {
   font-family: var(--font-display); font-weight: 600;
   font-size: clamp(1.7rem, 5vw, 2.6rem); letter-spacing: -.02em;
@@ -97,7 +97,17 @@ a:hover { text-decoration: underline; }
   margin: 0 0 4px; padding: 11px 14px; font-size: .88rem; line-height: 1.5;
   background: var(--terra-tint); color: #8a4426; border-radius: 10px;
 }
-.hoa-note a { color: var(--terra); font-weight: 500; white-space: nowrap; }
+.hoa-note summary { cursor: pointer; list-style: none; }
+.hoa-note summary::-webkit-details-marker { display: none; }
+.hoa-note .hoa-toggle { color: var(--terra); font-weight: 500; white-space: nowrap; }
+.hoa-note .caret { display: inline-block; margin-left: 3px; transition: transform .15s ease; }
+.hoa-note[open] .caret { transform: rotate(180deg); }
+.hoa-note[open] summary { margin-bottom: 6px; }
+.hoa-note .hoa-body ul { margin: 6px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 5px; }
+.hoa-note .hoa-body em { color: #a05a3c; }
+.hoa-note .hoa-foot { margin: 10px 0 0; }
+.hoa-note .hoa-src { margin: 8px 0 0; font-size: .78rem; opacity: .72; }
+.hoa-note a { color: var(--terra); font-weight: 500; }
 .result-count { color: var(--muted); font-size: .9rem; padding: 14px 0 10px; }
 
 /* ---- vendor list ---- */
@@ -227,7 +237,7 @@ blockquote.review cite { display: block; margin-top: 12px; font-style: normal; f
 }
 
 @media (max-width: 560px) {
-  .hero { padding: 20px 0 10px; }
+  .hero { padding-block: 20px 10px; }
   .hero p { font-size: .96rem; }
   .reach-secondary { margin-left: 0; width: 100%; }
 }
