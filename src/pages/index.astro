@@ -2,12 +2,40 @@
 import Base from '../layouts/Base.astro';
 import { allVendors as vendors, categoryChips, vendorCount as count } from '../lib/data.mjs';
 
+// Problem-word synonyms, keyed off the exact category vocabulary so they don't bleed
+// (e.g. a Plumber's "drain cleaning" service must NOT make it match "house cleaner").
+const CAT_SYNONYMS = {
+  'Plumber': 'leak leaking drain clog clogged pipe sewer toilet faucet sink valve shutoff backup',
+  'Cleaner': 'cleaners cleaning housekeeper housekeeping maid house',
+  'Electrician': 'electric electrical wiring panel outlet breaker socket lighting ev charger',
+  'Radiant Heat': 'boiler heater heating furnace tankless hydronic radiant',
+  'Handyman': 'handyperson repair fix odd jobs fixture',
+  'Gardener': 'garden yard lawn mow mowing landscape landscaping weeds',
+  'Arborist': 'tree trees trim trimming prune pruning stump branches',
+  'General Contractor': 'remodel renovation construction addition',
+  'Windows & Glass': 'window windows pane screen sliding door mirror glazing',
+  'Concrete': 'driveway slab patio cement',
+  'HVAC': 'ac air conditioning conditioner cooling heat pump mini-split minisplit furnace',
+  'Kitchen Reface': 'cabinet cabinets kitchen reface remodel',
+  'Water Softener': 'softener filter filtration hard water conditioning',
+  'Auto Repair': 'car mechanic auto vehicle',
+  'Babysitter & Helper': 'babysitter nanny childcare sitter helper',
+};
+
+function keywords(v) {
+  return v.categories.map((c) => CAT_SYNONYMS[c.label] || '').filter(Boolean).join(' ');
+}
+
+// Full searchable blob: name, contact, trades, services, neighbor review text, notes, synonyms.
 function searchString(v) {
   return [
     v.name,
     v.contact,
     ...v.categories.map((c) => c.label),
     ...v.services.map((s) => s.label),
+    ...(v.reviews || []).map((r) => r.text),
+    ...(v.notes || []),
+    keywords(v),
   ].filter(Boolean).join(' ').toLowerCase();
 }
 
@@ -72,7 +100,7 @@ const phoneIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" s
 
       <div class="list" id="list">
         {vendors.map((v) => (
-          <article class="vendor" id={v.slug} data-search={searchString(v)} data-cats={v.categories.map((c) => c.label).join('||')}>
+          <article class="vendor" id={v.slug} data-name={v.name} data-search={searchString(v)} data-cats={v.categories.map((c) => c.label).join('||')}>
             <div class="v-head">
               {v.logo && <img class="v-logo" src={v.logo} alt="" width="44" height="44" loading="lazy" />}
               <div class="v-id">
@@ -151,9 +179,12 @@ const phoneIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" s
   </div>
 
   <script>
+    import Fuse from 'fuse.js';
+
     const search = document.getElementById('search');
     const list = document.getElementById('list');
     const cards = Array.from(list.querySelectorAll('.vendor'));
+    const defaultOrder = cards.slice(); // recency order from the build
     const chips = Array.from(document.querySelectorAll('.chip'));
     const countEl = document.getElementById('result-count');
     const emptyEl = document.getElementById('empty');
@@ -162,16 +193,42 @@ const phoneIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" s
     const filterLabel = document.getElementById('filter-label');
     let activeCat = 'all';
 
+    // Fuzzy search over name (weighted) + the full blob (trades, services, neighbor reviews, synonyms).
+    const fuse = new Fuse(
+      cards.map((c) => ({ slug: c.id, name: c.dataset.name || '', blob: c.dataset.search })),
+      {
+        keys: [{ name: 'name', weight: 2 }, { name: 'blob', weight: 1 }],
+        threshold: 0.2, ignoreLocation: true, minMatchCharLength: 3,
+      },
+    );
+    const cardBySlug = Object.fromEntries(cards.map((c) => [c.id, c]));
+
+    const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
     function apply() {
       const q = search.value.trim().toLowerCase();
+      let ranked = null, usedFuzzy = false;
+      if (q) {
+        // Primary: every query word must prefix-match a word in the blob (precise, no substring noise).
+        const terms = q.split(/\s+/).filter(Boolean).map((t) => new RegExp('\\b' + escapeRe(t), 'i'));
+        ranked = cards.filter((c) => terms.every((re) => re.test(c.dataset.search))).map((c) => c.id);
+        // Fallback: nothing matched cleanly → fuzzy (catches typos like "electrcian").
+        if (ranked.length === 0) { ranked = fuse.search(q).map((r) => r.item.slug); usedFuzzy = true; }
+      }
+      const matchSet = ranked ? new Set(ranked) : null;
       let shown = 0;
       for (const card of cards) {
         const matchCat = activeCat === 'all' || card.dataset.cats.split('||').includes(activeCat);
-        const matchText = !q || card.dataset.search.includes(q);
+        const matchText = !matchSet || matchSet.has(card.id);
         const visible = matchCat && matchText;
         card.hidden = !visible;
         if (visible) shown++;
       }
+      // Word matches keep the default recency order; fuzzy fallback keeps Fuse's relevance order.
+      const seq = !ranked ? defaultOrder
+        : usedFuzzy ? ranked.map((s) => cardBySlug[s])
+        : defaultOrder.filter((c) => matchSet.has(c.id));
+      for (const card of seq) if (card) list.appendChild(card);
       emptyEl.style.display = shown === 0 ? 'block' : 'none';
       countEl.textContent = (q || activeCat !== 'all')
         ? `Showing ${shown} of ${cards.length} vendors`

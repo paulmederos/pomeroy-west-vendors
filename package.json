@@ -11,5 +11,8 @@
   },
   "devDependencies": {
     "astro": "^4.16.0"
+  },
+  "dependencies": {
+    "fuse.js": "^7.4.0"
   }
 }
