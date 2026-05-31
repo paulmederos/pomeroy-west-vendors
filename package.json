@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "private": true,
-  "description": "A browseable vendor directory for the Pomeroy West (Eichler) community.",
+  "description": "A browseable, community-maintained vendor directory for the Pomeroy West (Eichler) neighborhood.",
   "scripts": {
-    "import": "node scripts/import.mjs",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview"

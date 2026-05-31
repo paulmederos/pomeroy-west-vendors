@@ -1,9 +1,9 @@
 ---
 import Base from '../../layouts/Base.astro';
-import data from '../../data/vendors.json';
+import { allVendors } from '../../lib/data.mjs';
 
 export function getStaticPaths() {
-  return data.vendors.map((v) => ({ params: { slug: v.slug }, props: { v } }));
+  return allVendors.map((v) => ({ params: { slug: v.slug }, props: { v } }));
 }
 
 const { v } = Astro.props;
@@ -76,7 +76,7 @@ const desc = `${v.name} — ${v.categories.map((c) => c.label).join(', ')} recom
       <section class="panel">
         <h3>Services</h3>
         <div class="service-list">
-          {v.services.map((s) => <span class="tag">{s.label}</span>)}
+          {v.services.map((s) => <span class="tag">{s}</span>)}
         </div>
       </section>
     )}

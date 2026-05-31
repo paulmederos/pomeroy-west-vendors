@@ -1,29 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
-import { CATEGORY_ORDER } from '../data/labels.mjs';
-import data from '../data/vendors.json';
-
-const { vendors, catCounts, count } = data;
-
-// Build the ordered list of category chips: known order first, then any extras,
-// limited to categories that actually have vendors.
-const seen = new Set();
-const chipCodes = [
-  ...CATEGORY_ORDER.filter((c) => catCounts[c]),
-  ...Object.keys(catCounts).filter((c) => !CATEGORY_ORDER.includes(c)),
-].filter((c) => (seen.has(c) ? false : (seen.add(c), true)));
-
-// Map a code to a representative {label, icon} from the vendor data.
-const codeMeta = {};
-for (const v of vendors)
-  for (const c of v.categories) codeMeta[c.code] ??= c;
+import { allVendors as vendors, categoryChips, vendorCount as count } from '../lib/data.mjs';
 
 function searchString(v) {
   return [
     v.name,
     v.contact,
     ...v.categories.map((c) => c.label),
-    ...v.services.map((s) => s.label),
+    ...v.services,
   ].filter(Boolean).join(' ').toLowerCase();
 }
 ---
@@ -51,11 +35,11 @@ function searchString(v) {
   <section class="wrap">
     <div class="filters" id="filters" role="group" aria-label="Filter by category">
       <button class="chip" data-cat="all" aria-pressed="true">All<span class="count">{count}</span></button>
-      {chipCodes.map((code) => (
-        <button class="chip" data-cat={code} aria-pressed="false">
-          <span aria-hidden="true">{codeMeta[code]?.icon}</span>
-          {codeMeta[code]?.label}
-          <span class="count">{catCounts[code]}</span>
+      {categoryChips.map((c) => (
+        <button class="chip" data-cat={c.label} aria-pressed="false">
+          <span aria-hidden="true">{c.icon}</span>
+          {c.label}
+          <span class="count">{c.count}</span>
         </button>
       ))}
     </div>
@@ -67,7 +51,7 @@ function searchString(v) {
         <article
           class="card"
           data-search={searchString(v)}
-          data-cats={v.categories.map((c) => c.code).join(' ')}
+          data-cats={v.categories.map((c) => c.label).join('||')}
         >
           <div class="card-cats">
             {v.categories.map((c) => (
@@ -85,7 +69,7 @@ function searchString(v) {
 
           {v.services.length > 0 && (
             <div class="tags">
-              {v.services.slice(0, 3).map((s) => <span class="tag">{s.label}</span>)}
+              {v.services.slice(0, 3).map((s) => <span class="tag">{s}</span>)}
               {v.services.length > 3 && <span class="tag more">+{v.services.length - 3} more</span>}
             </div>
           )}
@@ -119,17 +103,16 @@ function searchString(v) {
       const q = search.value.trim().toLowerCase();
       let shown = 0;
       for (const card of cards) {
-        const matchCat = activeCat === 'all' || card.dataset.cats.split(' ').includes(activeCat);
+        const matchCat = activeCat === 'all' || card.dataset.cats.split('||').includes(activeCat);
         const matchText = !q || card.dataset.search.includes(q);
         const visible = matchCat && matchText;
         card.style.display = visible ? '' : 'none';
         if (visible) shown++;
       }
       emptyEl.style.display = shown === 0 ? 'block' : 'none';
-      const catLabel = activeCat === 'all'
-        ? 'vendors'
-        : chips.find((c) => c.dataset.cat === activeCat)?.textContent.replace(/\d+$/, '').trim().toLowerCase() + 's';
-      countEl.textContent = `Showing ${shown} ${q || activeCat !== 'all' ? 'matching ' : ''}${activeCat === 'all' ? 'vendors' : catLabel}`;
+      countEl.textContent = (q || activeCat !== 'all')
+        ? `Showing ${shown} of ${cards.length} vendors`
+        : `Showing all ${cards.length} vendors`;
     }
 
     search.addEventListener('input', apply);

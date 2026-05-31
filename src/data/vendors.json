@@ -1,2648 +1,1618 @@
-{
-  "generatedAt": "2026-05-31T01:18:31.869Z",
-  "count": 65,
-  "catCounts": {
-    "RAD": 6,
-    "CLE": 8,
-    "PLU": 12,
-    "GAR": 6,
-    "ELE": 8,
-    "HAN": 7,
-    "ARB": 5,
-    "PRO": 3,
-    "CON": 2,
-    "HVA": 1,
-    "GEN": 5,
-    "KRF": 1,
-    "WIN": 3,
-    "SOF": 1
+[
+  {
+    "slug": "anderson-radiant",
+    "name": "Anderson Radiant",
+    "contact": "Glenn Anderson",
+    "categories": [
+      "Radiant Heat"
+    ],
+    "services": [
+      "Tankless water heater",
+      "Radiant heat servicing"
+    ],
+    "phones": [
+      "(408) 378-3868"
+    ],
+    "emails": [
+      "info@radiantheat.net"
+    ],
+    "websites": [
+      "https://radiantheat.net"
+    ],
+    "yelp": "https://www.yelp.com/biz/anderson-radiant-heating-campbell",
+    "logo": null,
+    "reviews": [
+      {
+        "text": "We went with Glen from Anderson Radiant and I can't recommend him enough — incredibly responsive and worked around our schedule. The whole job took about a day and a half, with the final half-day spent thoroughly checking the system and walking us through how everything works. The craftsmanship is truly like a “piece of art” — everything neatly labeled, with all the documentation for our records.",
+        "date": "2026-05"
+      },
+      {
+        "text": "I switched to a combi boiler system and used Glen with Anderson Radiant — he took over for his grandfather and specializes in water-based radiant heating systems.",
+        "date": "2022-03"
+      }
+    ],
+    "notes": []
   },
-  "vendors": [
-    {
-      "slug": "anderson-radiant",
-      "name": "Anderson Radiant",
-      "contact": "Glenn Anderson",
-      "categories": [
-        {
-          "code": "RAD",
-          "label": "Radiant Heat",
-          "icon": "♨️"
-        }
-      ],
-      "services": [
-        {
-          "code": "TAN",
-          "label": "Tankless water heater"
-        },
-        {
-          "code": "RAN",
-          "label": "Radiant heat servicing"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 378-3868",
-          "href": "4083783868"
-        }
-      ],
-      "emails": [
-        "info@radiantheat.net"
-      ],
-      "links": [
-        {
-          "url": "https://radiantheat.net",
-          "label": "radiantheat.net"
-        },
-        {
-          "url": "https://www.yelp.com/biz/anderson-radiant-heating-campbell",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [
-        {
-          "text": "We went with Glen from Anderson Radiant and I can't recommend him enough — incredibly responsive and worked around our schedule. The whole job took about a day and a half, with the final half-day spent thoroughly checking the system and walking us through how everything works. The craftsmanship is truly like a “piece of art” — everything neatly labeled, with all the documentation for our records.",
-          "author": "A Pomeroy West neighbor",
-          "source": "group",
-          "date": "2026-05"
-        },
-        {
-          "text": "I switched to a combi boiler system and used Glen with Anderson Radiant — he took over for his grandfather and specializes in water-based radiant heating systems.",
-          "author": "A Pomeroy West neighbor",
-          "source": "group",
-          "date": "2022-03"
-        }
-      ],
-      "notes": [],
-      "reviewCount": 2,
-      "logo": "https://www.google.com/s2/favicons?domain=radiantheat.net&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "maria-and-silvario",
-      "name": "Maria and Silvario",
-      "contact": null,
-      "categories": [
-        {
-          "code": "CLE",
-          "label": "Cleaner",
-          "icon": "🧽"
-        }
-      ],
-      "services": [
-        {
-          "code": "CFL",
-          "label": "Clean floors"
-        },
-        {
-          "code": "WHC",
-          "label": "Windows + floors cleaning"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(650) 679-3348",
-          "href": "6506793348"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [
-        {
-          "text": "have cleaned our place for ~3 years, come every two weeks, highly recommended",
-          "author": "A Pomeroy West neighbor",
-          "source": "sheet"
-        },
-        {
-          "text": "Maria and Silvario clean our home every other week and do a great job. They clean a few other homes around the neighborhood too.",
-          "author": "A Pomeroy West neighbor",
-          "source": "group",
-          "date": "2026-05"
-        }
-      ],
-      "notes": [],
-      "reviewCount": 2,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "ej-plumbing",
-      "name": "EJ Plumbing",
-      "contact": null,
-      "categories": [
-        {
-          "code": "PLU",
-          "label": "Plumber",
-          "icon": "🚰"
-        }
-      ],
-      "services": [
-        {
-          "code": "PIP",
-          "label": "Plumbing pipes"
-        },
-        {
-          "code": "HEA",
-          "label": "Water heater"
-        },
-        {
-          "code": "DRA",
-          "label": "Drain cleaning"
-        },
-        {
-          "code": "SEW",
-          "label": "Sewer backup"
-        },
-        {
-          "code": "TRE",
-          "label": "Trenchless sewer repair"
-        },
-        {
-          "code": "HYD",
-          "label": "Hydro jetting"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(650) 434-4432",
-          "href": "6504344432"
-        }
-      ],
-      "emails": [
-        "customercare@ejplumbing.com"
-      ],
-      "links": [
-        {
-          "url": "https://www.ejplumbing.com",
-          "label": "ejplumbing.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/ej-home-services-santa-clara",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [
-        {
-          "text": "The plumber from EJ Plumbing was very nice — highly recommend.",
-          "author": "A Pomeroy West neighbor",
-          "source": "group",
-          "date": "2026-05"
-        }
-      ],
-      "notes": [],
-      "reviewCount": 1,
-      "logo": "https://www.google.com/s2/favicons?domain=www.ejplumbing.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "h-h-hydronics",
-      "name": "H H Hydronics",
-      "contact": "Hector Hernandez",
-      "categories": [
-        {
-          "code": "RAD",
-          "label": "Radiant Heat",
-          "icon": "♨️"
-        }
-      ],
-      "services": [
-        {
-          "code": "TAN",
-          "label": "Tankless water heater"
-        },
-        {
-          "code": "RAN",
-          "label": "Radiant heat servicing"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(650) 384-6393",
-          "href": "6503846393"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [
-        {
-          "text": "We had H H Hydronics service our radiant heating system recently and the experience was quite positive.",
-          "author": "A Pomeroy West neighbor",
-          "source": "group",
-          "date": "2026-04"
-        }
-      ],
-      "notes": [],
-      "reviewCount": 1,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "orlindos-cleaning",
-      "name": "Orlindos Cleaning",
-      "contact": "Ruben and Lorenzo",
-      "categories": [
-        {
-          "code": "CLE",
-          "label": "Cleaner",
-          "icon": "🧽"
-        }
-      ],
-      "services": [
-        {
-          "code": "WHC",
-          "label": "Windows + floors cleaning"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 774-9340",
-          "href": "4087749340"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [
-        {
-          "text": "We've used Orlindo's for house cleaning and windows.",
-          "author": "A Pomeroy West neighbor",
-          "source": "group",
-          "date": "2026-05"
-        }
-      ],
-      "notes": [],
-      "reviewCount": 1,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "tara-firma",
-      "name": "Tara Firma",
-      "contact": null,
-      "categories": [
-        {
-          "code": "GAR",
-          "label": "Gardener",
-          "icon": "🌿"
-        }
-      ],
-      "services": [
-        {
-          "code": "TREEA",
-          "label": "Tree trimming"
-        },
-        {
-          "code": "FRUIT",
-          "label": "Fruit tree specialist"
-        }
-      ],
-      "phones": [
-        {
-          "display": "831-238-4425",
-          "href": "8312384425"
-        }
-      ],
-      "emails": [
-        "tarafirmagardening@gmail.com"
-      ],
-      "links": [],
-      "reviews": [
-        {
-          "text": "Tara Keyser, Owner. She's great and specializes in fruit trees.",
-          "author": "A Pomeroy West neighbor",
-          "source": "sheet"
-        }
-      ],
-      "notes": [],
-      "reviewCount": 1,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "valeria-s-house-cleaning-services",
-      "name": "Valeria’s House Cleaning Services",
-      "contact": null,
-      "categories": [
-        {
-          "code": "CLE",
-          "label": "Cleaner",
-          "icon": "🧽"
-        }
-      ],
-      "services": [
-        {
-          "code": "CFL",
-          "label": "Clean floors"
-        },
-        {
-          "code": "WHC",
-          "label": "Windows + floors cleaning"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(650) 906-9162",
-          "href": "6509069162"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://www.yelp.com/biz/valeria-s-house-cleaning-services-palo-alto-2",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [
-        {
-          "text": "Very detailed, wants complete satisfaction, willingly come back to re-clean and supervisor/owner often inspects after the cleaners work. Very on time. Has equipment to handle cleaning ceilings as well as storage rooms, in addition to bathrooms and floors.",
-          "author": "A Pomeroy West neighbor",
-          "source": "sheet"
-        }
-      ],
-      "notes": [],
-      "reviewCount": 1,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "willow-glen-electric",
-      "name": "Willow Glen Electric",
-      "contact": null,
-      "categories": [
-        {
-          "code": "ELE",
-          "label": "Electrician",
-          "icon": "💡"
-        }
-      ],
-      "services": [
-        {
-          "code": "EVC",
-          "label": "EV charger install"
-        },
-        {
-          "code": "FUS",
-          "label": "Electric fuse replacement"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 289-9725",
-          "href": "4082899725"
-        }
-      ],
-      "emails": [
-        "matt@willowglenelectric.com"
-      ],
-      "links": [
-        {
-          "url": "https://willowglenelectric.com",
-          "label": "willowglenelectric.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/willow-glen-electric-san-jose",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [
-        {
-          "text": "I used Willow Glen Electric to install my EV charger — they were helpful walking us through the whole process.",
-          "author": "A Pomeroy West neighbor",
-          "source": "group",
-          "date": "2026-05"
-        }
-      ],
-      "notes": [],
-      "reviewCount": 1,
-      "logo": "https://www.google.com/s2/favicons?domain=willowglenelectric.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "15-sewer-and-plumbing",
-      "name": "$15 Sewer and Plumbing",
-      "contact": null,
-      "categories": [
-        {
-          "code": "PLU",
-          "label": "Plumber",
-          "icon": "🚰"
-        }
-      ],
-      "services": [
-        {
-          "code": "TLT",
-          "label": "Toilet replacement"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 279-1515",
-          "href": "4082791515"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://www.checkbook.org/ca/san-jose/plumbers/-15-sewer-and-drain-service/yhqv7",
-          "label": "Checkbook"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "aaa-electric",
-      "name": "AAA Electric",
-      "contact": null,
-      "categories": [
-        {
-          "code": "ELE",
-          "label": "Electrician",
-          "icon": "💡"
-        }
-      ],
-      "services": [
-        {
-          "code": "EVC",
-          "label": "EV charger install"
-        },
-        {
-          "code": "INL",
-          "label": "Install lights"
-        },
-        {
-          "code": "SPL",
-          "label": "Electric sub-panel"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 557-8899",
-          "href": "4085578899"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://www.yelp.com/biz/aaa-electric-san-jose-2?osq=AAA+Electric&override_cta=Request+quote+%26+availability",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "abel",
-      "name": "Abel",
-      "contact": null,
-      "categories": [
-        {
-          "code": "PLU",
-          "label": "Plumber",
-          "icon": "🚰"
-        }
-      ],
-      "services": [
-        {
-          "code": "TOI",
-          "label": "Toilet work"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 387-3340",
-          "href": "4083873340"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "al-salinas",
-      "name": "Al Salinas",
-      "contact": null,
-      "categories": [
-        {
-          "code": "HAN",
-          "label": "Handyman",
-          "icon": "🧰"
-        }
-      ],
-      "services": [
-        {
-          "code": "HAN",
-          "label": "General handyman"
-        }
-      ],
-      "phones": [],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "alfred-salinas",
-      "name": "Alfred Salinas",
-      "contact": null,
-      "categories": [
-        {
-          "code": "GAR",
-          "label": "Gardener",
-          "icon": "🌿"
-        }
-      ],
-      "services": [
-        {
-          "code": "MBL",
-          "label": "Lawn & plant care"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 469-3163",
-          "href": "4084693163"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "california-tree-solutions",
-      "name": "California Tree Solutions",
-      "contact": null,
-      "categories": [
-        {
-          "code": "ARB",
-          "label": "Arborist",
-          "icon": "🌳"
-        }
-      ],
-      "services": [
-        {
-          "code": "TREEA",
-          "label": "Tree trimming"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 910-5143",
-          "href": "4089105143"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://www.californiatreesolutions.com/index.html",
-          "label": "californiatreesolutions.com"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=www.californiatreesolutions.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "city-arborist",
-      "name": "City Arborist",
-      "contact": null,
-      "categories": [
-        {
-          "code": "ARB",
-          "label": "Arborist",
-          "icon": "🌳"
-        }
-      ],
-      "services": [
-        {
-          "code": "TREEA",
-          "label": "Tree trimming"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(650) 321-2795",
-          "href": "6503212795"
-        }
-      ],
-      "emails": [
-        "cityarboristtreeservice@gmail.com"
-      ],
-      "links": [
-        {
-          "url": "http://cityarborist.com",
-          "label": "cityarborist.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/city-arborist-menlo-park-3",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=cityarborist.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "comfort-energy",
-      "name": "Comfort Energy",
-      "contact": null,
-      "categories": [
-        {
-          "code": "RAD",
-          "label": "Radiant Heat",
-          "icon": "♨️"
-        }
-      ],
-      "services": [
-        {
-          "code": "RAN",
-          "label": "Radiant heat servicing"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 263-3100",
-          "href": "4082633100"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "commerce-metals",
-      "name": "Commerce Metals",
-      "contact": null,
-      "categories": [
-        {
-          "code": "PRO",
-          "label": "Product Provider",
-          "icon": "📦"
-        }
-      ],
-      "services": [
-        {
-          "code": "BSM",
-          "label": "Metal backsplash"
-        }
-      ],
-      "phones": [],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "complete-cleaning-service",
-      "name": "Complete Cleaning Service",
-      "contact": "Lupe and Alex",
-      "categories": [
-        {
-          "code": "CLE",
-          "label": "Cleaner",
-          "icon": "🧽"
-        }
-      ],
-      "services": [
-        {
-          "code": "WHC",
-          "label": "Windows + floors cleaning"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 248-4162",
-          "href": "4082484162"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "dan-salzberg",
-      "name": "Dan Salzberg",
-      "contact": null,
-      "categories": [
-        {
-          "code": "RAD",
-          "label": "Radiant Heat",
-          "icon": "♨️"
-        }
-      ],
-      "services": [
-        {
-          "code": "RAN",
-          "label": "Radiant heat servicing"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(650) 965-3777",
-          "href": "6509653777"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [
-        "May have retired."
-      ],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "de-anza-water-conditioning",
-      "name": "De Anza Water Conditioning",
-      "contact": null,
-      "categories": [
-        {
-          "code": "PLU",
-          "label": "Plumber",
-          "icon": "🚰"
-        }
-      ],
-      "services": [
-        {
-          "code": "SOF",
-          "label": "Install water softener"
-        },
-        {
-          "code": "WFL",
-          "label": "Whole-house water filter"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(669) 225-2053",
-          "href": "6692252053"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://deanzawater.com",
-          "label": "deanzawater.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/de-anza-water-conditioning-campbell-4",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=deanzawater.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "diamond-concrete",
-      "name": "Diamond Concrete",
-      "contact": "Dave",
-      "categories": [
-        {
-          "code": "CON",
-          "label": "Concrete",
-          "icon": "🧱"
-        }
-      ],
-      "services": [
-        {
-          "code": "CCR",
-          "label": "Seal concrete cracks"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(510) 684-6369",
-          "href": "5106846369"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://www.yelp.com/biz/diamonds-concrete-construction-oakland",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "dv-electric",
-      "name": "DV Electric",
-      "contact": null,
-      "categories": [
-        {
-          "code": "ELE",
-          "label": "Electrician",
-          "icon": "💡"
-        }
-      ],
-      "services": [],
-      "phones": [
-        {
-          "display": "(408) 827-1322",
-          "href": "4088271322"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://www.yelp.com/biz/dv-electric-san-jose-2",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "environmental-water-systems",
-      "name": "Environmental Water Systems",
-      "contact": null,
-      "categories": [
-        {
-          "code": "PRO",
-          "label": "Product Provider",
-          "icon": "📦"
-        }
-      ],
-      "services": [
-        {
-          "code": "WFL",
-          "label": "Whole-house water filter"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(702) 256-8182",
-          "href": "7022568182"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://www.ewswater.com",
-          "label": "ewswater.com"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=www.ewswater.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "ethan-angerbauer-hang-ten-window-cleaning",
-      "name": "Ethan Angerbauer, Hang Ten Window Cleaning",
-      "contact": null,
-      "categories": [
-        {
-          "code": "CLE",
-          "label": "Cleaner",
-          "icon": "🧽"
-        }
-      ],
-      "services": [],
-      "phones": [
-        {
-          "display": "(408) 915-7070",
-          "href": "4089157070"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "foley-electric",
-      "name": "Foley Electric",
-      "contact": "Michael Hanson",
-      "categories": [
-        {
-          "code": "ELE",
-          "label": "Electrician",
-          "icon": "💡"
-        }
-      ],
-      "services": [
-        {
-          "code": "SPL",
-          "label": "Electric sub-panel"
-        },
-        {
-          "code": "CLB",
-          "label": "Change light bulbs"
-        },
-        {
-          "code": "OUT",
-          "label": "Outlet / minor electrical"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(650) 333-1876",
-          "href": "6503331876"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://foleyelectric.com",
-          "label": "foleyelectric.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/foley-electric-redwood-city-3",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=foleyelectric.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "fuse-electric",
-      "name": "Fuse Electric",
-      "contact": null,
-      "categories": [
-        {
-          "code": "ELE",
-          "label": "Electrician",
-          "icon": "💡"
-        }
-      ],
-      "services": [
-        {
-          "code": "EXF",
-          "label": "Bathroom exhaust fan"
-        },
-        {
-          "code": "INL",
-          "label": "Install lights"
-        },
-        {
-          "code": "WHE",
-          "label": "Water heater"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 673-4814",
-          "href": "4086734814"
-        }
-      ],
-      "emails": [
-        "support@fuseservice.com"
-      ],
-      "links": [
-        {
-          "url": "https://fuseservice.com",
-          "label": "fuseservice.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/fuse-hvac-refrigeration-electrical-and-plumbing-santa-clara-4",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=fuseservice.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "fuse-hvac",
-      "name": "Fuse HVAC",
-      "contact": null,
-      "categories": [
-        {
-          "code": "HVA",
-          "label": "HVAC",
-          "icon": "🌡️"
-        }
-      ],
-      "services": [
-        {
-          "code": "MHP",
-          "label": "Mini-split heat pump"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 673-4814",
-          "href": "4086734814"
-        }
-      ],
-      "emails": [
-        "support@fuseservice.com"
-      ],
-      "links": [
-        {
-          "url": "https://fuseservice.com",
-          "label": "fuseservice.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/fuse-hvac-refrigeration-electrical-and-plumbing-santa-clara-4",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=fuseservice.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "george-hernandez",
-      "name": "George Hernandez",
-      "contact": null,
-      "categories": [
-        {
-          "code": "GAR",
-          "label": "Gardener",
-          "icon": "🌿"
-        }
-      ],
-      "services": [
-        {
-          "code": "MBL",
-          "label": "Lawn & plant care"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 701-8751",
-          "href": "4087018751"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "granite-expo",
-      "name": "Granite Expo",
-      "contact": null,
-      "categories": [
-        {
-          "code": "PRO",
-          "label": "Product Provider",
-          "icon": "📦"
-        }
-      ],
-      "services": [
-        {
-          "code": "CCP",
-          "label": "Countertops (slab/granite)"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(510) 652-6898",
-          "href": "5106526898"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "greg-lane",
-      "name": "Greg Lane",
-      "contact": null,
-      "categories": [
-        {
-          "code": "PLU",
-          "label": "Plumber",
-          "icon": "🚰"
-        }
-      ],
-      "services": [
-        {
-          "code": "TLT",
-          "label": "Toilet replacement"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 887-5157",
-          "href": "4088875157"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "happy-planet",
-      "name": "Happy Planet",
-      "contact": "Blanca and Jose",
-      "categories": [
-        {
-          "code": "CLE",
-          "label": "Cleaner",
-          "icon": "🧽"
-        }
-      ],
-      "services": [
-        {
-          "code": "WHC",
-          "label": "Windows + floors cleaning"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 772-0799",
-          "href": "4087720799"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://hpcleaningservices.com",
-          "label": "hpcleaningservices.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/happy-planet-cleaning-services-san-jose-2",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=hpcleaningservices.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "heavenly-touch-stone-care",
-      "name": "Heavenly Touch Stone Care",
-      "contact": null,
-      "categories": [
-        {
-          "code": "CLE",
-          "label": "Cleaner",
-          "icon": "🧽"
-        }
-      ],
-      "services": [
-        {
-          "code": "CPL",
-          "label": "Polish concrete"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 497-4354",
-          "href": "4084974354"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://www.heavenlytouchstonecare.com/",
-          "label": "heavenlytouchstonecare.com"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=www.heavenlytouchstonecare.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "hector-mendoza",
-      "name": "Hector Mendoza",
-      "contact": null,
-      "categories": [
-        {
-          "code": "GAR",
-          "label": "Gardener",
-          "icon": "🌿"
-        },
-        {
-          "code": "ARB",
-          "label": "Arborist",
-          "icon": "🌳"
-        }
-      ],
-      "services": [
-        {
-          "code": "MBL",
-          "label": "Lawn & plant care"
-        },
-        {
-          "code": "TREEA",
-          "label": "Tree trimming"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(650) 475-6458",
-          "href": "6504756458"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "hotts-home-services",
-      "name": "Hotts Home Services",
-      "contact": "John Hott",
-      "categories": [
-        {
-          "code": "HAN",
-          "label": "Handyman",
-          "icon": "🧰"
-        }
-      ],
-      "services": [
-        {
-          "code": "CLB",
-          "label": "Change light bulbs"
-        },
-        {
-          "code": "DVC",
-          "label": "Dryer vent cleaning"
-        },
-        {
-          "code": "SLV",
-          "label": "Assemble shelving"
-        },
-        {
-          "code": "INL",
-          "label": "Install lights"
-        },
-        {
-          "code": "WRP",
-          "label": "Wood / siding repair"
-        },
-        {
-          "code": "FEN",
-          "label": "Fence work"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 623-5880",
-          "href": "4086235880"
-        }
-      ],
-      "emails": [
-        "hottshomeservices@yahoo.com"
-      ],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "intuitive-climate-control",
-      "name": "Intuitive Climate Control",
-      "contact": "Kevin Smith",
-      "categories": [
-        {
-          "code": "RAD",
-          "label": "Radiant Heat",
-          "icon": "♨️"
-        }
-      ],
-      "services": [
-        {
-          "code": "RAN",
-          "label": "Radiant heat servicing"
-        }
-      ],
-      "phones": [
-        {
-          "display": "650-283-1953",
-          "href": "6502831953"
-        }
-      ],
-      "emails": [
-        "mkeys@intuitiveclimatecontrol.com"
-      ],
-      "links": [
-        {
-          "url": "https://www.intuitiveclimatecontrol.com/Home.html",
-          "label": "intuitiveclimatecontrol.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/intuitive-climate-control-palo-alto",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=www.intuitiveclimatecontrol.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "keycon",
-      "name": "Keycon",
-      "contact": null,
-      "categories": [
-        {
-          "code": "GEN",
-          "label": "General Contractor",
-          "icon": "🏗️"
-        }
-      ],
-      "services": [
-        {
-          "code": "EIC",
-          "label": "Eichler home specialist"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(650) 965-1256",
-          "href": "6509651256"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://keyconinc.com",
-          "label": "keyconinc.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/keycon-mountain-view",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=keyconinc.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "kitchen-reface-depot",
-      "name": "Kitchen Reface Depot",
-      "contact": null,
-      "categories": [
-        {
-          "code": "KRF",
-          "label": "Kitchen Reface",
-          "icon": "🍽️"
-        }
-      ],
-      "services": [
-        {
-          "code": "KRF",
-          "label": "Kitchen cabinet reface"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 217-2952",
-          "href": "4082172952"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://www.kitchenrefacedepot.com/",
-          "label": "kitchenrefacedepot.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/kitchen-reface-depot-san-jose",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=www.kitchenrefacedepot.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "lachance-s-radiant-heating",
-      "name": "LaChance's Radiant Heating",
-      "contact": "Dale",
-      "categories": [
-        {
-          "code": "RAD",
-          "label": "Radiant Heat",
-          "icon": "♨️"
-        }
-      ],
-      "services": [
-        {
-          "code": "TAN",
-          "label": "Tankless water heater"
-        },
-        {
-          "code": "RAN",
-          "label": "Radiant heat servicing"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 986-8189",
-          "href": "4089868189"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://lachancesradiantheating.com",
-          "label": "lachancesradiantheating.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/lachance-s-radiant-heating-santa-clara",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=lachancesradiantheating.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "leak-pro",
-      "name": "Leak Pro",
-      "contact": null,
-      "categories": [
-        {
-          "code": "PLU",
-          "label": "Plumber",
-          "icon": "🚰"
-        }
-      ],
-      "services": [],
-      "phones": [
-        {
-          "display": "(408) 594-2024",
-          "href": "4085942024"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://leak-pro.com",
-          "label": "leak-pro.com"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=leak-pro.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "leo",
-      "name": "Leo",
-      "contact": null,
-      "categories": [
-        {
-          "code": "HAN",
-          "label": "Handyman",
-          "icon": "🧰"
-        }
-      ],
-      "services": [
-        {
-          "code": "APP",
-          "label": "Install appliances"
-        },
-        {
-          "code": "REP",
-          "label": "General repairs"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(747) 308-5555",
-          "href": "7473085555"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "limebricks",
-      "name": "LimeBricks",
-      "contact": null,
-      "categories": [
-        {
-          "code": "HAN",
-          "label": "Handyman",
-          "icon": "🧰"
-        }
-      ],
-      "services": [
-        {
-          "code": "APP",
-          "label": "Install appliances"
-        },
-        {
-          "code": "CLB",
-          "label": "Change light bulbs"
-        },
-        {
-          "code": "EVC",
-          "label": "EV charger install"
-        },
-        {
-          "code": "HEA",
-          "label": "Water heater"
-        },
-        {
-          "code": "INL",
-          "label": "Install lights"
-        },
-        {
-          "code": "LEA",
-          "label": "Fix leaks"
-        },
-        {
-          "code": "OUT",
-          "label": "Outlet / minor electrical"
-        },
-        {
-          "code": "PIP",
-          "label": "Plumbing pipes"
-        },
-        {
-          "code": "REP",
-          "label": "General repairs"
-        },
-        {
-          "code": "TLT",
-          "label": "Toilet replacement"
-        },
-        {
-          "code": "WFL",
-          "label": "Whole-house water filter"
-        },
-        {
-          "code": "HAN",
-          "label": "General handyman"
-        },
-        {
-          "code": "REPAP",
-          "label": "Appliance repair"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 430-2844",
-          "href": "4084302844"
-        }
-      ],
-      "emails": [
-        "hello@limebricks.com"
-      ],
-      "links": [
-        {
-          "url": "https://www.limebricks.com",
-          "label": "limebricks.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/limebricks-fremont",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=www.limebricks.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "love-your-floors",
-      "name": "Love Your Floors",
-      "contact": null,
-      "categories": [
-        {
-          "code": "CLE",
-          "label": "Cleaner",
-          "icon": "🧽"
-        }
-      ],
-      "services": [
-        {
-          "code": "CFL",
-          "label": "Clean floors"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 268-6058",
-          "href": "4082686058"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://www.loveyourfloors.com/",
-          "label": "loveyourfloors.com"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=www.loveyourfloors.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "majestic-tree-service",
-      "name": "Majestic Tree Service",
-      "contact": null,
-      "categories": [
-        {
-          "code": "ARB",
-          "label": "Arborist",
-          "icon": "🌳"
-        }
-      ],
-      "services": [
-        {
-          "code": "TREEA",
-          "label": "Tree trimming"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(669) 216-9118",
-          "href": "6692169118"
-        }
-      ],
-      "emails": [
-        "info@majestictreeservice.com"
-      ],
-      "links": [
-        {
-          "url": "https://www.majestictreeservice.com",
-          "label": "majestictreeservice.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/majestic-tree-service-san-jose-2?override_cta=Get+a+quote",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=www.majestictreeservice.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "manuel-pineda",
-      "name": "Manuel Pineda",
-      "contact": null,
-      "categories": [
-        {
-          "code": "CON",
-          "label": "Concrete",
-          "icon": "🧱"
-        }
-      ],
-      "services": [
-        {
-          "code": "CCR",
-          "label": "Seal concrete cracks"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 218-5951",
-          "href": "4082185951"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "martin",
-      "name": "Martin",
-      "contact": null,
-      "categories": [
-        {
-          "code": "HAN",
-          "label": "Handyman",
-          "icon": "🧰"
-        }
-      ],
-      "services": [
-        {
-          "code": "CTP",
-          "label": "Countertop replacement"
-        },
-        {
-          "code": "FLR",
-          "label": "Flooring replacement"
-        },
-        {
-          "code": "CRP",
-          "label": "Concrete repair (atrium floor)"
-        },
-        {
-          "code": "OUT",
-          "label": "Outlet / minor electrical"
-        },
-        {
-          "code": "TOI",
-          "label": "Toilet work"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 775-9980",
-          "href": "4087759980"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "master-plumbing-and-sewer",
-      "name": "Master Plumbing & Sewer",
-      "contact": null,
-      "categories": [
-        {
-          "code": "PLU",
-          "label": "Plumber",
-          "icon": "🚰"
-        }
-      ],
-      "services": [
-        {
-          "code": "TLT",
-          "label": "Toilet replacement"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(877) 691-0400",
-          "href": "8776910400"
-        }
-      ],
-      "emails": [
-        "masterplumbing.net"
-      ],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "mission-glass",
-      "name": "Mission Glass",
-      "contact": null,
-      "categories": [
-        {
-          "code": "WIN",
-          "label": "Windows & Glass",
-          "icon": "🪟"
-        }
-      ],
-      "services": [
-        {
-          "code": "WIN",
-          "label": "Windows & glass doors"
-        },
-        {
-          "code": "INS",
-          "label": "Insect mesh screens"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 246-1799",
-          "href": "4082461799"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://www.yelp.com/biz/mission-glass-and-screen-co-santa-clara-2",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "mitrani-construction",
-      "name": "Mitrani Construction",
-      "contact": null,
-      "categories": [
-        {
-          "code": "GEN",
-          "label": "General Contractor",
-          "icon": "🏗️"
-        }
-      ],
-      "services": [
-        {
-          "code": "FEN",
-          "label": "Fence work"
-        },
-        {
-          "code": "ATR",
-          "label": "Atrium cover"
-        }
-      ],
-      "phones": [
-        {
-          "display": "+1 (310) 801-7182",
-          "href": "+13108017182"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://www.mitraniconstruction.com",
-          "label": "mitraniconstruction.com"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=www.mitraniconstruction.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "new-pipes",
-      "name": "New Pipes",
-      "contact": null,
-      "categories": [
-        {
-          "code": "PLU",
-          "label": "Plumber",
-          "icon": "🚰"
-        }
-      ],
-      "services": [
-        {
-          "code": "PIP",
-          "label": "Plumbing pipes"
-        },
-        {
-          "code": "HEA",
-          "label": "Water heater"
-        },
-        {
-          "code": "DRA",
-          "label": "Drain cleaning"
-        },
-        {
-          "code": "SEW",
-          "label": "Sewer backup"
-        },
-        {
-          "code": "TRE",
-          "label": "Trenchless sewer repair"
-        },
-        {
-          "code": "HYD",
-          "label": "Hydro jetting"
-        },
-        {
-          "code": "TAN",
-          "label": "Tankless water heater"
-        },
-        {
-          "code": "WHE",
-          "label": "Water heater"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 269-1969",
-          "href": "4082691969"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://newpipesinc.com",
-          "label": "newpipesinc.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/new-pipes-santa-clara",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=newpipesinc.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "palo-alto-glass",
-      "name": "Palo Alto Glass",
-      "contact": null,
-      "categories": [
-        {
-          "code": "WIN",
-          "label": "Windows & Glass",
-          "icon": "🪟"
-        }
-      ],
-      "services": [
-        {
-          "code": "WIN",
-          "label": "Windows & glass doors"
-        },
-        {
-          "code": "INS",
-          "label": "Insect mesh screens"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(650) 494-7000",
-          "href": "6504947000"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://paloaltoglass.com",
-          "label": "paloaltoglass.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/palo-alto-glass-palo-alto",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=paloaltoglass.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "peninsula-home-improvements",
-      "name": "Peninsula Home Improvements",
-      "contact": "Kurt",
-      "categories": [
-        {
-          "code": "GEN",
-          "label": "General Contractor",
-          "icon": "🏗️"
-        }
-      ],
-      "services": [
-        {
-          "code": "SHR",
-          "label": "Sheetrock repair"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 374-1516",
-          "href": "4083741516"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "randazzo-s-water-conditioning",
-      "name": "Randazzo's Water Conditioning",
-      "contact": null,
-      "categories": [
-        {
-          "code": "SOF",
-          "label": "Water Softener",
-          "icon": "💧"
-        }
-      ],
-      "services": [
-        {
-          "code": "SOF",
-          "label": "Install water softener"
-        },
-        {
-          "code": "ROS",
-          "label": "Reverse osmosis"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 620-7867",
-          "href": "4086207867"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://randazzoswater.com",
-          "label": "randazzoswater.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/randazzos-water-conditioning-san-jose",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=randazzoswater.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "rob-lutge",
-      "name": "Rob Lutge",
-      "contact": null,
-      "categories": [
-        {
-          "code": "GEN",
-          "label": "General Contractor",
-          "icon": "🏗️"
-        },
-        {
-          "code": "HAN",
-          "label": "Handyman",
-          "icon": "🧰"
-        }
-      ],
-      "services": [
-        {
-          "code": "HAN",
-          "label": "General handyman"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(650) 222-8488",
-          "href": "6502228488"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "ron-garcia",
-      "name": "Ron Garcia",
-      "contact": null,
-      "categories": [
-        {
-          "code": "GAR",
-          "label": "Gardener",
-          "icon": "🌿"
-        },
-        {
-          "code": "HAN",
-          "label": "Handyman",
-          "icon": "🧰"
-        }
-      ],
-      "services": [
-        {
-          "code": "MBL",
-          "label": "Lawn & plant care"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 701-8751",
-          "href": "4087018751"
-        },
-        {
-          "display": "(408) 242-3892",
-          "href": "4082423892"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "rudy-s-glass-in-san-jose",
-      "name": "Rudy's Glass in San Jose",
-      "contact": null,
-      "categories": [
-        {
-          "code": "WIN",
-          "label": "Windows & Glass",
-          "icon": "🪟"
-        }
-      ],
-      "services": [
-        {
-          "code": "WIN",
-          "label": "Windows & glass doors"
-        },
-        {
-          "code": "INS",
-          "label": "Insect mesh screens"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 986-8660",
-          "href": "4089868660"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://rudysglassinc.com/",
-          "label": "rudysglassinc.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/rudys-glass-santa-clara-2",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=rudysglassinc.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "scotty-with-scotty-s-plumbing",
-      "name": "Scotty with Scotty's plumbing",
-      "contact": null,
-      "categories": [
-        {
-          "code": "PLU",
-          "label": "Plumber",
-          "icon": "🚰"
-        }
-      ],
-      "services": [
-        {
-          "code": "LEA",
-          "label": "Fix leaks"
-        },
-        {
-          "code": "PIP",
-          "label": "Plumbing pipes"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 594-0955",
-          "href": "4085940955"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "sergio",
-      "name": "Sergio",
-      "contact": null,
-      "categories": [
-        {
-          "code": "GAR",
-          "label": "Gardener",
-          "icon": "🌿"
-        }
-      ],
-      "services": [
-        {
-          "code": "MBL",
-          "label": "Lawn & plant care"
-        },
-        {
-          "code": "IRR",
-          "label": "Irrigation install"
-        },
-        {
-          "code": "LLV",
-          "label": "Low-voltage lighting"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(650) 793-5872",
-          "href": "6507935872"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "sj-plumbing",
-      "name": "SJ Plumbing",
-      "contact": "Adam Garza",
-      "categories": [
-        {
-          "code": "PLU",
-          "label": "Plumber",
-          "icon": "🚰"
-        }
-      ],
-      "services": [
-        {
-          "code": "PIP",
-          "label": "Plumbing pipes"
-        },
-        {
-          "code": "HEA",
-          "label": "Water heater"
-        },
-        {
-          "code": "DRA",
-          "label": "Drain cleaning"
-        },
-        {
-          "code": "SEW",
-          "label": "Sewer backup"
-        },
-        {
-          "code": "TRE",
-          "label": "Trenchless sewer repair"
-        },
-        {
-          "code": "HYD",
-          "label": "Hydro jetting"
-        },
-        {
-          "code": "TAN",
-          "label": "Tankless water heater"
-        },
-        {
-          "code": "WHE",
-          "label": "Water heater"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 372-8978",
-          "href": "4083728978"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://sanjoseplumbing.net",
-          "label": "sanjoseplumbing.net"
-        },
-        {
-          "url": "https://www.yelp.com/biz/san-jose-plumbing-san-jose-15",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=sanjoseplumbing.net&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "smith-electric",
-      "name": "Smith Electric",
-      "contact": "Sean Smith",
-      "categories": [
-        {
-          "code": "ELE",
-          "label": "Electrician",
-          "icon": "💡"
-        }
-      ],
-      "services": [
-        {
-          "code": "SPL",
-          "label": "Electric sub-panel"
-        },
-        {
-          "code": "CLB",
-          "label": "Change light bulbs"
-        },
-        {
-          "code": "OUT",
-          "label": "Outlet / minor electrical"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 910-7619",
-          "href": "4089107619"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://seansmithelectric.com",
-          "label": "seansmithelectric.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/sean-smith-electric-inc-los-gatos",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=seansmithelectric.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "steve-young",
-      "name": "Steve Young",
-      "contact": null,
-      "categories": [
-        {
-          "code": "PLU",
-          "label": "Plumber",
-          "icon": "🚰"
-        }
-      ],
-      "services": [],
-      "phones": [
-        {
-          "display": "(408) 318-2109",
-          "href": "4083182109"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "tj-construction-and-design",
-      "name": "TJ Construction and Design",
-      "contact": "Tiago Pereira",
-      "categories": [
-        {
-          "code": "GEN",
-          "label": "General Contractor",
-          "icon": "🏗️"
-        }
-      ],
-      "services": [
-        {
-          "code": "OUT",
-          "label": "Outlet / minor electrical"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 506-2828",
-          "href": "4085062828"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "todd-ervin",
-      "name": "Todd Ervin",
-      "contact": null,
-      "categories": [
-        {
-          "code": "ELE",
-          "label": "Electrician",
-          "icon": "💡"
-        }
-      ],
-      "services": [
-        {
-          "code": "FUS",
-          "label": "Electric fuse replacement"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(650) 766-1208",
-          "href": "6507661208"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "villa-tree-service",
-      "name": "VILLA Tree service",
-      "contact": null,
-      "categories": [
-        {
-          "code": "ARB",
-          "label": "Arborist",
-          "icon": "🌳"
-        }
-      ],
-      "services": [
-        {
-          "code": "TREEA",
-          "label": "Tree trimming"
-        }
-      ],
-      "phones": [
-        {
-          "display": "650-670-0787",
-          "href": "6506700787"
-        }
-      ],
-      "emails": [],
-      "links": [],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": null,
-      "yelp": null
-    },
-    {
-      "slug": "voltz-electric",
-      "name": "Voltz Electric",
-      "contact": null,
-      "categories": [
-        {
-          "code": "ELE",
-          "label": "Electrician",
-          "icon": "💡"
-        }
-      ],
-      "services": [
-        {
-          "code": "INL",
-          "label": "Install lights"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(408) 835-3866",
-          "href": "4088353866"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://www.yelp.com/biz/voltz-electric-san-jose-6",
-          "label": "Yelp"
-        },
-        {
-          "url": "https://govoltz.com",
-          "label": "govoltz.com"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=govoltz.com&sz=128",
-      "yelp": null
-    },
-    {
-      "slug": "water-heaters-only",
-      "name": "Water Heaters Only",
-      "contact": null,
-      "categories": [
-        {
-          "code": "PLU",
-          "label": "Plumber",
-          "icon": "🚰"
-        }
-      ],
-      "services": [
-        {
-          "code": "HEA",
-          "label": "Water heater"
-        }
-      ],
-      "phones": [
-        {
-          "display": "(660) 314-3144",
-          "href": "6603143144"
-        }
-      ],
-      "emails": [],
-      "links": [
-        {
-          "url": "https://waterheatersonly.com",
-          "label": "waterheatersonly.com"
-        },
-        {
-          "url": "https://www.yelp.com/biz/water-heaters-only-sunnyvale-4",
-          "label": "Yelp"
-        }
-      ],
-      "reviews": [],
-      "notes": [],
-      "reviewCount": 0,
-      "logo": "https://www.google.com/s2/favicons?domain=waterheatersonly.com&sz=128",
-      "yelp": null
-    }
-  ]
-}
+  {
+    "slug": "maria-and-silvario",
+    "name": "Maria and Silvario",
+    "contact": null,
+    "categories": [
+      "Cleaner"
+    ],
+    "services": [
+      "Clean floors",
+      "Windows + floors cleaning"
+    ],
+    "phones": [
+      "(650) 679-3348"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [
+      {
+        "text": "have cleaned our place for ~3 years, come every two weeks, highly recommended",
+        "date": null
+      },
+      {
+        "text": "Maria and Silvario clean our home every other week and do a great job. They clean a few other homes around the neighborhood too.",
+        "date": "2026-05"
+      }
+    ],
+    "notes": []
+  },
+  {
+    "slug": "ej-plumbing",
+    "name": "EJ Plumbing",
+    "contact": null,
+    "categories": [
+      "Plumber"
+    ],
+    "services": [
+      "Plumbing pipes",
+      "Water heater",
+      "Drain cleaning",
+      "Sewer backup",
+      "Trenchless sewer repair",
+      "Hydro jetting"
+    ],
+    "phones": [
+      "(650) 434-4432"
+    ],
+    "emails": [
+      "customercare@ejplumbing.com"
+    ],
+    "websites": [
+      "https://www.ejplumbing.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/ej-home-services-santa-clara",
+    "logo": null,
+    "reviews": [
+      {
+        "text": "The plumber from EJ Plumbing was very nice — highly recommend.",
+        "date": "2026-05"
+      }
+    ],
+    "notes": []
+  },
+  {
+    "slug": "h-h-hydronics",
+    "name": "H H Hydronics",
+    "contact": "Hector Hernandez",
+    "categories": [
+      "Radiant Heat"
+    ],
+    "services": [
+      "Tankless water heater",
+      "Radiant heat servicing"
+    ],
+    "phones": [
+      "(650) 384-6393"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [
+      {
+        "text": "We had H H Hydronics service our radiant heating system recently and the experience was quite positive.",
+        "date": "2026-04"
+      }
+    ],
+    "notes": []
+  },
+  {
+    "slug": "orlindos-cleaning",
+    "name": "Orlindos Cleaning",
+    "contact": "Ruben and Lorenzo",
+    "categories": [
+      "Cleaner"
+    ],
+    "services": [
+      "Windows + floors cleaning"
+    ],
+    "phones": [
+      "(408) 774-9340"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [
+      {
+        "text": "We've used Orlindo's for house cleaning and windows.",
+        "date": "2026-05"
+      }
+    ],
+    "notes": []
+  },
+  {
+    "slug": "tara-firma",
+    "name": "Tara Firma",
+    "contact": null,
+    "categories": [
+      "Gardener"
+    ],
+    "services": [
+      "Tree trimming",
+      "Fruit tree specialist"
+    ],
+    "phones": [
+      "831-238-4425"
+    ],
+    "emails": [
+      "tarafirmagardening@gmail.com"
+    ],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [
+      {
+        "text": "Tara Keyser, Owner. She's great and specializes in fruit trees.",
+        "date": null
+      }
+    ],
+    "notes": []
+  },
+  {
+    "slug": "valeria-s-house-cleaning-services",
+    "name": "Valeria’s House Cleaning Services",
+    "contact": null,
+    "categories": [
+      "Cleaner"
+    ],
+    "services": [
+      "Clean floors",
+      "Windows + floors cleaning"
+    ],
+    "phones": [
+      "(650) 906-9162"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": "https://www.yelp.com/biz/valeria-s-house-cleaning-services-palo-alto-2",
+    "logo": null,
+    "reviews": [
+      {
+        "text": "Very detailed, wants complete satisfaction, willingly come back to re-clean and supervisor/owner often inspects after the cleaners work. Very on time. Has equipment to handle cleaning ceilings as well as storage rooms, in addition to bathrooms and floors.",
+        "date": null
+      }
+    ],
+    "notes": []
+  },
+  {
+    "slug": "willow-glen-electric",
+    "name": "Willow Glen Electric",
+    "contact": null,
+    "categories": [
+      "Electrician"
+    ],
+    "services": [
+      "EV charger install",
+      "Electric fuse replacement"
+    ],
+    "phones": [
+      "(408) 289-9725"
+    ],
+    "emails": [
+      "matt@willowglenelectric.com"
+    ],
+    "websites": [
+      "https://willowglenelectric.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/willow-glen-electric-san-jose",
+    "logo": null,
+    "reviews": [
+      {
+        "text": "I used Willow Glen Electric to install my EV charger — they were helpful walking us through the whole process.",
+        "date": "2026-05"
+      }
+    ],
+    "notes": []
+  },
+  {
+    "slug": "15-sewer-and-plumbing",
+    "name": "$15 Sewer and Plumbing",
+    "contact": null,
+    "categories": [
+      "Plumber"
+    ],
+    "services": [
+      "Toilet replacement"
+    ],
+    "phones": [
+      "(408) 279-1515"
+    ],
+    "emails": [],
+    "websites": [
+      "https://www.checkbook.org/ca/san-jose/plumbers/-15-sewer-and-drain-service/yhqv7"
+    ],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "aaa-electric",
+    "name": "AAA Electric",
+    "contact": null,
+    "categories": [
+      "Electrician"
+    ],
+    "services": [
+      "EV charger install",
+      "Install lights",
+      "Electric sub-panel"
+    ],
+    "phones": [
+      "(408) 557-8899"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": "https://www.yelp.com/biz/aaa-electric-san-jose-2?osq=AAA+Electric&override_cta=Request+quote+%26+availability",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "abel",
+    "name": "Abel",
+    "contact": null,
+    "categories": [
+      "Plumber"
+    ],
+    "services": [
+      "Toilet work"
+    ],
+    "phones": [
+      "(408) 387-3340"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "al-salinas",
+    "name": "Al Salinas",
+    "contact": null,
+    "categories": [
+      "Handyman"
+    ],
+    "services": [
+      "General handyman"
+    ],
+    "phones": [],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "alfred-salinas",
+    "name": "Alfred Salinas",
+    "contact": null,
+    "categories": [
+      "Gardener"
+    ],
+    "services": [
+      "Lawn & plant care"
+    ],
+    "phones": [
+      "(408) 469-3163"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "california-tree-solutions",
+    "name": "California Tree Solutions",
+    "contact": null,
+    "categories": [
+      "Arborist"
+    ],
+    "services": [
+      "Tree trimming"
+    ],
+    "phones": [
+      "(408) 910-5143"
+    ],
+    "emails": [],
+    "websites": [
+      "https://www.californiatreesolutions.com/index.html"
+    ],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "city-arborist",
+    "name": "City Arborist",
+    "contact": null,
+    "categories": [
+      "Arborist"
+    ],
+    "services": [
+      "Tree trimming"
+    ],
+    "phones": [
+      "(650) 321-2795"
+    ],
+    "emails": [
+      "cityarboristtreeservice@gmail.com"
+    ],
+    "websites": [
+      "http://cityarborist.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/city-arborist-menlo-park-3",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "comfort-energy",
+    "name": "Comfort Energy",
+    "contact": null,
+    "categories": [
+      "Radiant Heat"
+    ],
+    "services": [
+      "Radiant heat servicing"
+    ],
+    "phones": [
+      "(408) 263-3100"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "commerce-metals",
+    "name": "Commerce Metals",
+    "contact": null,
+    "categories": [
+      "Product Provider"
+    ],
+    "services": [
+      "Metal backsplash"
+    ],
+    "phones": [],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "complete-cleaning-service",
+    "name": "Complete Cleaning Service",
+    "contact": "Lupe and Alex",
+    "categories": [
+      "Cleaner"
+    ],
+    "services": [
+      "Windows + floors cleaning"
+    ],
+    "phones": [
+      "(408) 248-4162"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "dan-salzberg",
+    "name": "Dan Salzberg",
+    "contact": null,
+    "categories": [
+      "Radiant Heat"
+    ],
+    "services": [
+      "Radiant heat servicing"
+    ],
+    "phones": [
+      "(650) 965-3777"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": [
+      "May have retired."
+    ]
+  },
+  {
+    "slug": "de-anza-water-conditioning",
+    "name": "De Anza Water Conditioning",
+    "contact": null,
+    "categories": [
+      "Plumber"
+    ],
+    "services": [
+      "Install water softener",
+      "Whole-house water filter"
+    ],
+    "phones": [
+      "(669) 225-2053"
+    ],
+    "emails": [],
+    "websites": [
+      "https://deanzawater.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/de-anza-water-conditioning-campbell-4",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "diamond-concrete",
+    "name": "Diamond Concrete",
+    "contact": "Dave",
+    "categories": [
+      "Concrete"
+    ],
+    "services": [
+      "Seal concrete cracks"
+    ],
+    "phones": [
+      "(510) 684-6369"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": "https://www.yelp.com/biz/diamonds-concrete-construction-oakland",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "dv-electric",
+    "name": "DV Electric",
+    "contact": null,
+    "categories": [
+      "Electrician"
+    ],
+    "services": [],
+    "phones": [
+      "(408) 827-1322"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": "https://www.yelp.com/biz/dv-electric-san-jose-2",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "environmental-water-systems",
+    "name": "Environmental Water Systems",
+    "contact": null,
+    "categories": [
+      "Product Provider"
+    ],
+    "services": [
+      "Whole-house water filter"
+    ],
+    "phones": [
+      "(702) 256-8182"
+    ],
+    "emails": [],
+    "websites": [
+      "https://www.ewswater.com"
+    ],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "ethan-angerbauer-hang-ten-window-cleaning",
+    "name": "Ethan Angerbauer, Hang Ten Window Cleaning",
+    "contact": null,
+    "categories": [
+      "Cleaner"
+    ],
+    "services": [],
+    "phones": [
+      "(408) 915-7070"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "foley-electric",
+    "name": "Foley Electric",
+    "contact": "Michael Hanson",
+    "categories": [
+      "Electrician"
+    ],
+    "services": [
+      "Electric sub-panel",
+      "Change light bulbs",
+      "Outlet / minor electrical"
+    ],
+    "phones": [
+      "(650) 333-1876"
+    ],
+    "emails": [],
+    "websites": [
+      "https://foleyelectric.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/foley-electric-redwood-city-3",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "fuse-electric",
+    "name": "Fuse Electric",
+    "contact": null,
+    "categories": [
+      "Electrician"
+    ],
+    "services": [
+      "Bathroom exhaust fan",
+      "Install lights",
+      "Water heater"
+    ],
+    "phones": [
+      "(408) 673-4814"
+    ],
+    "emails": [
+      "support@fuseservice.com"
+    ],
+    "websites": [
+      "https://fuseservice.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/fuse-hvac-refrigeration-electrical-and-plumbing-santa-clara-4",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "fuse-hvac",
+    "name": "Fuse HVAC",
+    "contact": null,
+    "categories": [
+      "HVAC"
+    ],
+    "services": [
+      "Mini-split heat pump"
+    ],
+    "phones": [
+      "(408) 673-4814"
+    ],
+    "emails": [
+      "support@fuseservice.com"
+    ],
+    "websites": [
+      "https://fuseservice.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/fuse-hvac-refrigeration-electrical-and-plumbing-santa-clara-4",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "george-hernandez",
+    "name": "George Hernandez",
+    "contact": null,
+    "categories": [
+      "Gardener"
+    ],
+    "services": [
+      "Lawn & plant care"
+    ],
+    "phones": [
+      "(408) 701-8751"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "granite-expo",
+    "name": "Granite Expo",
+    "contact": null,
+    "categories": [
+      "Product Provider"
+    ],
+    "services": [
+      "Countertops (slab/granite)"
+    ],
+    "phones": [
+      "(510) 652-6898"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "greg-lane",
+    "name": "Greg Lane",
+    "contact": null,
+    "categories": [
+      "Plumber"
+    ],
+    "services": [
+      "Toilet replacement"
+    ],
+    "phones": [
+      "(408) 887-5157"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "happy-planet",
+    "name": "Happy Planet",
+    "contact": "Blanca and Jose",
+    "categories": [
+      "Cleaner"
+    ],
+    "services": [
+      "Windows + floors cleaning"
+    ],
+    "phones": [
+      "(408) 772-0799"
+    ],
+    "emails": [],
+    "websites": [
+      "https://hpcleaningservices.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/happy-planet-cleaning-services-san-jose-2",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "heavenly-touch-stone-care",
+    "name": "Heavenly Touch Stone Care",
+    "contact": null,
+    "categories": [
+      "Cleaner"
+    ],
+    "services": [
+      "Polish concrete"
+    ],
+    "phones": [
+      "(408) 497-4354"
+    ],
+    "emails": [],
+    "websites": [
+      "https://www.heavenlytouchstonecare.com/"
+    ],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "hector-mendoza",
+    "name": "Hector Mendoza",
+    "contact": null,
+    "categories": [
+      "Gardener",
+      "Arborist"
+    ],
+    "services": [
+      "Lawn & plant care",
+      "Tree trimming"
+    ],
+    "phones": [
+      "(650) 475-6458"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "hotts-home-services",
+    "name": "Hotts Home Services",
+    "contact": "John Hott",
+    "categories": [
+      "Handyman"
+    ],
+    "services": [
+      "Change light bulbs",
+      "Dryer vent cleaning",
+      "Assemble shelving",
+      "Install lights",
+      "Wood / siding repair",
+      "Fence work"
+    ],
+    "phones": [
+      "(408) 623-5880"
+    ],
+    "emails": [
+      "hottshomeservices@yahoo.com"
+    ],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "intuitive-climate-control",
+    "name": "Intuitive Climate Control",
+    "contact": "Kevin Smith",
+    "categories": [
+      "Radiant Heat"
+    ],
+    "services": [
+      "Radiant heat servicing"
+    ],
+    "phones": [
+      "650-283-1953"
+    ],
+    "emails": [
+      "mkeys@intuitiveclimatecontrol.com"
+    ],
+    "websites": [
+      "https://www.intuitiveclimatecontrol.com/Home.html"
+    ],
+    "yelp": "https://www.yelp.com/biz/intuitive-climate-control-palo-alto",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "keycon",
+    "name": "Keycon",
+    "contact": null,
+    "categories": [
+      "General Contractor"
+    ],
+    "services": [
+      "Eichler home specialist"
+    ],
+    "phones": [
+      "(650) 965-1256"
+    ],
+    "emails": [],
+    "websites": [
+      "https://keyconinc.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/keycon-mountain-view",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "kitchen-reface-depot",
+    "name": "Kitchen Reface Depot",
+    "contact": null,
+    "categories": [
+      "Kitchen Reface"
+    ],
+    "services": [
+      "Kitchen cabinet reface"
+    ],
+    "phones": [
+      "(408) 217-2952"
+    ],
+    "emails": [],
+    "websites": [
+      "https://www.kitchenrefacedepot.com/"
+    ],
+    "yelp": "https://www.yelp.com/biz/kitchen-reface-depot-san-jose",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "lachance-s-radiant-heating",
+    "name": "LaChance's Radiant Heating",
+    "contact": "Dale",
+    "categories": [
+      "Radiant Heat"
+    ],
+    "services": [
+      "Tankless water heater",
+      "Radiant heat servicing"
+    ],
+    "phones": [
+      "(408) 986-8189"
+    ],
+    "emails": [],
+    "websites": [
+      "https://lachancesradiantheating.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/lachance-s-radiant-heating-santa-clara",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "leak-pro",
+    "name": "Leak Pro",
+    "contact": null,
+    "categories": [
+      "Plumber"
+    ],
+    "services": [],
+    "phones": [
+      "(408) 594-2024"
+    ],
+    "emails": [],
+    "websites": [
+      "https://leak-pro.com"
+    ],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "leo",
+    "name": "Leo",
+    "contact": null,
+    "categories": [
+      "Handyman"
+    ],
+    "services": [
+      "Install appliances",
+      "General repairs"
+    ],
+    "phones": [
+      "(747) 308-5555"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "limebricks",
+    "name": "LimeBricks",
+    "contact": null,
+    "categories": [
+      "Handyman"
+    ],
+    "services": [
+      "Install appliances",
+      "Change light bulbs",
+      "EV charger install",
+      "Water heater",
+      "Install lights",
+      "Fix leaks",
+      "Outlet / minor electrical",
+      "Plumbing pipes",
+      "General repairs",
+      "Toilet replacement",
+      "Whole-house water filter",
+      "General handyman",
+      "Appliance repair"
+    ],
+    "phones": [
+      "(408) 430-2844"
+    ],
+    "emails": [
+      "hello@limebricks.com"
+    ],
+    "websites": [
+      "https://www.limebricks.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/limebricks-fremont",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "love-your-floors",
+    "name": "Love Your Floors",
+    "contact": null,
+    "categories": [
+      "Cleaner"
+    ],
+    "services": [
+      "Clean floors"
+    ],
+    "phones": [
+      "(408) 268-6058"
+    ],
+    "emails": [],
+    "websites": [
+      "https://www.loveyourfloors.com/"
+    ],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "majestic-tree-service",
+    "name": "Majestic Tree Service",
+    "contact": null,
+    "categories": [
+      "Arborist"
+    ],
+    "services": [
+      "Tree trimming"
+    ],
+    "phones": [
+      "(669) 216-9118"
+    ],
+    "emails": [
+      "info@majestictreeservice.com"
+    ],
+    "websites": [
+      "https://www.majestictreeservice.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/majestic-tree-service-san-jose-2?override_cta=Get+a+quote",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "manuel-pineda",
+    "name": "Manuel Pineda",
+    "contact": null,
+    "categories": [
+      "Concrete"
+    ],
+    "services": [
+      "Seal concrete cracks"
+    ],
+    "phones": [
+      "(408) 218-5951"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "martin",
+    "name": "Martin",
+    "contact": null,
+    "categories": [
+      "Handyman"
+    ],
+    "services": [
+      "Countertop replacement",
+      "Flooring replacement",
+      "Concrete repair (atrium floor)",
+      "Outlet / minor electrical",
+      "Toilet work"
+    ],
+    "phones": [
+      "(408) 775-9980"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "master-plumbing-and-sewer",
+    "name": "Master Plumbing & Sewer",
+    "contact": null,
+    "categories": [
+      "Plumber"
+    ],
+    "services": [
+      "Toilet replacement"
+    ],
+    "phones": [
+      "(877) 691-0400"
+    ],
+    "emails": [
+      "masterplumbing.net"
+    ],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "mission-glass",
+    "name": "Mission Glass",
+    "contact": null,
+    "categories": [
+      "Windows & Glass"
+    ],
+    "services": [
+      "Windows & glass doors",
+      "Insect mesh screens"
+    ],
+    "phones": [
+      "(408) 246-1799"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": "https://www.yelp.com/biz/mission-glass-and-screen-co-santa-clara-2",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "mitrani-construction",
+    "name": "Mitrani Construction",
+    "contact": null,
+    "categories": [
+      "General Contractor"
+    ],
+    "services": [
+      "Fence work",
+      "Atrium cover"
+    ],
+    "phones": [
+      "+1 (310) 801-7182"
+    ],
+    "emails": [],
+    "websites": [
+      "https://www.mitraniconstruction.com"
+    ],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "new-pipes",
+    "name": "New Pipes",
+    "contact": null,
+    "categories": [
+      "Plumber"
+    ],
+    "services": [
+      "Plumbing pipes",
+      "Water heater",
+      "Drain cleaning",
+      "Sewer backup",
+      "Trenchless sewer repair",
+      "Hydro jetting",
+      "Tankless water heater",
+      "Water heater"
+    ],
+    "phones": [
+      "(408) 269-1969"
+    ],
+    "emails": [],
+    "websites": [
+      "https://newpipesinc.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/new-pipes-santa-clara",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "palo-alto-glass",
+    "name": "Palo Alto Glass",
+    "contact": null,
+    "categories": [
+      "Windows & Glass"
+    ],
+    "services": [
+      "Windows & glass doors",
+      "Insect mesh screens"
+    ],
+    "phones": [
+      "(650) 494-7000"
+    ],
+    "emails": [],
+    "websites": [
+      "https://paloaltoglass.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/palo-alto-glass-palo-alto",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "peninsula-home-improvements",
+    "name": "Peninsula Home Improvements",
+    "contact": "Kurt",
+    "categories": [
+      "General Contractor"
+    ],
+    "services": [
+      "Sheetrock repair"
+    ],
+    "phones": [
+      "(408) 374-1516"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "randazzo-s-water-conditioning",
+    "name": "Randazzo's Water Conditioning",
+    "contact": null,
+    "categories": [
+      "Water Softener"
+    ],
+    "services": [
+      "Install water softener",
+      "Reverse osmosis"
+    ],
+    "phones": [
+      "(408) 620-7867"
+    ],
+    "emails": [],
+    "websites": [
+      "https://randazzoswater.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/randazzos-water-conditioning-san-jose",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "rob-lutge",
+    "name": "Rob Lutge",
+    "contact": null,
+    "categories": [
+      "General Contractor",
+      "Handyman"
+    ],
+    "services": [
+      "General handyman"
+    ],
+    "phones": [
+      "(650) 222-8488"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "ron-garcia",
+    "name": "Ron Garcia",
+    "contact": null,
+    "categories": [
+      "Gardener",
+      "Handyman"
+    ],
+    "services": [
+      "Lawn & plant care"
+    ],
+    "phones": [
+      "(408) 701-8751",
+      "(408) 242-3892"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "rudy-s-glass-in-san-jose",
+    "name": "Rudy's Glass in San Jose",
+    "contact": null,
+    "categories": [
+      "Windows & Glass"
+    ],
+    "services": [
+      "Windows & glass doors",
+      "Insect mesh screens"
+    ],
+    "phones": [
+      "(408) 986-8660"
+    ],
+    "emails": [],
+    "websites": [
+      "https://rudysglassinc.com/"
+    ],
+    "yelp": "https://www.yelp.com/biz/rudys-glass-santa-clara-2",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "scotty-with-scotty-s-plumbing",
+    "name": "Scotty with Scotty's plumbing",
+    "contact": null,
+    "categories": [
+      "Plumber"
+    ],
+    "services": [
+      "Fix leaks",
+      "Plumbing pipes"
+    ],
+    "phones": [
+      "(408) 594-0955"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "sergio",
+    "name": "Sergio",
+    "contact": null,
+    "categories": [
+      "Gardener"
+    ],
+    "services": [
+      "Lawn & plant care",
+      "Irrigation install",
+      "Low-voltage lighting"
+    ],
+    "phones": [
+      "(650) 793-5872"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "sj-plumbing",
+    "name": "SJ Plumbing",
+    "contact": "Adam Garza",
+    "categories": [
+      "Plumber"
+    ],
+    "services": [
+      "Plumbing pipes",
+      "Water heater",
+      "Drain cleaning",
+      "Sewer backup",
+      "Trenchless sewer repair",
+      "Hydro jetting",
+      "Tankless water heater",
+      "Water heater"
+    ],
+    "phones": [
+      "(408) 372-8978"
+    ],
+    "emails": [],
+    "websites": [
+      "https://sanjoseplumbing.net"
+    ],
+    "yelp": "https://www.yelp.com/biz/san-jose-plumbing-san-jose-15",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "smith-electric",
+    "name": "Smith Electric",
+    "contact": "Sean Smith",
+    "categories": [
+      "Electrician"
+    ],
+    "services": [
+      "Electric sub-panel",
+      "Change light bulbs",
+      "Outlet / minor electrical"
+    ],
+    "phones": [
+      "(408) 910-7619"
+    ],
+    "emails": [],
+    "websites": [
+      "https://seansmithelectric.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/sean-smith-electric-inc-los-gatos",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "steve-young",
+    "name": "Steve Young",
+    "contact": null,
+    "categories": [
+      "Plumber"
+    ],
+    "services": [],
+    "phones": [
+      "(408) 318-2109"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "tj-construction-and-design",
+    "name": "TJ Construction and Design",
+    "contact": "Tiago Pereira",
+    "categories": [
+      "General Contractor"
+    ],
+    "services": [
+      "Outlet / minor electrical"
+    ],
+    "phones": [
+      "(408) 506-2828"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "todd-ervin",
+    "name": "Todd Ervin",
+    "contact": null,
+    "categories": [
+      "Electrician"
+    ],
+    "services": [
+      "Electric fuse replacement"
+    ],
+    "phones": [
+      "(650) 766-1208"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "villa-tree-service",
+    "name": "VILLA Tree service",
+    "contact": null,
+    "categories": [
+      "Arborist"
+    ],
+    "services": [
+      "Tree trimming"
+    ],
+    "phones": [
+      "650-670-0787"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "voltz-electric",
+    "name": "Voltz Electric",
+    "contact": null,
+    "categories": [
+      "Electrician"
+    ],
+    "services": [
+      "Install lights"
+    ],
+    "phones": [
+      "(408) 835-3866"
+    ],
+    "emails": [],
+    "websites": [
+      "https://govoltz.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/voltz-electric-san-jose-6",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "water-heaters-only",
+    "name": "Water Heaters Only",
+    "contact": null,
+    "categories": [
+      "Plumber"
+    ],
+    "services": [
+      "Water heater"
+    ],
+    "phones": [
+      "(660) 314-3144"
+    ],
+    "emails": [],
+    "websites": [
+      "https://waterheatersonly.com"
+    ],
+    "yelp": "https://www.yelp.com/biz/water-heaters-only-sunnyvale-4",
+    "logo": null,
+    "reviews": [],
+    "notes": []
+  },
+  {
+    "slug": "just-tankless",
+    "name": "Just Tankless",
+    "contact": "Al Johnson",
+    "categories": [
+      "Radiant Heat"
+    ],
+    "services": [
+      "Tankless water heater",
+      "Radiant heat servicing",
+      "Whole-house water filter"
+    ],
+    "phones": [
+      "(408) 357-3280"
+    ],
+    "emails": [
+      "info@justtankless.com"
+    ],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [
+      {
+        "text": "Several of us converted to tankless a couple years ago — couldn't be happier with our Just Tankless Navien water-heating system.",
+        "date": "2026-05"
+      }
+    ],
+    "notes": []
+  },
+  {
+    "slug": "regina-dominguez",
+    "name": "Regina Dominguez",
+    "contact": null,
+    "categories": [
+      "Cleaner"
+    ],
+    "services": [
+      "House cleaning"
+    ],
+    "phones": [
+      "(408) 261-9358"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [
+      {
+        "text": "I'm very happy with my house cleaner — she is fantastic.",
+        "date": "2026-05"
+      }
+    ],
+    "notes": []
+  },
+  {
+    "slug": "sandra-s",
+    "name": "Sandra S.",
+    "contact": "Babysitter & household helper",
+    "categories": [
+      "Babysitter & Helper"
+    ],
+    "services": [
+      "Babysitting & childcare",
+      "Mother's helper",
+      "Pet walking & sitting",
+      "Gardening",
+      "Household chores",
+      "Light cleaning"
+    ],
+    "phones": [],
+    "emails": [
+      "sandrathehouseholdhelper@gmail.com"
+    ],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [
+      {
+        "text": "For anyone considering Sandra's services, we highly recommend her. She regularly looks after our 2-year-old and they adore each other — always excited to see her.",
+        "date": "2025-07"
+      },
+      {
+        "text": "Sandra has watched our two kids (7 and 2) regularly and they've loved her!",
+        "date": "2025-07"
+      },
+      {
+        "text": "She looks after our cats when we travel and always texts us updates and pictures. One of our cats is very shy, and Sandra goes out of her way to find her and give her attention.",
+        "date": "2025-07"
+      }
+    ],
+    "notes": [
+      "A 16-year-old Pomeroy West neighbor's daughter. Rates $18–$25/hour; references available on request."
+    ]
+  },
+  {
+    "slug": "professional-auto-repair",
+    "name": "Professional Auto Repair",
+    "contact": "Raul",
+    "categories": [
+      "Auto Repair"
+    ],
+    "services": [
+      "Auto repair",
+      "Maintenance"
+    ],
+    "phones": [],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [
+      {
+        "text": "We use Professional Auto Repair — Raul always gives a price lower than anywhere else.",
+        "date": "2026-01"
+      },
+      {
+        "text": "I'd third that recommendation — we've gone to Raul for years.",
+        "date": "2026-01"
+      }
+    ],
+    "notes": [
+      "On El Camino Real, Santa Clara."
+    ]
+  }
+]
