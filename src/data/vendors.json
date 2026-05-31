@@ -545,7 +545,14 @@
     ],
     "yelp": "https://www.yelp.com/biz/de-anza-water-conditioning-campbell-4",
     "logo": "/logos/de-anza-water-conditioning.png",
-    "reviews": [],
+    "reviews": [
+      {
+        "date": "2022-07",
+        "by": "Gail",
+        "mention": true,
+        "source": "https://groups.google.com/d/msgid/pomeroywest/DBBF723B-74B8-4D63-8760-843071FB24AD%40comcast.net"
+      }
+    ],
     "notes": []
   },
   {
@@ -1038,7 +1045,14 @@
     ],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "date": "2022-09",
+        "by": "Cindy",
+        "mention": true,
+        "source": "https://groups.google.com/d/msgid/pomeroywest/c2e8a01c-f1e6-eec2-f849-f7aa28631c43%40jps.net"
+      }
+    ],
     "notes": []
   },
   {
@@ -1327,7 +1341,14 @@
     ],
     "yelp": "https://www.yelp.com/biz/new-pipes-santa-clara",
     "logo": "/logos/new-pipes.png",
-    "reviews": [],
+    "reviews": [
+      {
+        "date": "2024-01",
+        "by": "Gayathri",
+        "mention": true,
+        "source": "https://groups.google.com/d/msgid/pomeroywest/730051045.4167487.1704211338730%40mail.yahoo.com"
+      }
+    ],
     "notes": [
       "Often the HOA association’s preferred/“go-to” plumber for shared water-line and main-valve work, per neighbor posts."
     ]
@@ -1402,7 +1423,14 @@
     ],
     "yelp": "https://www.yelp.com/biz/randazzos-water-conditioning-san-jose",
     "logo": "/logos/randazzo-s-water-conditioning.png",
-    "reviews": [],
+    "reviews": [
+      {
+        "date": "2021-08",
+        "by": "Mark",
+        "mention": true,
+        "source": "https://groups.google.com/d/msgid/pomeroywest/F1058F89-1FF0-4B3A-8905-7755B224486D%40mymsky.net"
+      }
+    ],
     "notes": []
   },
   {
@@ -1632,7 +1660,14 @@
     "websites": [],
     "yelp": null,
     "logo": null,
-    "reviews": [],
+    "reviews": [
+      {
+        "date": "2024-07",
+        "by": "Hannah",
+        "mention": true,
+        "source": "https://groups.google.com/d/msgid/pomeroywest/7675D913-AF94-4739-959D-4DF1DFDD0810%40gmail.com"
+      }
+    ],
     "notes": []
   },
   {
@@ -1943,6 +1978,59 @@
     ],
     "notes": [
       "Also operates as JMC Electric."
+    ]
+  },
+  {
+    "slug": "s-and-g-flooring",
+    "name": "S&G Flooring",
+    "contact": "",
+    "categories": [
+      "Flooring"
+    ],
+    "services": [
+      "Luxury laminate flooring",
+      "Radiant-compatible flooring"
+    ],
+    "phones": [],
+    "emails": [],
+    "websites": [],
+    "logo": null,
+    "reviews": [
+      {
+        "text": "I had my floors done by S&G Flooring (their store is in Cupertino on De Anza near Home Depot). It’s luxury laminate, lets the radiant heat through, and looks pretty good — they did a really nice job.",
+        "date": "2018-06",
+        "by": "Diane",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/633268694.2438670.1528568983588%40mail.yahoo.com"
+      }
+    ],
+    "notes": [
+      "Storefront in Cupertino on De Anza Blvd, near Home Depot."
+    ]
+  },
+  {
+    "slug": "just-windows",
+    "name": "Just Windows",
+    "contact": "",
+    "categories": [
+      "Cleaner"
+    ],
+    "services": [
+      "Window washing"
+    ],
+    "phones": [],
+    "emails": [],
+    "websites": [],
+    "logo": null,
+    "reviews": [
+      {
+        "date": "2025-03",
+        "by": "Suzanne",
+        "mention": true,
+        "source": "https://groups.google.com/d/msgid/pomeroywest/f8700478-95cc-451d-92f4-a3f596a815f2%40earthlink.net"
+      }
+    ],
+    "notes": [
+      "Suzanne’s regular window washer — ask her for the contact."
     ]
   }
 ]

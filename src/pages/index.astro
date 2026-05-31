@@ -20,6 +20,7 @@ const CAT_SYNONYMS = {
   'Water Softener': 'softener filter filtration hard water conditioning',
   'Auto Repair': 'car mechanic auto vehicle',
   'Babysitter & Helper': 'babysitter nanny childcare sitter helper',
+  'Flooring': 'floor floors laminate hardwood tile carpet vinyl refinish',
 };
 
 function keywords(v) {
@@ -100,7 +101,7 @@ const phoneIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" s
 
       <div class="list" id="list">
         {vendors.map((v) => (
-          <article class="vendor" id={v.slug} data-name={v.name} data-search={searchString(v)} data-cats={v.categories.map((c) => c.label).join('||')}>
+          <article class="vendor" id={v.slug} data-search={searchString(v)} data-cats={v.categories.map((c) => c.label).join('||')}>
             <div class="v-head">
               {v.logo && <img class="v-logo" src={v.logo} alt="" width="44" height="44" loading="lazy" />}
               <div class="v-id">
@@ -145,25 +146,33 @@ const phoneIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" s
 
             {v.reviews.length > 0 && (
               <div class="v-reviews">
-                {v.reviews.slice(0, 3).map((r) => (
+                {v.reviews.slice(0, 3).map((r) => (r.text ? (
                   <blockquote class="review">
                     <p class="review-text">“{r.text}”</p>
                     <cite>{r.source
                       ? <a class="review-src" href={r.source} target="_blank" rel="noopener noreferrer" title="View this recommendation in the Pomeroy West Google Group (members only)">— {r.by || 'A Pomeroy West neighbor'}{r.date ? `, ${r.date}` : ''} ↗</a>
                       : <span>— {r.by || 'A Pomeroy West neighbor'}{r.date ? `, ${r.date}` : ''}</span>}</cite>
                   </blockquote>
-                ))}
+                ) : (
+                  <p class="mention">{r.source
+                    ? <a class="review-src" href={r.source} target="_blank" rel="noopener noreferrer" title="View this mention in the Pomeroy West Google Group (members only)">👋 Mentioned by {r.by || 'a neighbor'}{r.date ? `, ${r.date}` : ''} ↗</a>
+                    : <span>👋 Mentioned by {r.by || 'a neighbor'}{r.date ? `, ${r.date}` : ''}</span>}</p>
+                )))}
                 {v.reviews.length > 3 && (
                   <Fragment>
                     <div class="more-reviews" hidden>
-                      {v.reviews.slice(3).map((r) => (
+                      {v.reviews.slice(3).map((r) => (r.text ? (
                         <blockquote class="review">
                           <p class="review-text">“{r.text}”</p>
                           <cite>{r.source
                             ? <a class="review-src" href={r.source} target="_blank" rel="noopener noreferrer">— {r.by || 'A Pomeroy West neighbor'}{r.date ? `, ${r.date}` : ''} ↗</a>
                             : <span>— {r.by || 'A Pomeroy West neighbor'}{r.date ? `, ${r.date}` : ''}</span>}</cite>
                         </blockquote>
-                      ))}
+                      ) : (
+                        <p class="mention">{r.source
+                          ? <a class="review-src" href={r.source} target="_blank" rel="noopener noreferrer">👋 Mentioned by {r.by || 'a neighbor'}{r.date ? `, ${r.date}` : ''} ↗</a>
+                          : <span>👋 Mentioned by {r.by || 'a neighbor'}{r.date ? `, ${r.date}` : ''}</span>}</p>
+                      )))}
                     </div>
                     <button class="more-toggle" type="button">Show {v.reviews.length - 3} more review{v.reviews.length - 3 === 1 ? '' : 's'} ▾</button>
                   </Fragment>
@@ -179,12 +188,9 @@ const phoneIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" s
   </div>
 
   <script>
-    import Fuse from 'fuse.js';
-
     const search = document.getElementById('search');
     const list = document.getElementById('list');
     const cards = Array.from(list.querySelectorAll('.vendor'));
-    const defaultOrder = cards.slice(); // recency order from the build
     const chips = Array.from(document.querySelectorAll('.chip'));
     const countEl = document.getElementById('result-count');
     const emptyEl = document.getElementById('empty');
@@ -193,42 +199,22 @@ const phoneIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" s
     const filterLabel = document.getElementById('filter-label');
     let activeCat = 'all';
 
-    // Fuzzy search over name (weighted) + the full blob (trades, services, neighbor reviews, synonyms).
-    const fuse = new Fuse(
-      cards.map((c) => ({ slug: c.id, name: c.dataset.name || '', blob: c.dataset.search })),
-      {
-        keys: [{ name: 'name', weight: 2 }, { name: 'blob', weight: 1 }],
-        threshold: 0.2, ignoreLocation: true, minMatchCharLength: 3,
-      },
-    );
-    const cardBySlug = Object.fromEntries(cards.map((c) => [c.id, c]));
-
     const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
     function apply() {
       const q = search.value.trim().toLowerCase();
-      let ranked = null, usedFuzzy = false;
-      if (q) {
-        // Primary: every query word must prefix-match a word in the blob (precise, no substring noise).
-        const terms = q.split(/\s+/).filter(Boolean).map((t) => new RegExp('\\b' + escapeRe(t), 'i'));
-        ranked = cards.filter((c) => terms.every((re) => re.test(c.dataset.search))).map((c) => c.id);
-        // Fallback: nothing matched cleanly → fuzzy (catches typos like "electrcian").
-        if (ranked.length === 0) { ranked = fuse.search(q).map((r) => r.item.slug); usedFuzzy = true; }
-      }
-      const matchSet = ranked ? new Set(ranked) : null;
+      // Each query word must prefix-match a word in the vendor's blob — which now spans
+      // name, contact, trades, services, problem-word synonyms, and neighbor review text.
+      // Plain and predictable: handles plurals (cleaner↔cleaners) and multi-word AND.
+      const terms = q ? q.split(/\s+/).filter(Boolean).map((t) => new RegExp('\\b' + escapeRe(t), 'i')) : null;
       let shown = 0;
       for (const card of cards) {
         const matchCat = activeCat === 'all' || card.dataset.cats.split('||').includes(activeCat);
-        const matchText = !matchSet || matchSet.has(card.id);
+        const matchText = !terms || terms.every((re) => re.test(card.dataset.search));
         const visible = matchCat && matchText;
         card.hidden = !visible;
         if (visible) shown++;
       }
-      // Word matches keep the default recency order; fuzzy fallback keeps Fuse's relevance order.
-      const seq = !ranked ? defaultOrder
-        : usedFuzzy ? ranked.map((s) => cardBySlug[s])
-        : defaultOrder.filter((c) => matchSet.has(c.id));
-      for (const card of seq) if (card) list.appendChild(card);
       emptyEl.style.display = shown === 0 ? 'block' : 'none';
       countEl.textContent = (q || activeCat !== 'all')
         ? `Showing ${shown} of ${cards.length} vendors`

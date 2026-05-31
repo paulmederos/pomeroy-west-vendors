@@ -196,6 +196,8 @@ blockquote.review:last-child { margin-bottom: 0; }
 blockquote.review cite { display: block; margin-top: 12px; font-style: normal; font-size: .84rem; color: var(--muted); }
 .review-src { color: var(--muted); border-bottom: 1px dotted var(--line); transition: color .12s, border-color .12s; }
 .review-src:hover { color: var(--terra); border-bottom-color: var(--terra); text-decoration: none; }
+.mention { margin: 0 0 12px; font-size: .85rem; color: var(--muted); }
+.mention:last-child { margin-bottom: 0; }
 .more-reviews[hidden] { display: none; }
 .more-toggle {
   font-family: inherit; font-size: .85rem; font-weight: 600; color: var(--green);
