@@ -4,3 +4,8 @@ dist/
 .DS_Store
 *.log
 .env
+
+# Local-only private inputs (Google Group mbox export, etc.) — never commit
+private/
+*.mbox
+takeout*.zip
