@@ -129,6 +129,15 @@ a:hover { text-decoration: underline; }
   padding: 3px 9px; border-radius: 999px;
   background: var(--green-tint); color: var(--green);
 }
+.reviews-pill {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: .76rem; font-weight: 600; white-space: nowrap;
+  padding: 3px 9px; border-radius: 999px;
+  background: var(--terra-tint); color: var(--terra);
+  margin-left: auto;
+}
+.reviews-pill .star { font-size: .8rem; line-height: 1; }
+
 .card h2 {
   font-family: var(--font-display); font-weight: 600;
   font-size: 1.18rem; margin: 0; letter-spacing: -.01em;
@@ -173,6 +182,17 @@ a:hover { text-decoration: underline; }
   font-size: clamp(1.7rem, 4vw, 2.4rem); margin: 10px 0 4px; letter-spacing: -.02em;
 }
 .detail .contact-name { color: var(--muted); font-size: 1.05rem; margin: 0; }
+.detail-title { display: flex; align-items: center; gap: 16px; }
+.detail-logo {
+  width: 60px; height: 60px; flex: 0 0 auto; border-radius: 12px;
+  object-fit: contain; background: #fff; border: 1px solid var(--line); padding: 7px;
+}
+.yelp-rating {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 10px;
+  font-size: .92rem; color: var(--muted);
+}
+.yelp-rating .stars { color: #d32323; font-weight: 600; letter-spacing: .02em; }
+.h3-count { color: var(--muted); font-weight: 400; text-transform: none; letter-spacing: 0; }
 .panel {
   background: var(--surface); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow);

@@ -1,0 +1,13 @@
+{
+  "_comment": "Researched extras merged on top of the Google Sheet at import time, keyed by vendor slug (see slugs in vendors.json). The Sheet stays the source for core facts; this holds neighbor reviews, logos, and Yelp ratings gathered separately.",
+  "_shape": {
+    "<vendor-slug>": {
+      "reviews": [
+        { "text": "What the neighbor said.", "author": "A Pomeroy West neighbor", "source": "group", "date": "2025-03" }
+      ],
+      "logo": "https://example.com/logo.png",
+      "yelp": { "rating": 4.5, "count": 128, "url": "https://www.yelp.com/biz/..." }
+    }
+  },
+  "vendors": {}
+}

@@ -22,9 +22,27 @@ const desc = `${v.name} — ${v.categories.map((c) => c.label).join(', ')} recom
         {v.categories.map((c) => (
           <span class="cat-badge"><span aria-hidden="true">{c.icon}</span> {c.label}</span>
         ))}
+        {v.reviewCount > 0 && (
+          <span class="reviews-pill">
+            <span class="star" aria-hidden="true">★</span>
+            {v.reviewCount} review{v.reviewCount === 1 ? '' : 's'}
+          </span>
+        )}
       </div>
-      <h1>{v.name}</h1>
-      {v.contact && <p class="contact-name">{v.contact}</p>}
+      <div class="detail-title">
+        {v.logo && <img class="detail-logo" src={v.logo} alt={`${v.name} logo`} width="60" height="60" loading="lazy" />}
+        <div>
+          <h1>{v.name}</h1>
+          {v.contact && <p class="contact-name">{v.contact}</p>}
+        </div>
+      </div>
+      {v.yelp && (
+        <p class="yelp-rating">
+          <span class="stars">★ {v.yelp.rating}</span>
+          {v.yelp.count && <span>· {v.yelp.count} reviews on</span>}
+          <a href={v.yelp.url || v.links.find((l) => l.label === 'Yelp')?.url} target="_blank" rel="noopener noreferrer">Yelp</a>
+        </p>
+      )}
     </header>
 
     <section class="panel">
@@ -65,11 +83,11 @@ const desc = `${v.name} — ${v.categories.map((c) => c.label).join(', ')} recom
 
     {v.reviews.length > 0 && (
       <section class="panel">
-        <h3>What neighbors say</h3>
+        <h3>Homeowner reviews <span class="h3-count">({v.reviews.length})</span></h3>
         {v.reviews.map((r) => (
           <blockquote class="review">
-            “{r}”
-            <cite>— A Pomeroy West neighbor</cite>
+            “{r.text}”
+            <cite>— {r.author || 'A Pomeroy West neighbor'}{r.date ? `, ${r.date}` : ''}</cite>
           </blockquote>
         ))}
       </section>

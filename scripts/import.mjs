@@ -7,7 +7,7 @@
 // The Sheet's "Vendors" tab is published as CSV at the URL below. Only the
 // vendor rows are fetched; the code -> label maps live in src/data/labels.mjs.
 
-import { writeFileSync } from 'node:fs';
+import { writeFileSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { CATEGORIES, SERVICES } from '../src/data/labels.mjs';
@@ -18,6 +18,25 @@ const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?forma
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, '..', 'src', 'data', 'vendors.json');
+const ENRICH = join(__dirname, '..', 'src', 'data', 'enrichment.json');
+
+// Curated/researched extras merged on top of the Sheet, keyed by vendor slug:
+// reviews gathered from neighbors, a logo URL, and Yelp rating/count. Optional —
+// missing file just means "no enrichment yet".
+let enrichment = {};
+try {
+  enrichment = JSON.parse(readFileSync(ENRICH, 'utf8')).vendors || {};
+} catch { /* no enrichment file yet */ }
+
+// A small, reliable brand mark for any vendor with a real website (not Yelp).
+const faviconFor = (links) => {
+  const site = links.find((l) => l.label !== 'Yelp' && l.label !== 'Checkbook');
+  if (!site) return null;
+  try {
+    const host = new URL(site.url).hostname;
+    return `https://www.google.com/s2/favicons?domain=${host}&sz=128`;
+  } catch { return null; }
+};
 
 // --- tiny CSV parser (handles quotes, embedded commas + newlines) ----------
 function parseCSV(text) {
@@ -143,7 +162,8 @@ for (const r of rows) {
   if (phone && !v.phones.some((p) => telHref(p) === telHref(phone))) v.phones.push(phone);
   if (email && !v.emails.includes(email)) v.emails.push(email);
   for (const l of links) if (!v.links.some((x) => x.url === l.url)) v.links.push(l);
-  if (review && !v.reviews.includes(review)) v.reviews.push(review);
+  if (review && !v.reviews.some((x) => x.text === review))
+    v.reviews.push({ text: review, author: 'A Pomeroy West neighbor', source: 'sheet' });
   if (note && !v.notes.includes(note)) v.notes.push(note);
   if (contact && !v.contact) v.contact = contact;
 }
@@ -155,6 +175,14 @@ const vendors = [...byKey.values()]
     let slug = slugify(v.name);
     while (usedSlugs.has(slug)) slug += '-2';
     usedSlugs.add(slug);
+
+    const links = v.links.map((l) => l); // already {url,label}
+    const extra = enrichment[slug] || {};
+    // Sheet reviews first, then any researched ones; dedupe by text.
+    const reviews = [...v.reviews];
+    for (const r of extra.reviews || [])
+      if (r?.text && !reviews.some((x) => x.text === r.text)) reviews.push(r);
+
     return {
       ...v,
       slug,
@@ -163,9 +191,15 @@ const vendors = [...byKey.values()]
       })),
       services: v.services.map((c) => ({ code: c, label: SERVICES[c] || c })),
       phones: v.phones.map((p) => ({ display: p, href: telHref(p) })),
+      links,
+      reviews,
+      reviewCount: reviews.length,
+      logo: extra.logo || faviconFor(links),
+      yelp: extra.yelp || null, // { rating, count, url }
     };
   })
-  .sort((a, b) => a.name.localeCompare(b.name));
+  // "All" order: most-reviewed first, then alphabetical.
+  .sort((a, b) => b.reviewCount - a.reviewCount || a.name.localeCompare(b.name));
 
 // Category counts for the index.
 const catCounts = {};
