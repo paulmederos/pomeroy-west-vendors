@@ -213,6 +213,7 @@ blockquote.review cite { display: block; margin-top: 12px; font-style: normal; f
 .site-footer a { color: var(--green); }
 .site-footer .disclaimer { max-width: 60ch; }
 .site-footer .meta { margin-top: 12px; font-size: .8rem; opacity: .85; }
+.site-footer .updated { margin-top: 8px; font-size: .75rem; opacity: .6; }
 
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;

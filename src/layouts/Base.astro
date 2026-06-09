@@ -1,9 +1,13 @@
 ---
 import '../styles/global.css';
+import { lastUpdated } from '../data/meta.mjs';
 const { title, description } = Astro.props;
 const fullTitle = title
   ? `${title} · Pomeroy West Vendors`
   : 'Pomeroy West Vendor Directory';
+const lastUpdatedLabel = new Date(`${lastUpdated}T00:00:00`).toLocaleDateString('en-US', {
+  year: 'numeric', month: 'long', day: 'numeric',
+});
 ---
 
 <!doctype html>
@@ -49,6 +53,9 @@ const fullTitle = title
         <p class="meta">
           Know a great vendor, or spot something out of date?
           <a href="https://groups.google.com/g/pomeroywest">Let us know in the Google Group</a>.
+        </p>
+        <p class="updated">
+          Last reviewed against the Google Group <time datetime={lastUpdated}>{lastUpdatedLabel}</time>.
         </p>
       </div>
     </footer>

@@ -2035,6 +2035,34 @@
     ]
   },
   {
+    "slug": "the-container-store-elfa",
+    "name": "The Container Store (Elfa)",
+    "contact": null,
+    "categories": [
+      "Product Provider"
+    ],
+    "services": [
+      "Closet & storage systems",
+      "DIY shelving"
+    ],
+    "phones": [],
+    "emails": [],
+    "websites": [
+      "https://www.containerstore.com/elfa"
+    ],
+    "yelp": null,
+    "logo": null,
+    "reviews": [
+      {
+        "text": "We really like the Elfa system from the Container Store — very flexible to design and adjust over time, and durable even for drawers heavily used by kids. We installed it all ourselves and it was relatively straightforward, and they have a good warranty. Tip: the online design tools are limited, so measure carefully yourself and then design with the Elfa specialist at the store.",
+        "date": "2026-05",
+        "by": "Vitaliy",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/7C8A4BF2-5BE6-4D8D-9425-213A58AF2530%40gmail.com"
+      }
+    ],
+    "notes": []
+  },
+  {
     "slug": "rolling-suds-power-washing",
     "name": "Rolling Suds Power Washing",
     "contact": null,
