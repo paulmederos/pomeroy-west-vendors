@@ -1551,15 +1551,17 @@
   },
   {
     "slug": "sergio",
-    "name": "Sergio",
+    "name": "Sergio Soto",
     "contact": null,
     "categories": [
-      "Gardener"
+      "Gardener",
+      "Handyman"
     ],
     "services": [
       "Lawn & plant care",
       "Irrigation install",
-      "Low-voltage lighting"
+      "Low-voltage lighting",
+      "General handyman work"
     ],
     "phones": [
       "(650) 793-5872"
@@ -1574,9 +1576,17 @@
         "date": "2022-06",
         "by": "Diane",
         "source": "https://groups.google.com/d/msgid/pomeroywest/CACOq_jB6Yr2jymjZL%2BhBjgATnUvt858i9xko2OLQHr2oLZaKeQ%40mail.gmail.com"
+      },
+      {
+        "text": "I have used him as a gardener/handyman for a few years — he's not licensed, but does a great job at a very reasonable fee. Several others in the complex have used him and are well satisfied.",
+        "date": "2026-07",
+        "by": "Diane",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CACOq_jCeEK-gWk0DhvDraie3OUepA5-W0oARCVw37DRWmh%3DyCw%40mail.gmail.com"
       }
     ],
-    "notes": []
+    "notes": [
+      "Not a licensed contractor."
+    ]
   },
   {
     "slug": "sj-plumbing",
