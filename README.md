@@ -10,6 +10,22 @@ static site, maintained by neighbors, and lives at
 - **Host:** Cloudflare Pages (auto-deploys on every push to `main`)
 - **Privacy:** public but **unlisted** — `noindex` + `robots.txt` keep it out of search engines. Share the link in the neighborhood Google Group.
 
+## Linkable views
+
+Any search or filter you land on is a link you can paste into an email to a neighbor.
+The address bar keeps up as you narrow things down, so you can just copy it — or build
+one by hand:
+
+| Link | What the neighbor sees |
+| --- | --- |
+| `vendors.pomeroywest.org/?category=Electrician` | The Electrician list, pre-filtered |
+| `vendors.pomeroywest.org/?q=radiant` | A pre-filled search for "radiant" |
+| `vendors.pomeroywest.org/?q=leak&category=Plumber` | Both together |
+| `vendors.pomeroywest.org/#sj-plumbing` | Scrolls to and highlights one vendor |
+
+`category` matches the chip names in [`categories.mjs`](src/data/categories.mjs) and is
+case-insensitive (`?category=plumber` works). An unrecognized category is ignored.
+
 ## Want to add or fix a vendor?
 
 You don't need to be a developer. See **[CONTRIBUTING.md](CONTRIBUTING.md)** — you can
