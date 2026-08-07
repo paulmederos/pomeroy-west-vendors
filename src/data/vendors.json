@@ -269,7 +269,9 @@
         "by": "Jay"
       }
     ],
-    "notes": []
+    "notes": [
+      "August 2026: a neighbor pricing a small stove-circuit job reported a $300/hour minimum and went looking for a lower-cost option."
+    ]
   },
   {
     "slug": "15-sewer-and-plumbing",
@@ -1620,10 +1622,29 @@
         "text": "I highly recommend Adam Garza at San Jose Plumbing — he's done work for me and several other Pomeroy West residents.",
         "by": "Horst",
         "date": "2021-10"
+      },
+      {
+        "text": "We've been using San Jose Plumbing. Their model is like a contractor where you pay by the hour with a 2-hour minimum. It's possible it would be cheaper with a different plumber, but I like their model.",
+        "date": "2026-07",
+        "by": "Todd",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CAMUPbaLgGF256%2BxzVBKDEQmKK1_5UkBVSVpVWuZ12sV4uS%3D6%3Dg%40mail.gmail.com"
+      },
+      {
+        "text": "Several of us likewise consistently use San Jose Plumbing, Diamond Certified, Adam Garza. As someone else once wrote, “Adam is the only plumber I allow in my house.” 10% discount every repeated visit. Have had Adam over 15+ years.",
+        "date": "2026-07",
+        "by": "MJF",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/mMsYwb87zysSumMsaw1vMB.1784688044.432418b4b8f9afd438c61d75685b62ad.MISSINGID%40comcast.net"
+      },
+      {
+        "text": "I use San Jose Plumbing. Adam Garza is great.",
+        "date": "2026-07",
+        "by": "Manju",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/2BAD7C83-C441-4C35-8915-6CC9898DE0D2%40gmail.com"
       }
     ],
     "notes": [
-      "Warmly recommended by several neighbors over the years. A couple reported slow or no response more recently (2023–2025), so confirm availability before counting on him."
+      "Warmly recommended by neighbors over many years, and re-confirmed by three in July 2026. A couple reported slow or no response in 2023–2025, so it is still worth confirming availability up front.",
+      "Ask for Adam Garza. Recommending the company in July 2026, Todd added: “Do NOT have Raul do the work.”"
     ]
   },
   {
@@ -2071,5 +2092,129 @@
       }
     ],
     "notes": []
+  },
+  {
+    "slug": "vango-rooter",
+    "name": "VanGo Rooter",
+    "contact": null,
+    "categories": [
+      "Plumber"
+    ],
+    "services": [
+      "Drain cleaning",
+      "Plumbing pipes",
+      "Sewer backup",
+      "General plumbing"
+    ],
+    "phones": [
+      "(877) 826-4690"
+    ],
+    "emails": [
+      "dispatch@vangorooter.com"
+    ],
+    "websites": [
+      "https://vangorooter.com"
+    ],
+    "yelp": null,
+    "logo": null,
+    "reviews": [
+      {
+        "text": "We’ve used them recently for both commercial and residential plumbing needs. Their rates are very reasonable and the service team is professional.",
+        "date": "2026-07",
+        "by": "Lisa",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/2D13110E-D253-4923-A3EA-289D03AE5DAB%40gmail.com"
+      }
+    ],
+    "notes": []
+  },
+  {
+    "slug": "gladiator-repipe-and-plumbing",
+    "name": "Gladiator Repipe & Plumbing",
+    "contact": null,
+    "categories": [
+      "Plumber"
+    ],
+    "services": [
+      "Repipe",
+      "Plumbing pipes",
+      "General plumbing"
+    ],
+    "phones": [
+      "(408) 359-3769"
+    ],
+    "emails": [],
+    "websites": [
+      "https://gladiatorrepipe.com"
+    ],
+    "yelp": null,
+    "logo": null,
+    "reviews": [
+      {
+        "text": "Gladiator Repipe & Plumbing is another option. They are listed in the Eichler Network and they sometimes have better availability as they are based locally in San Jose. Their rates are generally a bit higher.",
+        "date": "2026-07",
+        "by": "Lisa",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/2D13110E-D253-4923-A3EA-289D03AE5DAB%40gmail.com"
+      }
+    ],
+    "notes": [
+      "Listed in the Eichler Network. Rates run higher than the other options here, per the neighbor who suggested them."
+    ]
+  },
+  {
+    "slug": "pedro-electrician",
+    "name": "Pedro",
+    "contact": null,
+    "categories": [
+      "Electrician"
+    ],
+    "services": [
+      "Outlet / minor electrical",
+      "General electrical"
+    ],
+    "phones": [
+      "(408) 661-8812"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [
+      {
+        "text": "I’ve used Pedro — he works for an electrician and moonlights on the side, and does a great job.",
+        "date": "2026-08",
+        "by": "Diane",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CACOq_jDy5bjNjKYVtstX%2B9V8g0B5QQVDbh%3DPt2LMdgZiw2ucLg%40mail.gmail.com"
+      }
+    ],
+    "notes": [
+      "License status unconfirmed — the neighbor who recommended him noted she does not know whether he is licensed. Worth asking before permit-worthy work."
+    ]
+  },
+  {
+    "slug": "joan-peterson",
+    "name": "Joan Peterson",
+    "contact": null,
+    "categories": [
+      "Electrician"
+    ],
+    "services": [
+      "General electrical"
+    ],
+    "phones": [],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [
+      {
+        "text": "I’ve used Joan Peterson (licensed) from Santa Cruz and she does a great job. I don’t know what she charges at this time.",
+        "date": "2026-08",
+        "by": "Diane",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CACOq_jDy5bjNjKYVtstX%2B9V8g0B5QQVDbh%3DPt2LMdgZiw2ucLg%40mail.gmail.com"
+      }
+    ],
+    "notes": [
+      "Licensed, based in Santa Cruz. No phone number on file yet — ask Diane for the contact."
+    ]
   }
 ]

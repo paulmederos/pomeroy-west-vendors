@@ -219,9 +219,51 @@ const phoneIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" s
       countEl.textContent = (q || activeCat !== 'all')
         ? `Showing ${shown} of ${cards.length} vendors`
         : `Showing all ${cards.length} vendors`;
+      scheduleUrlWrite();
     }
 
     function closeFilters() { filters.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
+
+    function selectChip(chip) {
+      activeCat = chip.dataset.cat;
+      for (const c of chips) c.setAttribute('aria-pressed', String(c === chip));
+      filterLabel.textContent = chip.dataset.label;
+    }
+
+    // Shareable filters: ?q=<text> pre-fills the search box and ?category=<label>
+    // pre-selects a category chip, so a link can drop someone straight into
+    // "Electrician" or a search for "radiant". Both are optional and combine.
+    function readUrlState() {
+      const params = new URLSearchParams(location.search);
+      const q = params.get('q');
+      if (q) search.value = q;
+      const cat = params.get('category');
+      if (cat) {
+        // Case-insensitive so ?category=plumber works as well as ?category=Plumber.
+        const wanted = cat.trim().toLowerCase();
+        const chip = chips.find((c) => c.dataset.cat.toLowerCase() === wanted);
+        if (chip) selectChip(chip);
+      }
+    }
+
+    // Mirror whatever you've narrowed to back into the address bar, so the URL is
+    // always copy-pasteable. replaceState keeps the back button out of it, and an
+    // unrecognized ?category= gets dropped on the first write.
+    function writeUrlState() {
+      const params = new URLSearchParams();
+      const q = search.value.trim();
+      if (q) params.set('q', q);
+      if (activeCat !== 'all') params.set('category', activeCat);
+      const qs = params.toString();
+      history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '') + location.hash);
+    }
+
+    // Debounced so fast typing doesn't trip Safari's replaceState rate limit.
+    let urlTimer;
+    function scheduleUrlWrite() {
+      clearTimeout(urlTimer);
+      urlTimer = setTimeout(writeUrlState, 250);
+    }
 
     search.addEventListener('input', apply);
 
@@ -232,9 +274,7 @@ const phoneIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" s
 
     for (const chip of chips) {
       chip.addEventListener('click', () => {
-        activeCat = chip.dataset.cat;
-        for (const c of chips) c.setAttribute('aria-pressed', String(c === chip));
-        filterLabel.textContent = chip.dataset.label;
+        selectChip(chip);
         closeFilters();
         apply();
       });
@@ -262,6 +302,10 @@ const phoneIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" s
       setTimeout(() => el.classList.remove('flash'), 2000);
     }
     window.addEventListener('hashchange', jumpToHash);
+
+    // Honour ?q= / ?category= from the incoming link, then settle the hash jump.
+    readUrlState();
+    apply();
     jumpToHash();
   </script>
 </Base>
