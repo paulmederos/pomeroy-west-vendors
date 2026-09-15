@@ -136,6 +136,11 @@
     "logo": null,
     "reviews": [
       {
+        "text": "I’ve called Hector Hernandez of HH Hydronics for a few emergencies and he’s always so prompt and gets the job done.",
+        "date": "2026-09",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CAJdGd3Oqs8iByAHZoDsXX0_cCskwxaE8nvTxXfRxsgssq_NZ3g%40mail.gmail.com"
+      },
+      {
         "text": "We had H H Hydronics service our radiant heating system recently and the experience was quite positive.",
         "date": "2026-04",
         "by": "Patrick",
@@ -157,7 +162,9 @@
         "by": "Paul"
       }
     ],
-    "notes": []
+    "notes": [
+      "Radiant heating and radiant-pipe leak specialist. For HOA sewer issues, the September 2026 community thread directs residents to VanGo Rooter."
+    ]
   },
   {
     "slug": "orlindos-cleaning",
@@ -913,7 +920,7 @@
     "logo": null,
     "reviews": [],
     "notes": [
-      "For years John Hott was the community’s on-site handyman (dryer-vent cleaning, clearing leaves off the flat roofs, light fixtures, small repairs). As of ~2024–25 neighbors note he’s no longer available — listed here for reference."
+      "September 2026: a neighbor contacted John about another round of dryer-vent cleaning and reported that pricing and a scheduling link would follow. Check the Pomeroy West group for scheduling or contact John directly. Availability for other handyman work has not been reconfirmed."
     ]
   },
   {
@@ -1740,9 +1747,7 @@
     "services": [
       "Electric fuse replacement"
     ],
-    "phones": [
-      "(650) 766-1208"
-    ],
+    "phones": [],
     "emails": [],
     "websites": [],
     "yelp": null,
@@ -1755,7 +1760,9 @@
         "source": "https://groups.google.com/d/msgid/pomeroywest/CACX6N%2B9sOKLWjggshEJUDPRNfMSQ3dVR86teR0-xC8%2BmcHz%3D4A%40mail.gmail.com"
       }
     ],
-    "notes": []
+    "notes": [
+      "August 2026: a neighbor called Todd and reported that he had moved out of California about five years earlier. No longer a local option; retained here for historical reference."
+    ]
   },
   {
     "slug": "villa-tree-service",
@@ -1994,7 +2001,9 @@
       "Install lights",
       "General electrical"
     ],
-    "phones": [],
+    "phones": [
+      "(408) 971-7786"
+    ],
     "emails": [
       "office@testedandtrue.com"
     ],
@@ -2125,7 +2134,9 @@
         "source": "https://groups.google.com/d/msgid/pomeroywest/2D13110E-D253-4923-A3EA-289D03AE5DAB%40gmail.com"
       }
     ],
-    "notes": []
+    "notes": [
+      "September 2026: identified in the Pomeroy West group as the HOA’s plumber for sewer issues. Contact CIMS to confirm how to arrange service for an HOA matter."
+    ]
   },
   {
     "slug": "gladiator-repipe-and-plumbing",
@@ -2216,5 +2227,33 @@
     "notes": [
       "Licensed, based in Santa Cruz. No phone number on file yet — ask Diane for the contact."
     ]
+  },
+  {
+    "slug": "ar-electrical",
+    "name": "AR Electrical",
+    "contact": "Ron",
+    "categories": [
+      "Electrician"
+    ],
+    "services": [
+      "Stove circuit upgrade",
+      "Breaker replacement",
+      "Electrical load management"
+    ],
+    "phones": [
+      "(669) 319-9739"
+    ],
+    "emails": [],
+    "websites": [],
+    "yelp": null,
+    "logo": null,
+    "reviews": [
+      {
+        "text": "I had a very good experience with AR Electrical installing a new 40-amp stove circuit, new breakers for the hood and stove, and a smart meter to balance the electrical load. I’m very happy with the work. The permit was still pending when I shared this recommendation.",
+        "date": "2026-09",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/1765019523.678035.1789428946385%40mail.yahoo.com"
+      }
+    ],
+    "notes": []
   }
 ]
