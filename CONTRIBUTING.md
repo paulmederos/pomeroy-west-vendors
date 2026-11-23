@@ -49,7 +49,7 @@ will flag it and someone will help.
 | `websites` | List of full URLs (or `[]`). |
 | `yelp` | Full Yelp URL, or `null`. |
 | `logo` | Path to a logo stored in `public/logos/` (e.g. `/logos/ej-plumbing.png`), or `null`. Drop a square PNG in `public/logos/` named after the slug and point to it here — we keep logos local rather than hotlinking. |
-| `reviews` | List of `{ "text": "...", "date": "YYYY-MM" }`. |
+| `reviews` | List of `{ "text": "...", "date": "YYYY-MM", "by": "First name", "source": "group message link" }`. `by` is required: the neighbor's first name only, shown under the review. |
 | `notes` | List of short factual notes (e.g. `"May have retired."`). |
 
 ## Review & privacy guidelines
@@ -57,9 +57,14 @@ will flag it and someone will help.
 This directory is **public**, so please:
 
 - **Only list business contact info** (vendor phone/email/website) — that's already public.
-- **Never include a neighbor's name, address, or phone** in a review. Attribute reviews
-  generically; the site shows every review as *"— A Pomeroy West neighbor."*
+- **Never include a neighbor's last name, address, or phone** in a review. The site signs each
+  review with the neighbor's first name (`by`) and links to their group message, which only
+  group members can open.
 - Keep reviews honest and specific. Note caveats factually (e.g. "great for X, less so for Y").
+- **Every review names its neighbor** (`by`), and the build stops if one doesn't.
+- **One neighbor, one review per vendor.** If someone recommends a vendor again, keep the
+  review that says the most rather than adding another. The build stops if a vendor has two
+  reviews with the same `by`.
 - Listings are shared neighbor experiences, **not** official HOA endorsements.
 
 ## Checking your change locally (optional)
