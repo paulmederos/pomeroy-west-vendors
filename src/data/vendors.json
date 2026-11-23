@@ -75,10 +75,6 @@
     "logo": null,
     "reviews": [
       {
-        "text": "have cleaned our place for ~3 years, come every two weeks, highly recommended",
-        "date": null
-      },
-      {
         "text": "Maria and Silvario clean our home every other week and do a great job. They clean a few other homes around the neighborhood too.",
         "date": "2026-05",
         "by": "Paul"
@@ -213,8 +209,10 @@
     "logo": null,
     "reviews": [
       {
-        "text": "Tara Keyser, Owner. She's great and specializes in fruit trees.",
-        "date": null
+        "text": "Tara Keyser of Tara Firma Gardening. She’s great and specializes in fruit trees.",
+        "date": "2025-03",
+        "by": "Laurel",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CAK4xhP4z9LqxyJFd8RgR0WDq9n4UR3GnSOb2xsAU%3Dpn7SyhtDg%40mail.gmail.com"
       }
     ],
     "notes": []
@@ -237,12 +235,7 @@
     "websites": [],
     "yelp": "https://www.yelp.com/biz/valeria-s-house-cleaning-services-palo-alto-2",
     "logo": null,
-    "reviews": [
-      {
-        "text": "Very detailed, wants complete satisfaction, willingly come back to re-clean and supervisor/owner often inspects after the cleaners work. Very on time. Has equipment to handle cleaning ceilings as well as storage rooms, in addition to bathrooms and floors.",
-        "date": null
-      }
-    ],
+    "reviews": [],
     "notes": []
   },
   {
@@ -881,13 +874,13 @@
     "reviews": [
       {
         "text": "Hector's wonderful — he came right over to clean up our yard and does great work.",
-        "by": "Cindy",
-        "date": "2023-08"
+        "date": "2023-08",
+        "by": "Cindy"
       },
       {
         "text": "We've worked with Hector for years, as have both our direct neighbors. He's super friendly, knowledgeable, and great at suggesting ideas — all at reasonable pricing.",
-        "by": "Celine",
-        "date": "2024-07"
+        "date": "2024-07",
+        "by": "Celine"
       }
     ],
     "notes": []
@@ -1625,8 +1618,8 @@
     "reviews": [
       {
         "text": "I highly recommend Adam Garza at San Jose Plumbing — he's done work for me and several other Pomeroy West residents.",
-        "by": "Horst",
-        "date": "2021-10"
+        "date": "2021-10",
+        "by": "Horst"
       },
       {
         "text": "We've been using San Jose Plumbing. Their model is like a contractor where you pay by the hour with a 2-hour minimum. It's possible it would be cheaper with a different plumber, but I like their model.",
@@ -1906,8 +1899,10 @@
         "by": "Paul"
       },
       {
-        "text": "She looks after our cats when we travel and always texts us updates and pictures. One of our cats is very shy, and Sandra goes out of her way to find her and give her attention.",
-        "date": "2025-07"
+        "text": "She looks after our cats when we travel and always texts us with updates and pictures. One of our cats is very shy and Sandra goes out of her way to find her and make sure that she is OK each day.",
+        "date": "2025-07",
+        "by": "Mason",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/CAJW9GiGmfuhL%2B9RzobC7d5F5bChagqPbk%2BKn%2BvXSopkRZ6qfmA%40mail.gmail.com"
       }
     ],
     "notes": [
@@ -1937,8 +1932,10 @@
         "by": "Michelle"
       },
       {
-        "text": "I'd third that recommendation — we've gone to Raul for years.",
-        "date": "2026-01"
+        "text": "I’d third that recommendation. We’ve gone to Raul for years.",
+        "date": "2026-01",
+        "by": "Doug",
+        "source": "https://groups.google.com/d/msgid/pomeroywest/838CF898-A0C4-4A2C-9D60-51CE639CE013%40gmail.com"
       }
     ],
     "notes": [
@@ -1969,12 +1966,7 @@
     ],
     "yelp": null,
     "logo": "/logos/tested-and-true-electric.png",
-    "reviews": [
-      {
-        "text": "Jon and his team at Tested & True do great work — clear communication and solid quality. Several of us in the community have used them.",
-        "date": "2025-05"
-      }
-    ],
+    "reviews": [],
     "notes": [
       "Also operates as JMC Electric."
     ]
@@ -2208,6 +2200,7 @@
       {
         "text": "I had a very good experience with AR Electrical installing a new 40-amp stove circuit, new breakers for the hood and stove, and a smart meter to balance the electrical load. I’m very happy with the work. The permit was still pending when I shared this recommendation.",
         "date": "2026-09",
+        "by": "Gayathri",
         "source": "https://groups.google.com/d/msgid/pomeroywest/1765019523.678035.1789428946385%40mail.yahoo.com"
       }
     ],
