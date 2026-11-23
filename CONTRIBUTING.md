@@ -60,6 +60,9 @@ This directory is **public**, so please:
 - **Never include a neighbor's name, address, or phone** in a review. Attribute reviews
   generically; the site shows every review as *"— A Pomeroy West neighbor."*
 - Keep reviews honest and specific. Note caveats factually (e.g. "great for X, less so for Y").
+- **One neighbor, one review per vendor.** If someone recommends a vendor again, keep the
+  review that says the most rather than adding another. The build stops if a vendor has two
+  reviews with the same `by`.
 - Listings are shared neighbor experiences, **not** official HOA endorsements.
 
 ## Checking your change locally (optional)

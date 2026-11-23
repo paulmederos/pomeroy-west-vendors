@@ -22,7 +22,22 @@ const labelFor = (url) => {
   } catch { return 'Website'; }
 };
 
+// One neighbor, one recommendation per vendor. When someone recommends a vendor
+// again, keep the review that says the most instead of adding another, so a
+// vendor's review count reflects how many neighbors vouch for them.
+function assertOneReviewPerNeighbor(v) {
+  const seen = new Set();
+  for (const r of v.reviews || []) {
+    const who = (r.by || '').trim().toLowerCase();
+    if (!who) continue;
+    if (seen.has(who))
+      throw new Error(`vendors.json: "${v.slug}" has more than one review by "${r.by}". Keep one per neighbor.`);
+    seen.add(who);
+  }
+}
+
 function shape(v) {
+  assertOneReviewPerNeighbor(v);
   const links = [
     ...(v.websites || []).map((url) => ({ url, label: labelFor(url) })),
     ...(v.yelp ? [{ url: v.yelp, label: 'Yelp' }] : []),
